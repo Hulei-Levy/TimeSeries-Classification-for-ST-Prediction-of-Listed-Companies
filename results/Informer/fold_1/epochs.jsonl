@@ -1,0 +1,17 @@
+{"epoch": 1, "train_loss": 2.360352918825277, "validation_ap": 0.1021566918803303, "best_validation_ap": 0.1021566918803303, "best_epoch": 1}
+{"epoch": 2, "train_loss": 2.201173551049446, "validation_ap": 0.1313540754911855, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 3, "train_loss": 2.010311822276383, "validation_ap": 0.12499673059229684, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 4, "train_loss": 2.055545643949346, "validation_ap": 0.07652555753731649, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 5, "train_loss": 1.9052610463298623, "validation_ap": 0.10103932547056917, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 6, "train_loss": 1.8689461677089996, "validation_ap": 0.062406427861121466, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 7, "train_loss": 1.7800348602839795, "validation_ap": 0.10034363510480185, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 8, "train_loss": 1.6687238353553824, "validation_ap": 0.10359396881992332, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 9, "train_loss": 1.6635796153836269, "validation_ap": 0.0861056604519326, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 10, "train_loss": 1.739429908912579, "validation_ap": 0.04927107107547274, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 11, "train_loss": 1.5845926117741398, "validation_ap": 0.028869927508309277, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 12, "train_loss": 1.704979935324559, "validation_ap": 0.045171184235591945, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 13, "train_loss": 1.4773605128123148, "validation_ap": 0.03365073107324148, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 14, "train_loss": 1.486948991724153, "validation_ap": 0.04289009446987607, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 15, "train_loss": 1.6457192587452272, "validation_ap": 0.0910466237092667, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 16, "train_loss": 1.3222613438864301, "validation_ap": 0.04708026679515065, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}
+{"epoch": 17, "train_loss": 1.3886677139051626, "validation_ap": 0.027798009429533484, "best_validation_ap": 0.1313540754911855, "best_epoch": 2}

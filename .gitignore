@@ -1,0 +1,8 @@
+datasets/
+cache/
+
+*.csv
+*.parquet
+*.h5
+*.pkl
+*.pt

@@ -1,0 +1,28 @@
+{
+  "model": "Autoformer",
+  "fold": 2,
+  "config": {
+    "seed": 42,
+    "epochs": 100,
+    "patience": 15,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dim": 64,
+    "depth": 2,
+    "dropout": 0.1,
+    "text_dim": 64,
+    "threshold": 0.5,
+    "gradient_clip": 1.0,
+    "bert_batch_size": 128,
+    "torch_threads": 6,
+    "auxiliary_loss_weight": 0.01,
+    "graph_microbatch_size": 16
+  },
+  "fingerprint": "aa08df924ec57cc2ba83c54de2d58d8b1faf1901467844f3d626d5c2a0e3a50a",
+  "train_n": 6433,
+  "val_n": 2145,
+  "test_n": 2145,
+  "pos_weight": 106.21666666666667,
+  "trainable_parameters": 249985
+}
