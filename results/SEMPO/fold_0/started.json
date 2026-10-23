@@ -24,5 +24,7 @@
   "val_n": 2144,
   "test_n": 2144,
   "pos_weight": 106.25,
-  "trainable_parameters": 1393306
+  "trainable_parameters": 1393306,
+  "attention_backend": "SDPBackend.MATH",
+  "execution_note": "Full batch unchanged; default efficient CUDA SDPA rejects expanded batch 69376."
 }
