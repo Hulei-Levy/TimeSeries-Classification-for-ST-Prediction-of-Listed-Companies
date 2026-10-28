@@ -1,0 +1,51 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.9183035714285714,
+  "precision": 0.4651898734177215,
+  "recall": 0.9130434782608695,
+  "f1": 0.6163522012578616,
+  "specificity": 0.9187109187109187,
+  "mcc": 0.6171478394356633,
+  "roc_auc": 0.9675757874515638,
+  "ap": 0.7308644119774093,
+  "brier": 0.062112179384159104,
+  "ece_10_bins": 0.09921502468413175,
+  "top_decile_capture": 0.8509316770186336,
+  "tn": 1910,
+  "fp": 169,
+  "fn": 14,
+  "tp": 147,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "abb6182a8843924643810a5b47f42ed1be63321dce7e8b3548f197bcbbc3b1b6",
+    "experiment": "annual_risk_v1",
+    "model": "PerSeM_ABC",
+    "scheme": "ratio_3",
+    "fold": 3,
+    "protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+      "fold": 3,
+      "numeric_sha256": "376ad58f81a9c46ae8ba7ccb3b101391af2cee3b123dfb1dd9e4e4fcaf9f9b1e",
+      "preprocessing_sha256": "0ff0b56fc71bdb6219ca02a7d1f1530a717d39a37eed946f3b103f125c4e2027",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007664069802434,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "selected_index_sha256": "01ed64280352e868382321639a745949a63ebc4e75690bb2b0842d4f3f9567c3",
+    "full_train_index_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+    "validation_index_sha256": "883b85492e66cd23f103438f30eec85e2c65295b7ea6f919762049756faabbd7",
+    "test_index_sha256": "a461781454845c7421d7f65e96c786442baf45b66333dda345b62ef5b8feb379",
+    "sampling_manifest_sha256": "d1c5d5c12aff145483bf885d649ee315f2f9b2aeb3a76659f68bd5e203294081"
+  },
+  "best_step": 210,
+  "checkpoint_selection": "maximum validation AP"
+}

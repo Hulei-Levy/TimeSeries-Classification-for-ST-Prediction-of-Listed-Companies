@@ -1,0 +1,532 @@
+{
+  "schema_version": 2,
+  "seed": 42,
+  "prediction_years": [
+    2006,
+    2024
+  ],
+  "candidate_samples": 10723,
+  "candidate_positives": 100,
+  "samples": 10723,
+  "positives": 100,
+  "companies": 1536,
+  "documents": 20403,
+  "source_roster_companies": 1545,
+  "exclusions": {
+    "already_ST_windows": 494,
+    "not_yet_listed_windows": 17426,
+    "entire_input_preIPO_windows": 691,
+    "uncertain_event_in_horizon_windows": 1,
+    "incomplete_followup_windows": 1,
+    "identity_break_companies": 1
+  },
+  "fold_groups": [
+    {
+      "group": 0,
+      "samples": 2144,
+      "positives": 20,
+      "companies": 307
+    },
+    {
+      "group": 1,
+      "samples": 2144,
+      "positives": 20,
+      "companies": 307
+    },
+    {
+      "group": 2,
+      "samples": 2145,
+      "positives": 20,
+      "companies": 307
+    },
+    {
+      "group": 3,
+      "samples": 2145,
+      "positives": 20,
+      "companies": 308
+    },
+    {
+      "group": 4,
+      "samples": 2145,
+      "positives": 20,
+      "companies": 307
+    }
+  ],
+  "fold_roles": "test=k; validation=(k+1)%5; training=other three groups",
+  "features": [
+    {
+      "name": "F010101A",
+      "categorical": false,
+      "observed_positions": 143026,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.03857115968917213
+    },
+    {
+      "name": "F010701B",
+      "categorical": false,
+      "observed_positions": 76136,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.48820951305423355
+    },
+    {
+      "name": "F010201A",
+      "categorical": false,
+      "observed_positions": 142405,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.04274555672071201
+    },
+    {
+      "name": "F011701A",
+      "categorical": false,
+      "observed_positions": 143040,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.038477050899411114
+    },
+    {
+      "name": "F011201A",
+      "categorical": false,
+      "observed_positions": 143022,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.038598047914818134
+    },
+    {
+      "name": "F012301B",
+      "categorical": false,
+      "observed_positions": 132446,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1096905165228147
+    },
+    {
+      "name": "F010401A",
+      "categorical": false,
+      "observed_positions": 132767,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10753273641472394
+    },
+    {
+      "name": "F011901A",
+      "categorical": false,
+      "observed_positions": 143040,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.038477050899411114
+    },
+    {
+      "name": "F030101A",
+      "categorical": false,
+      "observed_positions": 143026,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.03857115968917213
+    },
+    {
+      "name": "F031501A",
+      "categorical": false,
+      "observed_positions": 143022,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.038598047914818134
+    },
+    {
+      "name": "F040201B",
+      "categorical": false,
+      "observed_positions": 132497,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10934769164582825
+    },
+    {
+      "name": "F040501B",
+      "categorical": false,
+      "observed_positions": 131834,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.11380441504665106
+    },
+    {
+      "name": "F041201B",
+      "categorical": false,
+      "observed_positions": 132813,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10722352181979511
+    },
+    {
+      "name": "F041401B",
+      "categorical": false,
+      "observed_positions": 132746,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10767389959936546
+    },
+    {
+      "name": "F041701B",
+      "categorical": false,
+      "observed_positions": 132827,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10712941303003409
+    },
+    {
+      "name": "F041801B",
+      "categorical": false,
+      "observed_positions": 132824,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1071495791992686
+    },
+    {
+      "name": "F040901B",
+      "categorical": false,
+      "observed_positions": 126888,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1470517060579173
+    },
+    {
+      "name": "F050501B",
+      "categorical": false,
+      "observed_positions": 132840,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10704202629668469
+    },
+    {
+      "name": "F051401B",
+      "categorical": false,
+      "observed_positions": 132868,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10685380871716277
+    },
+    {
+      "name": "F050101B",
+      "categorical": false,
+      "observed_positions": 132842,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10702858218386169
+    },
+    {
+      "name": "F050201B",
+      "categorical": false,
+      "observed_positions": 132843,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10702186012745019
+    },
+    {
+      "name": "F051501B",
+      "categorical": false,
+      "observed_positions": 132868,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10685380871716277
+    },
+    {
+      "name": "F052101B",
+      "categorical": false,
+      "observed_positions": 78740,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.47070527815869434
+    },
+    {
+      "name": "F053201B",
+      "categorical": false,
+      "observed_positions": 132863,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.10688741899922027
+    },
+    {
+      "name": "F053401B",
+      "categorical": false,
+      "observed_positions": 78604,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.47161947783065794
+    },
+    {
+      "name": "F080601A",
+      "categorical": false,
+      "observed_positions": 143657,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.03432954209351724
+    },
+    {
+      "name": "F081001B",
+      "categorical": false,
+      "observed_positions": 115678,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.22240595843080313
+    },
+    {
+      "name": "F081601B",
+      "categorical": false,
+      "observed_positions": 131884,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.11346831222607623
+    },
+    {
+      "name": "F081201B",
+      "categorical": false,
+      "observed_positions": 113561,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.23663655185394317
+    },
+    {
+      "name": "F082802A",
+      "categorical": false,
+      "observed_positions": 143634,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.034484149390981655
+    },
+    {
+      "name": "AF_CFEATUREPROFILE-CompanySize",
+      "categorical": false,
+      "observed_positions": 126226,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1515017074023285
+    },
+    {
+      "name": "AF_CFEATUREPROFILE-Big4",
+      "categorical": true,
+      "observed_positions": 118309,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.2047202280121535
+    },
+    {
+      "name": "CG_Ybasic-Y0501b",
+      "categorical": true,
+      "observed_positions": 63590,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.5725444327928799
+    },
+    {
+      "name": "CG_Agm-A0101b",
+      "categorical": false,
+      "observed_positions": 67251,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.547934984270388
+    },
+    {
+      "name": "CG_Agm-A0201b",
+      "categorical": false,
+      "observed_positions": 34202,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.7700922266139658
+    },
+    {
+      "name": "CG_Agm-A0301b",
+      "categorical": false,
+      "observed_positions": 66794,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.5510069640504422
+    },
+    {
+      "name": "CG_CommissionSta-StrategyCommitteeTimes",
+      "categorical": false,
+      "observed_positions": 36039,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.757743808986045
+    },
+    {
+      "name": "CG_CommissionSta-AuditCommitteeTimes",
+      "categorical": false,
+      "observed_positions": 50625,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6596958941679438
+    },
+    {
+      "name": "CG_CommissionSta-RemAssComMemberTimes",
+      "categorical": false,
+      "observed_positions": 40846,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.725430883815977
+    },
+    {
+      "name": "CG_ManagerShareSalary-Top3SumSalary",
+      "categorical": false,
+      "observed_positions": 48666,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6728644026780672
+    },
+    {
+      "name": "CG_ManagerShareSalary-Top3DirectorSumSalary",
+      "categorical": false,
+      "observed_positions": 48666,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6728644026780672
+    },
+    {
+      "name": "CG_ManagerShareSalary-Top3SupervisorSumSalary",
+      "categorical": false,
+      "observed_positions": 48638,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6730526202575893
+    },
+    {
+      "name": "CG_ManagerShareSalary-Top3ManageSumSalary",
+      "categorical": false,
+      "observed_positions": 48660,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6729047350165362
+    },
+    {
+      "name": "CG_ManagerShareSalary-DirectorHoldsharesNum",
+      "categorical": false,
+      "observed_positions": 48993,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6706662902315077
+    },
+    {
+      "name": "CG_ManagerShareSalary-SupervisorHoldsharesNum",
+      "categorical": false,
+      "observed_positions": 48993,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6706662902315077
+    },
+    {
+      "name": "HLD_CR-Shrcr1",
+      "categorical": false,
+      "observed_positions": 126226,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1515017074023285
+    },
+    {
+      "name": "HLD_CR-Shrz",
+      "categorical": false,
+      "observed_positions": 126226,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1515017074023285
+    },
+    {
+      "name": "HLD_CR-Shrhfd3",
+      "categorical": false,
+      "observed_positions": 126226,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1515017074023285
+    },
+    {
+      "name": "HLD_CR-Shrhfd5",
+      "categorical": false,
+      "observed_positions": 126226,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1515017074023285
+    },
+    {
+      "name": "HLD_CR-Shrhfd10",
+      "categorical": false,
+      "observed_positions": 126167,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.15189830873060683
+    },
+    {
+      "name": "HLD_CR-Shrs",
+      "categorical": false,
+      "observed_positions": 126167,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.15189830873060683
+    },
+    {
+      "name": "IC_EvaluationRepInfo-IsDisclosingEvaRep",
+      "categorical": true,
+      "observed_positions": 90737,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.39006076738996
+    },
+    {
+      "name": "IC_EvaluationRepInfo-IsDeficiency",
+      "categorical": true,
+      "observed_positions": 46588,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.6868328359011588
+    },
+    {
+      "name": "IC_AuditRepInfo-IsDisclosingAuditRep",
+      "categorical": true,
+      "observed_positions": 77010,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.48233443575058477
+    },
+    {
+      "name": "LA_SUMMARY-IsInvolvedLA",
+      "categorical": true,
+      "observed_positions": 6822,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.9541421311607647
+    },
+    {
+      "name": "EN_EquityNatureAll-LargestHolderRate",
+      "categorical": false,
+      "observed_positions": 126226,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1515017074023285
+    },
+    {
+      "name": "PT_LCRDSPENDING-RDPersonRatio",
+      "categorical": false,
+      "observed_positions": 81685,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.45090882202683447
+    },
+    {
+      "name": "PT_LCRDSPENDING-RDSpendSumRatio",
+      "categorical": false,
+      "observed_positions": 92704,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.37683848242854456
+    },
+    {
+      "name": "BDT_ManaGovAbil-ContrshrNature",
+      "categorical": true,
+      "observed_positions": 79327,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.4667594310451453
+    },
+    {
+      "name": "BDT_ManaGovAbil-Boardsize",
+      "categorical": false,
+      "observed_positions": 125710,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1549702885106612
+    },
+    {
+      "name": "BDT_ManaGovAbil-IndDirectorRatio",
+      "categorical": false,
+      "observed_positions": 125697,
+      "eligible_positions": 148764,
+      "missing_fraction": 0.1550576752440106
+    }
+  ],
+  "categorical_indices": [
+    31,
+    32,
+    51,
+    52,
+    53,
+    54,
+    58
+  ],
+  "categorical_encodings": {
+    "AF_CFEATUREPROFILE-Big4": {
+      "N": 0,
+      "Y": 1
+    },
+    "LA_SUMMARY-IsInvolvedLA": {
+      "N": 0,
+      "Y": 1
+    },
+    "other_categories": "Original numeric codes; no ordinal semantic claim."
+  },
+  "known_source_date_counts": {
+    "financial": 653302,
+    "governance": 86142
+  },
+  "late_masked_sample_positions": {
+    "financial_cells": 350555,
+    "governance_cells": 1053
+  },
+  "document_index_exclusions": {
+    "outside_roster": 90296
+  },
+  "point_in_time_verified": false,
+  "label_scope": "Research candidates for first ST/*ST, supported by provider history and official implementation notices; not official certification of first-ever ST.",
+  "availability": "max(report-period end + 6 calendar months, known source publication date) <= June 30 cutoff; unknown original vintages remain unverified",
+  "sequence_alignment": "20 report-quarter nodes in previous five complete fiscal years; nodes are not historical real-time prediction dates. No report period later than its node and no source outside the five-year window.",
+  "ages": "Elapsed quarters from each source report-period end to the final June 30 prediction cutoff, not elapsed time since actual disclosure. Latest prior-year Q4 age=2 quarters; earliest five-year-window Q1 age=21 quarters. Missing ages=0 with availability masks.",
+  "missingness": "No financial forward fill; annual governance held Q4 through next Q3; semiannual MD&A held Q2-Q3 and Q4-next Q1. Missing scheduled reports/fields reset; no cross-cycle fill. No imputation or scaling fitted here.",
+  "cohort_scope": "Preserves the uploaded 1545-company roster; no claim of market-wide representative prevalence.",
+  "generalization_scope": "Company-group cross-validation; no out-of-time holdout is implied.",
+  "source_sha256": {
+    "coverage": "f15c8cbf519fe6e88ad89a04cda7ee5ccbe4dd0153560f1208ea6e9f35749130",
+    "financial": "f838a8ce73ce62f55f6ae29493b69394942ecd7d436d87119f2399cc951cc97c",
+    "financial_dates": "296508f338ba4296ae4306c1b0b5bda1c5735e95c990f51ff7d5bada35e91d15",
+    "governance": "f3081b2706e5e88978151ba48b3e8b45cdb14a636ae005f5e1c161e7e37147ef",
+    "governance_dates": "207beba82d96f11f6bca1892e104c4dc5a0cddd2360dc8e58236ca06cd0af2fd"
+  },
+  "data_code_sha256": "a940f7581bf1cc880ce09c07c21b0f98982d9f75a3a1f5de971890376b358771"
+}

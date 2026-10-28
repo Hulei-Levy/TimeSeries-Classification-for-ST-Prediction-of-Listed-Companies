@@ -1,0 +1,3232 @@
+{
+  "backup": "cache/backups/before_sampling_20261023T063857Z.zip",
+  "baseline_fingerprint": "aa08df924ec57cc2ba83c54de2d58d8b1faf1901467844f3d626d5c2a0e3a50a",
+  "persem_fingerprint": "304fd96b4a2286deba98c0ea9d60cec07a5991e8224e6dc2b318a04bdff40c5b",
+  "source_sha256": {
+    "run.py": "9a3ab69a895b95e8df92b7fa3ac970939f2149a89e2712a6ab858aa2f6d20ec2",
+    "run_persem.py": "a919c26e4bc6f86a8d53fe4ea00002b8ba1a21ec07fdaee48d284539cfa034a8",
+    "models_persem.py": "96c8751a3adf8bfac459ce459ab5483f265ce6fd02149849e7469e7c3a3ac921",
+    "data.py": "a940f7581bf1cc880ce09c07c21b0f98982d9f75a3a1f5de971890376b358771",
+    "models_classic.py": "831703ac07f6c1bce6dfe36a34afe70b39dfc7118622f746c7d31ecd0e5a4185",
+    "models_recent.py": "3af9ba5490d07779e8ddaf6f274ef213d3dce94688ac0215612a4440db539a5d",
+    "config.json": "c50261e640891e166535a387a3225f7c143ec816f1431376f7a81aec8e613b9d",
+    "README.md": "ee6e7a38e990136468599492c17a26568b509dd939f2ddbb69235bca6084bf9b"
+  },
+  "artifacts": {
+    "results/summary.json": {
+      "size": 79842,
+      "mtime_ns": 1792723816252690634,
+      "sha256": "18bf940cc85c19d23cbb16f4dcfa37c1aee1a640a18b5e384231eeab086a7f04"
+    },
+    "results/comparison.csv": {
+      "size": 10256,
+      "mtime_ns": 1792728530906190592,
+      "sha256": "b5c1c452b2c0355ee528c0b46b7bd70506a5a3bf6e5f0cb13cbe07e4da37fdd4"
+    },
+    "results/persem_summary.csv": {
+      "size": 3903,
+      "mtime_ns": 1792728530901315524,
+      "sha256": "dd6036c046338d6a1fea2db13f58e40f9fea0159fca7b36bfce5829d98fc2c83"
+    },
+    "results/summary.csv": {
+      "size": 6284,
+      "mtime_ns": 1792723816260042353,
+      "sha256": "cfecb0abb86047b2b2c080be2e6d2a07287f76a19728cc23820279eda1bd095d"
+    },
+    "results/persem_summary.json": {
+      "size": 50833,
+      "mtime_ns": 1792728530901047782,
+      "sha256": "232f9e32bad509dba1afc6369847f0c7e18b876459b68c45f210740da4b2c1bf"
+    },
+    "results/TimesNet/fold_1/best.pt": {
+      "size": 5342054,
+      "mtime_ns": 1792690330064339034
+    },
+    "results/TimesNet/fold_1/started.json": {
+      "size": 638,
+      "mtime_ns": 1792690318436824381,
+      "sha256": "aa2575d0298a3632631229bc0de6dfb007b0276bccd56b77dd144bfe7e700b9d"
+    },
+    "results/TimesNet/fold_1/metrics.json": {
+      "size": 712,
+      "mtime_ns": 1792690383387997352,
+      "sha256": "078f86207f87a29c08aac8abcad58cf278b30acc786c8c48ea0e28b5b5310921"
+    },
+    "results/TimesNet/fold_1/epochs.jsonl": {
+      "size": 2610,
+      "mtime_ns": 1792690382953424884,
+      "sha256": "434cdcafe0ab8048d9e25dbc3d957b3b033291d8acd47b9bff5ebfa89ae9b7e8"
+    },
+    "results/TimesNet/fold_1/predictions.csv": {
+      "size": 102213,
+      "mtime_ns": 1792690383387782801,
+      "sha256": "4cea5e3546fb3f42a69369fa5d915291e9dae8fdc04c5d2133f3eedafbbf0403"
+    },
+    "results/TimesNet/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792690317613128116,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/TimesNet/fold_4/best.pt": {
+      "size": 5342054,
+      "mtime_ns": 1792695179055733514
+    },
+    "results/TimesNet/fold_4/started.json": {
+      "size": 638,
+      "mtime_ns": 1792695170177289587,
+      "sha256": "0f2064e8052f01540543e0109ea52c6f232c29bf26a471461c60698b9ba99ab1"
+    },
+    "results/TimesNet/fold_4/metrics.json": {
+      "size": 650,
+      "mtime_ns": 1792695233040463963,
+      "sha256": "b3dc2c40cbe0c4f28d0d5b08e015c3177f67ade3a0982fec99571a328da298f7"
+    },
+    "results/TimesNet/fold_4/epochs.jsonl": {
+      "size": 2464,
+      "mtime_ns": 1792695232636291350,
+      "sha256": "04dc89839ca0014ad1fda7681f783951ac66bf72c78490d5955e932e0e1412d0"
+    },
+    "results/TimesNet/fold_4/predictions.csv": {
+      "size": 102774,
+      "mtime_ns": 1792695233040250830,
+      "sha256": "db171dea52ebfc87b4cfc6ddf0c094f8640afd1a716bc85e2a3284114024a5c9"
+    },
+    "results/TimesNet/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792695169630760963,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/TimesNet/fold_3/best.pt": {
+      "size": 5342054,
+      "mtime_ns": 1792690410301596926
+    },
+    "results/TimesNet/fold_3/started.json": {
+      "size": 638,
+      "mtime_ns": 1792690388758461577,
+      "sha256": "5932c6f7d201130eb1010a410d855e52cd37eb94daa6ce00332f46b857eec490"
+    },
+    "results/TimesNet/fold_3/metrics.json": {
+      "size": 652,
+      "mtime_ns": 1792690461847186641,
+      "sha256": "4b58cd2ba8b0905181dff9e3440affe5269581e900799ef15d8cd4af119d5f76"
+    },
+    "results/TimesNet/fold_3/epochs.jsonl": {
+      "size": 3052,
+      "mtime_ns": 1792690461517913743,
+      "sha256": "d937e7d508d801361570bb2a6143e8f20f431fb576e0d07c3ebd32e1ef359c38"
+    },
+    "results/TimesNet/fold_3/predictions.csv": {
+      "size": 102819,
+      "mtime_ns": 1792690461846981219,
+      "sha256": "a965556d365028e17a858acf6bfff97e9ea6bccfe1c4c0ffaa21e1c132a37431"
+    },
+    "results/TimesNet/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792690387845199558,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/TimesNet/fold_0/best.pt": {
+      "size": 5342054,
+      "mtime_ns": 1792695049391020617
+    },
+    "results/TimesNet/fold_0/started.json": {
+      "size": 626,
+      "mtime_ns": 1792695044973863834,
+      "sha256": "66fcf7dd297b13185d7226a48ea2968cdac06b2cf4eacee4bd9916ec59651d7a"
+    },
+    "results/TimesNet/fold_0/metrics.json": {
+      "size": 650,
+      "mtime_ns": 1792695103253088673,
+      "sha256": "f58b8418eda659d9f6299f4f00592f148a88762543a960106dde33eef359188c"
+    },
+    "results/TimesNet/fold_0/epochs.jsonl": {
+      "size": 2329,
+      "mtime_ns": 1792695102930830103,
+      "sha256": "7991f1534b15d00581924f736ce6fab69cf11f68914a5e2810b52ab8c248b795"
+    },
+    "results/TimesNet/fold_0/predictions.csv": {
+      "size": 102637,
+      "mtime_ns": 1792695103252732667,
+      "sha256": "f079f8203aed20db63546ca35c503d60ed2a9c3450658a14b42cde10f6b9fd40"
+    },
+    "results/TimesNet/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792695044070353852,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/TimesNet/fold_2/best.pt": {
+      "size": 5342054,
+      "mtime_ns": 1792695113163386515
+    },
+    "results/TimesNet/fold_2/started.json": {
+      "size": 638,
+      "mtime_ns": 1792695108520152851,
+      "sha256": "381b9afddeb21527d97feeae1a5deb8e814092a45c58d748d0109225ed31a698"
+    },
+    "results/TimesNet/fold_2/metrics.json": {
+      "size": 650,
+      "mtime_ns": 1792695165285873593,
+      "sha256": "b992b32ca21a88eb8a5d2fa68b5ef0a084e560a6c850ce0ca4958590eb09c637"
+    },
+    "results/TimesNet/fold_2/epochs.jsonl": {
+      "size": 2322,
+      "mtime_ns": 1792695164976720360,
+      "sha256": "43fca30341c8792e170e3c0df99d59806111443aaba2d72daaecbc65101a4a57"
+    },
+    "results/TimesNet/fold_2/predictions.csv": {
+      "size": 103287,
+      "mtime_ns": 1792695165285539555,
+      "sha256": "61477fd9de3eb128e920eeb18f49608cd749551cc07f14bc1ffb31b561f87051"
+    },
+    "results/TimesNet/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792695107664796075,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/PerSeM_B/fold_1/best.pt": {
+      "size": 20369924,
+      "mtime_ns": 1792724795255876493
+    },
+    "results/PerSeM_B/fold_1/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792724730236186248,
+      "sha256": "b864d9bb27ac62f61c51df03b9f2781495e251dd3d677d1e44139e907983402e"
+    },
+    "results/PerSeM_B/fold_1/metrics.json": {
+      "size": 798,
+      "mtime_ns": 1792724934476786821,
+      "sha256": "a0b0f47a657360a6f0f197461967b9afe2768457775cc42e58ed13473d89879f"
+    },
+    "results/PerSeM_B/fold_1/epochs.jsonl": {
+      "size": 3179,
+      "mtime_ns": 1792724933436380376,
+      "sha256": "bda18ad55d61f5812aa47867f8835fa75d1ba017f63c75ff0c4a03682660de88"
+    },
+    "results/PerSeM_B/fold_1/predictions.csv": {
+      "size": 102765,
+      "mtime_ns": 1792724934475835214,
+      "sha256": "1edccba89a4ea7f659a2f422f159b12abe6ce38867fb734115089cb819b13ff3"
+    },
+    "results/PerSeM_B/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792724730235964898,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM_B/fold_4/best.pt": {
+      "size": 20369924,
+      "mtime_ns": 1792725236842257476
+    },
+    "results/PerSeM_B/fold_4/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792725216400312532,
+      "sha256": "6945c8661a0d72e278ae8bd843071ef2c06c3c8c083b224e4147d8ceb4de73fe"
+    },
+    "results/PerSeM_B/fold_4/metrics.json": {
+      "size": 746,
+      "mtime_ns": 1792725374923034772,
+      "sha256": "86bbf1c03349ee9fc92e002ccb23980c0f8a3a23a0ecd145f64ef52e89e4f74c"
+    },
+    "results/PerSeM_B/fold_4/epochs.jsonl": {
+      "size": 2466,
+      "mtime_ns": 1792725373872918461,
+      "sha256": "d5686ad422a2ab3e9f81ab822d90350e58a4c02a09da096c4eb82359dc87a8f8"
+    },
+    "results/PerSeM_B/fold_4/predictions.csv": {
+      "size": 102807,
+      "mtime_ns": 1792725374922841822,
+      "sha256": "27364b5c00b4f95a22524c9458783b06e4f6322e95ade44478bb6ce2a1f7e3ca"
+    },
+    "results/PerSeM_B/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792725216400066461,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM_B/fold_3/best.pt": {
+      "size": 20369924,
+      "mtime_ns": 1792725050246020501
+    },
+    "results/PerSeM_B/fold_3/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792724939335146350,
+      "sha256": "54f39eb9ccdc13adb5b9c96dfe09b4002038ce793840e3354d0428eb7a675bd3"
+    },
+    "results/PerSeM_B/fold_3/metrics.json": {
+      "size": 811,
+      "mtime_ns": 1792725191188673751,
+      "sha256": "b6c402039236e90bc5885115310b6e74f6d2ea600678bf4496544daf16944e44"
+    },
+    "results/PerSeM_B/fold_3/epochs.jsonl": {
+      "size": 3943,
+      "mtime_ns": 1792725190244511127,
+      "sha256": "694ed9b0cbdd3e102f79b28f5b1f9bb8f66cdb39c86679ba86eaa3684faf4f36"
+    },
+    "results/PerSeM_B/fold_3/predictions.csv": {
+      "size": 103823,
+      "mtime_ns": 1792725191188443710,
+      "sha256": "38be27905a5ad293bc5f246366ef079b38bcf8c61e5c97f6c9d4a3ac5cd177d8"
+    },
+    "results/PerSeM_B/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792724939334960769,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM_B/fold_0/best.pt": {
+      "size": 20369924,
+      "mtime_ns": 1792724802967416562
+    },
+    "results/PerSeM_B/fold_0/started.json": {
+      "size": 1552,
+      "mtime_ns": 1792724702563956384,
+      "sha256": "fd27d22236a639ec6646a00f08f7dc94e210823d7039dafc87af37fb615f05dd"
+    },
+    "results/PerSeM_B/fold_0/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792724941273647931,
+      "sha256": "bcadd88697133bfaa6ca15bf3c88ffead51b2d22e24320072ce94be67a1321bb"
+    },
+    "results/PerSeM_B/fold_0/epochs.jsonl": {
+      "size": 3778,
+      "mtime_ns": 1792724940351852607,
+      "sha256": "0aa5dd5760178b732be0a6b8e4504a186cb345e541b81b0e2baa6817c2070b4a"
+    },
+    "results/PerSeM_B/fold_0/predictions.csv": {
+      "size": 103010,
+      "mtime_ns": 1792724941272855324,
+      "sha256": "561114933544931105b39d8cce0369f73d0212fbc9d61690cd7afe485b786976"
+    },
+    "results/PerSeM_B/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792724702563646723,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM_B/fold_2/best.pt": {
+      "size": 20369924,
+      "mtime_ns": 1792725073609601907
+    },
+    "results/PerSeM_B/fold_2/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792724946427352042,
+      "sha256": "fbf037701d9e2d4376487207e81bf35a657e66ff150ce2b2d9467d68d8e9996d"
+    },
+    "results/PerSeM_B/fold_2/metrics.json": {
+      "size": 811,
+      "mtime_ns": 1792725211112852264,
+      "sha256": "a7f13a7490b78cf498d0179efb52020db7bfd2d4d38b0f3afdf3d7ad11f84a1d"
+    },
+    "results/PerSeM_B/fold_2/epochs.jsonl": {
+      "size": 4228,
+      "mtime_ns": 1792725210209636235,
+      "sha256": "ad212d99a61cd60bacf58b8d44c60a37084cab2e82ce13a7ed374ce02d810d18"
+    },
+    "results/PerSeM_B/fold_2/predictions.csv": {
+      "size": 103687,
+      "mtime_ns": 1792725211112594653,
+      "sha256": "48f6c0c3f2f3f85c3273f5e813759cc817606c853f1599e2ebf75a068c5a59ff"
+    },
+    "results/PerSeM_B/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792724946427107541,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/ETSformer/fold_1/best.pt": {
+      "size": 1158394,
+      "mtime_ns": 1792690840520703718
+    },
+    "results/ETSformer/fold_1/started.json": {
+      "size": 638,
+      "mtime_ns": 1792690796222238424,
+      "sha256": "b0b148f1f0beaffbfdaa5f0c9c8b8fd64e7987e6fd4f044995ee14c6b4747169"
+    },
+    "results/ETSformer/fold_1/metrics.json": {
+      "size": 718,
+      "mtime_ns": 1792690933334753598,
+      "sha256": "46ae7c4d9f2d2f487e7f4974fd0244d18209af717dd2c6510c3ad8adaf09bc70"
+    },
+    "results/ETSformer/fold_1/epochs.jsonl": {
+      "size": 3206,
+      "mtime_ns": 1792690932823220759,
+      "sha256": "6a6f58ae80836632b6d5c7845ef6645f6552894cd5922a30cc365960e83a2a5e"
+    },
+    "results/ETSformer/fold_1/predictions.csv": {
+      "size": 102794,
+      "mtime_ns": 1792690933334431959,
+      "sha256": "93cf83a35647ec2437f0b09f4a423758fe9832f24854401f71dad61a850d5bc7"
+    },
+    "results/ETSformer/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792690795540840985,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/ETSformer/fold_4/best.pt": {
+      "size": 1158394,
+      "mtime_ns": 1792695966611960085
+    },
+    "results/ETSformer/fold_4/started.json": {
+      "size": 638,
+      "mtime_ns": 1792695948790383320,
+      "sha256": "7bae6a3c97b200f7695925c1093b9739ee98b6793e6fd7108245b97685646494"
+    },
+    "results/ETSformer/fold_4/metrics.json": {
+      "size": 651,
+      "mtime_ns": 1792696053460048918,
+      "sha256": "4f734ba6c38f1cf853d6c49d3318aa5a924f0779b1c0ca3c9f266157e60dde6a"
+    },
+    "results/ETSformer/fold_4/epochs.jsonl": {
+      "size": 2616,
+      "mtime_ns": 1792696052975484879,
+      "sha256": "57f61447fc68bd265712b439e109124dae396c3f28e80db28abbf0992535df2e"
+    },
+    "results/ETSformer/fold_4/predictions.csv": {
+      "size": 102932,
+      "mtime_ns": 1792696053459840301,
+      "sha256": "17b180e9975de0decb3404cf58aca3eb2adb7d493e91c8d6c535de06aacc5c5c"
+    },
+    "results/ETSformer/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792695947953233786,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/ETSformer/fold_3/best.pt": {
+      "size": 1158394,
+      "mtime_ns": 1792691061410082878
+    },
+    "results/ETSformer/fold_3/started.json": {
+      "size": 638,
+      "mtime_ns": 1792690938065789796,
+      "sha256": "6efe235b1d88a0c92a88399dfbdeae69228b9ea2b0500e391957f4f466489b8d"
+    },
+    "results/ETSformer/fold_3/metrics.json": {
+      "size": 715,
+      "mtime_ns": 1792691153629026537,
+      "sha256": "6f75e5ad5d756b64986f99f985a62f123962c371668069dc94c15a359bb380c9"
+    },
+    "results/ETSformer/fold_3/epochs.jsonl": {
+      "size": 5140,
+      "mtime_ns": 1792691152974918884,
+      "sha256": "b2806f293a1ef6a318b598c23cfbd41ac5d685840139ff3384375fb900b3e9af"
+    },
+    "results/ETSformer/fold_3/predictions.csv": {
+      "size": 104075,
+      "mtime_ns": 1792691153628299951,
+      "sha256": "2dc910c3675492f51bc21e01fe4a76b3935a6467ac6234fbf1e2e2180dfbc85d"
+    },
+    "results/ETSformer/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792690937487038703,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/ETSformer/fold_0/best.pt": {
+      "size": 1158394,
+      "mtime_ns": 1792695645461852479
+    },
+    "results/ETSformer/fold_0/started.json": {
+      "size": 626,
+      "mtime_ns": 1792695533924799007,
+      "sha256": "7c36ca3ead04f24bbb961fd12783957a217ba0850287d186a97a75a47bc01955"
+    },
+    "results/ETSformer/fold_0/metrics.json": {
+      "size": 699,
+      "mtime_ns": 1792695733404476481,
+      "sha256": "330d495ca0bf1e049647816e8a3a6be38ee6808fc7afa03b77d4aaf086334bb5"
+    },
+    "results/ETSformer/fold_0/epochs.jsonl": {
+      "size": 4936,
+      "mtime_ns": 1792695732971409045,
+      "sha256": "c05778879fc76012d284c7d75e45c34c4c05961100ff159f26e014206a373c93"
+    },
+    "results/ETSformer/fold_0/predictions.csv": {
+      "size": 104061,
+      "mtime_ns": 1792695733404248944,
+      "sha256": "2a6294265ffb6b7f81127f4894e7438a44da607946c50aefe777473ef3703b8a"
+    },
+    "results/ETSformer/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792695533037931478,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/ETSformer/fold_2/best.pt": {
+      "size": 1158394,
+      "mtime_ns": 1792695856122899635
+    },
+    "results/ETSformer/fold_2/started.json": {
+      "size": 638,
+      "mtime_ns": 1792695738723305427,
+      "sha256": "632116b9eb8ff042c6018d6c3736875603faa3deaa9ade9d32f2b774876d700b"
+    },
+    "results/ETSformer/fold_2/metrics.json": {
+      "size": 717,
+      "mtime_ns": 1792695943546434913,
+      "sha256": "d6d73e5fb403fba52428460e34d6108af6bb9da23337c640cd73b47977eec3a3"
+    },
+    "results/ETSformer/fold_2/epochs.jsonl": {
+      "size": 5133,
+      "mtime_ns": 1792695943099650174,
+      "sha256": "97924f5d6b486cbadfacac49fb3f8dd499f32acf5f06ad61636784dadb7922c7"
+    },
+    "results/ETSformer/fold_2/predictions.csv": {
+      "size": 105073,
+      "mtime_ns": 1792695943545946109,
+      "sha256": "9f6fdf04fb85ca7a7c117efe4e603f06cf0549769074694681f3fd92942aafb7"
+    },
+    "results/ETSformer/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792695737828827171,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/SEMPO/fold_1/best.pt": {
+      "size": 5590072,
+      "mtime_ns": 1792721943200650706
+    },
+    "results/SEMPO/fold_1/started.json": {
+      "size": 780,
+      "mtime_ns": 1792722258390080626,
+      "sha256": "ca04d919eb9f04a1e01828046cca1aabea15ee0f0cbe5ecdf8e2903c624378bd"
+    },
+    "results/SEMPO/fold_1/metrics.json": {
+      "size": 791,
+      "mtime_ns": 1792722258390405642,
+      "sha256": "8c0089012c3b7522d1c4fc754601f05d901171abd06f79bef30b9588086de296"
+    },
+    "results/SEMPO/fold_1/epochs.jsonl": {
+      "size": 3032,
+      "mtime_ns": 1792722256293486858,
+      "sha256": "883a03985c1cdbb3713d2108318a09b2abe80d941855a031716fc1699f62bbe0"
+    },
+    "results/SEMPO/fold_1/predictions.csv": {
+      "size": 102354,
+      "mtime_ns": 1792722258376874053,
+      "sha256": "32b6fe2a877c6d620751b6295c3bee612f6b43f8d2c013f5b78459fb4e89f533"
+    },
+    "results/SEMPO/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792721815569955135,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/SEMPO/fold_4/best.pt": {
+      "size": 5590072,
+      "mtime_ns": 1792723479091189598
+    },
+    "results/SEMPO/fold_4/started.json": {
+      "size": 780,
+      "mtime_ns": 1792723810413021112,
+      "sha256": "fe4a5ff725c2d4378182a7bbd39170315f002d407edab4930559c12749eba6e0"
+    },
+    "results/SEMPO/fold_4/metrics.json": {
+      "size": 858,
+      "mtime_ns": 1792723810413313056,
+      "sha256": "0ba04e1a6dba52f3031e1d9f39633bc5141b1fb37b6e14fa665a3648797957d8"
+    },
+    "results/SEMPO/fold_4/epochs.jsonl": {
+      "size": 5546,
+      "mtime_ns": 1792723808254920944,
+      "sha256": "e2b96d47c81b343d6ef3b63b14ec6164686d28b0346a8039ce4f3898ec607a51"
+    },
+    "results/SEMPO/fold_4/predictions.csv": {
+      "size": 103865,
+      "mtime_ns": 1792723810409375577,
+      "sha256": "72a22c5dc06ca917da8f4422dc6e9c76f06e3129b1e16dce62a9724562ca6f03"
+    },
+    "results/SEMPO/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792722972489077298,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/SEMPO/fold_3/best.pt": {
+      "size": 5590072,
+      "mtime_ns": 1792722370468352544
+    },
+    "results/SEMPO/fold_3/started.json": {
+      "size": 780,
+      "mtime_ns": 1792722686057210414,
+      "sha256": "513bb1b8c094b874a2f7f796c223f0c02f5338254a8b3b49c9d4ab48cbaf123d"
+    },
+    "results/SEMPO/fold_3/metrics.json": {
+      "size": 861,
+      "mtime_ns": 1792722686057539292,
+      "sha256": "4f3f78537caac83ff456cd7ffcf583b73f77cccb7abc48a93e9a23def34e13c3"
+    },
+    "results/SEMPO/fold_3/epochs.jsonl": {
+      "size": 2905,
+      "mtime_ns": 1792722684013307676,
+      "sha256": "d5f500d5a84f1c0ddf04c0b2531935e5f6f6fa6a7588b84e86953bbae941930d"
+    },
+    "results/SEMPO/fold_3/predictions.csv": {
+      "size": 103089,
+      "mtime_ns": 1792722686052974277,
+      "sha256": "7feca6f3944890ccc84bed3107d553385e6adaafabea8156e72d1bce3cfa9c19"
+    },
+    "results/SEMPO/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792722263983138319,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/SEMPO/fold_0/best.pt": {
+      "size": 5590072,
+      "mtime_ns": 1792722055006904588
+    },
+    "results/SEMPO/fold_0/started.json": {
+      "size": 768,
+      "mtime_ns": 1792722395416480777,
+      "sha256": "d2efdef292529d076982f623a51892580e1e9c2e23e1b50a2937b77624630908"
+    },
+    "results/SEMPO/fold_0/metrics.json": {
+      "size": 860,
+      "mtime_ns": 1792722395416775474,
+      "sha256": "a7f914f521620832e856a76f85abf428f00c2acd154fb617f1e3038b9a051f49"
+    },
+    "results/SEMPO/fold_0/epochs.jsonl": {
+      "size": 3797,
+      "mtime_ns": 1792722393282240008,
+      "sha256": "33e4b82c1279d69820f83e8c488c1b50995a5ccb54fb1dac2f9d7baec7378079"
+    },
+    "results/SEMPO/fold_0/predictions.csv": {
+      "size": 102778,
+      "mtime_ns": 1792722395411222656,
+      "sha256": "95b3a52390da0d179df85153c3d80f212ae09ee1296395dc026bbb073951cd1f"
+    },
+    "results/SEMPO/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792721815569955135,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/SEMPO/fold_2/best.pt": {
+      "size": 5590072,
+      "mtime_ns": 1792722629990609602
+    },
+    "results/SEMPO/fold_2/started.json": {
+      "size": 780,
+      "mtime_ns": 1792722967117100406,
+      "sha256": "2601ab9fdb0dba4d28a84e6cfb2dfe96aec6259821e63e4100da48e069ab03b9"
+    },
+    "results/SEMPO/fold_2/metrics.json": {
+      "size": 849,
+      "mtime_ns": 1792722967117478984,
+      "sha256": "d79efb197e0b9004e58e2dea4f82c918d5af537bfbbb2c5573526a65f8e9e840"
+    },
+    "results/SEMPO/fold_2/epochs.jsonl": {
+      "size": 3658,
+      "mtime_ns": 1792722964986027756,
+      "sha256": "1b8b57e9044f5f49b8ed16eacafed977d1f90f90305cd33999fae36cc3a5941e"
+    },
+    "results/SEMPO/fold_2/predictions.csv": {
+      "size": 103409,
+      "mtime_ns": 1792722967112532235,
+      "sha256": "4956763e9ec3994400877f14d2d4bb5a2d41d9300cdda0c9096a6e4a095474f2"
+    },
+    "results/SEMPO/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792722400486826128,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/PerSeM/fold_1/best.pt": {
+      "size": 5505631,
+      "mtime_ns": 1792723888134059059
+    },
+    "results/PerSeM/fold_1/started.json": {
+      "size": 1562,
+      "mtime_ns": 1792723877069043552,
+      "sha256": "25b7359f7f9afacea621d91232bf8674156616ee9672a7d4cd6309ac62f6bafa"
+    },
+    "results/PerSeM/fold_1/metrics.json": {
+      "size": 805,
+      "mtime_ns": 1792723938942756747,
+      "sha256": "d4ceaf8c7fc19a26824f1052982890c7b86e63ba04e350889f019a9da0ced573"
+    },
+    "results/PerSeM/fold_1/epochs.jsonl": {
+      "size": 2619,
+      "mtime_ns": 1792723938566700007,
+      "sha256": "ce35055efa34923b043a0464c74f8718de1b91399455e305d2fbaf0befdf994d"
+    },
+    "results/PerSeM/fold_1/predictions.csv": {
+      "size": 102235,
+      "mtime_ns": 1792723938941704568,
+      "sha256": "864b7ea057a4b38bc101023999a7978b2d7375b433dc2fe7df5b2df417dfe00d"
+    },
+    "results/PerSeM/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792723877068771808,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM/fold_4/best.pt": {
+      "size": 5505631,
+      "mtime_ns": 1792724108205101702
+    },
+    "results/PerSeM/fold_4/started.json": {
+      "size": 1562,
+      "mtime_ns": 1792724099889727340,
+      "sha256": "00b2e23e38121761a5e06bb7dfa57a56f5724b391fa8693392d76a10077de766"
+    },
+    "results/PerSeM/fold_4/metrics.json": {
+      "size": 745,
+      "mtime_ns": 1792724161057458863,
+      "sha256": "584f147d8fc6022a22652b3b0b2b32b052df70d25e2c8c55ce2d18cc0544abce"
+    },
+    "results/PerSeM/fold_4/epochs.jsonl": {
+      "size": 2475,
+      "mtime_ns": 1792724160654951479,
+      "sha256": "f453568ef835e88c8e920a408fb8d6eb6aae2f61e0e045a30859afc1d9dd3719"
+    },
+    "results/PerSeM/fold_4/predictions.csv": {
+      "size": 102850,
+      "mtime_ns": 1792724161057141001,
+      "sha256": "3c2e2c3b9402102f506e7e6b16d5358fd542ebaa399c4f8cab6322878a7cc88e"
+    },
+    "results/PerSeM/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792724099889400687,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM/fold_3/best.pt": {
+      "size": 5505631,
+      "mtime_ns": 1792723989065896026
+    },
+    "results/PerSeM/fold_3/started.json": {
+      "size": 1562,
+      "mtime_ns": 1792723944199922760,
+      "sha256": "57ce700c52c39de1291071651c7e0ef5056043a31f491e4a73e396d3a576ae42"
+    },
+    "results/PerSeM/fold_3/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792724041757103639,
+      "sha256": "b0336af8454e3c926f88417d9d87ad2f21190713a1a375d826bf91bc1264fa38"
+    },
+    "results/PerSeM/fold_3/epochs.jsonl": {
+      "size": 4266,
+      "mtime_ns": 1792724041390846844,
+      "sha256": "e019083138d31d7dc763d023037d98b2acccbca455422f93c90dcbd2e2f8fddc"
+    },
+    "results/PerSeM/fold_3/predictions.csv": {
+      "size": 103453,
+      "mtime_ns": 1792724041756831806,
+      "sha256": "0ee9e59167bac4f2521ef8a847d44921859a7cad317740bdebe44c3859b8d390"
+    },
+    "results/PerSeM/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792723944199644217,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM/fold_0/best.pt": {
+      "size": 5505631,
+      "mtime_ns": 1792723927711595176
+    },
+    "results/PerSeM/fold_0/started.json": {
+      "size": 1550,
+      "mtime_ns": 1792723877070452501,
+      "sha256": "1f0fe8f92871de01cbf269bbd59132d4154c3fcbc40330fbd4924569850b658a"
+    },
+    "results/PerSeM/fold_0/metrics.json": {
+      "size": 794,
+      "mtime_ns": 1792723980559004466,
+      "sha256": "e395a319d6b693d373798d136004189d5acafd794db94116bd9cbfd9ca393791"
+    },
+    "results/PerSeM/fold_0/epochs.jsonl": {
+      "size": 4379,
+      "mtime_ns": 1792723980212188825,
+      "sha256": "5ac3a5a90c13a56db3a422df08dd8a988158fa7cb904ddf1b543440b49d92649"
+    },
+    "results/PerSeM/fold_0/predictions.csv": {
+      "size": 103856,
+      "mtime_ns": 1792723980558696563,
+      "sha256": "ec19b2d26702f904c73de1c2de9ddfbbdd37ac22263e73468d67e91178fce0d6"
+    },
+    "results/PerSeM/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792723877070139936,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM/fold_2/best.pt": {
+      "size": 5505631,
+      "mtime_ns": 1792724038347879226
+    },
+    "results/PerSeM/fold_2/started.json": {
+      "size": 1562,
+      "mtime_ns": 1792723985733530839,
+      "sha256": "58b9ee366d34e3e6f78a26d0ba39e34c09c7f154d17a8f6180e5eeca3c2d1ad6"
+    },
+    "results/PerSeM/fold_2/metrics.json": {
+      "size": 799,
+      "mtime_ns": 1792724094544821239,
+      "sha256": "738ad9b80b8ad01f77eee093e25cd01816c93f6bcc7247957f061d872bbe8b6d"
+    },
+    "results/PerSeM/fold_2/epochs.jsonl": {
+      "size": 4538,
+      "mtime_ns": 1792724094158362507,
+      "sha256": "457333434fc75f42d8636244fcd86488d4cc9ee827f5535d981c769f82d3b486"
+    },
+    "results/PerSeM/fold_2/predictions.csv": {
+      "size": 104057,
+      "mtime_ns": 1792724094544366114,
+      "sha256": "f87de7fc997e2ed095beda0fe8d08421736d5d7b5eb9d409c8cc3abc77633160"
+    },
+    "results/PerSeM/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792723985733229486,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/TimeFilter/fold_1/best.pt": {
+      "size": 5268720,
+      "mtime_ns": 1792692773638959113
+    },
+    "results/TimeFilter/fold_1/started.json": {
+      "size": 640,
+      "mtime_ns": 1792691834008365686,
+      "sha256": "622c33a5583c52ea87a5bc62c1e33112a4c7881f076d08585005fe8afa13def6"
+    },
+    "results/TimeFilter/fold_1/metrics.json": {
+      "size": 705,
+      "mtime_ns": 1792693864698849848,
+      "sha256": "f2d7c7df408981a1a6ffb4283492fc1cf0419693ee5a2b686b1babd6aaba06c0"
+    },
+    "results/TimeFilter/fold_1/epochs.jsonl": {
+      "size": 4089,
+      "mtime_ns": 1792693853651027561,
+      "sha256": "153d78aff9b140382514826d07dd21facd4d203911de00776cdc45e78b4caedf"
+    },
+    "results/TimeFilter/fold_1/predictions.csv": {
+      "size": 103603,
+      "mtime_ns": 1792693864698599089,
+      "sha256": "cd703c3f163104a074d34826770859a46dea33601bbf98c398ec9f729172dd25"
+    },
+    "results/TimeFilter/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792691833162399008,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/TimeFilter/fold_4/best.pt": {
+      "size": 5268720,
+      "mtime_ns": 1792689265350581301
+    },
+    "results/TimeFilter/fold_4/started.json": {
+      "size": 640,
+      "mtime_ns": 1792689194962632326,
+      "sha256": "b698fea75ab0bc0b6e813abf394e8c343e99c045ad4adf1600d63be0b20e9a80"
+    },
+    "results/TimeFilter/fold_4/metrics.json": {
+      "size": 656,
+      "mtime_ns": 1792690313841760751,
+      "sha256": "657549e3533a07a7cef2d5fd6a975142bc015e82b7185015347f9b9659800f9e"
+    },
+    "results/TimeFilter/fold_4/epochs.jsonl": {
+      "size": 2324,
+      "mtime_ns": 1792690303414913826,
+      "sha256": "cfa0bc820d8b3df9749ee0a8bea27b24deaca83148f841aa04c36db5296d2249"
+    },
+    "results/TimeFilter/fold_4/predictions.csv": {
+      "size": 102340,
+      "mtime_ns": 1792690313841489259,
+      "sha256": "dd1effc6c07ad4e7e8b796f3889f2482c37664019f91f254dfc2f7f0b9f365d8"
+    },
+    "results/TimeFilter/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792689194080653365,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/TimeFilter/fold_3/best.pt": {
+      "size": 5268720,
+      "mtime_ns": 1792693941953364610
+    },
+    "results/TimeFilter/fold_3/started.json": {
+      "size": 640,
+      "mtime_ns": 1792693870207984445,
+      "sha256": "9fc18d092d024b089d4ec8898949e843aae69cf00bd6270f8468a6c0db8c974d"
+    },
+    "results/TimeFilter/fold_3/metrics.json": {
+      "size": 701,
+      "mtime_ns": 1792695039384372128,
+      "sha256": "590c0dccd17b4d47cedabc1f55bd07817ac73e14e0e671f5ab25361f877b2646"
+    },
+    "results/TimeFilter/fold_3/epochs.jsonl": {
+      "size": 2308,
+      "mtime_ns": 1792695028083943447,
+      "sha256": "77a80d770f04165249391c76e0524d942729bcd241f4b71e483ba8c1bdc3b698"
+    },
+    "results/TimeFilter/fold_3/predictions.csv": {
+      "size": 102020,
+      "mtime_ns": 1792695039384104519,
+      "sha256": "7232551a6652d16c3e12dea83b0d8d2a1186c3ac9f6a99dbbd61faa7cd947ece"
+    },
+    "results/TimeFilter/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792693869386760403,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/TimeFilter/fold_0/best.pt": {
+      "size": 5268720,
+      "mtime_ns": 1792686601844190741
+    },
+    "results/TimeFilter/fold_0/started.json": {
+      "size": 628,
+      "mtime_ns": 1792686046683472432,
+      "sha256": "4ee15d52e8935d1a4421e51efd7c08f5993b471c7d83868eaa4cb69c416b261e"
+    },
+    "results/TimeFilter/fold_0/metrics.json": {
+      "size": 690,
+      "mtime_ns": 1792687650584622284,
+      "sha256": "36bc757e8622f3c0da8486506e2e746397f95acab617719ccd615c3bfb83fcee"
+    },
+    "results/TimeFilter/fold_0/epochs.jsonl": {
+      "size": 3346,
+      "mtime_ns": 1792687640139021541,
+      "sha256": "bdf4213122fbc42397d81cd5a621a9dd5dea4b7bcc7c2ebcf483d5b74d1bfffb"
+    },
+    "results/TimeFilter/fold_0/predictions.csv": {
+      "size": 104145,
+      "mtime_ns": 1792687650583037907,
+      "sha256": "02d33b7bc7e34f1f455f39962ccb9a326807bdcb2292f5a172feefebd479e04f"
+    },
+    "results/TimeFilter/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792686046150855661,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/TimeFilter/fold_2/best.pt": {
+      "size": 5268720,
+      "mtime_ns": 1792688141430467227
+    },
+    "results/TimeFilter/fold_2/started.json": {
+      "size": 640,
+      "mtime_ns": 1792687655415546897,
+      "sha256": "e3059bbbeab0b5dc383718f8c7dbfe2ab961ffd4e0358c7848becd50bda78f8b"
+    },
+    "results/TimeFilter/fold_2/metrics.json": {
+      "size": 719,
+      "mtime_ns": 1792689189958952323,
+      "sha256": "bde8cf4e86ba4c940c29507fdca8afc5a8c49f122b0585b1544f28263f2dac2e"
+    },
+    "results/TimeFilter/fold_2/epochs.jsonl": {
+      "size": 3207,
+      "mtime_ns": 1792689179486446660,
+      "sha256": "d21aee16ac84ec4f5a698ffbc46b570e9c38209d05e3cd0ff73e3ab0b7bf4091"
+    },
+    "results/TimeFilter/fold_2/predictions.csv": {
+      "size": 103346,
+      "mtime_ns": 1792689189958741539,
+      "sha256": "dbb63eb86362619ecfc82972a1af713e0da58f45ad92f322c489db816b0ca758"
+    },
+    "results/TimeFilter/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792687654575965819,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/PerSeM_A/fold_1/best.pt": {
+      "size": 20368970,
+      "mtime_ns": 1792724251105201425
+    },
+    "results/PerSeM_A/fold_1/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792724166362798840,
+      "sha256": "e4daa0bd9a6861260eeefd5d89c795f2ecb14de798fb952b3bf892f666ad1658"
+    },
+    "results/PerSeM_A/fold_1/metrics.json": {
+      "size": 811,
+      "mtime_ns": 1792724391681777451,
+      "sha256": "376a134c36e79a135d18d70de2d4414ec8ee9ee76db919308fcd4cf9dfa814c1"
+    },
+    "results/PerSeM_A/fold_1/epochs.jsonl": {
+      "size": 3478,
+      "mtime_ns": 1792724390527568442,
+      "sha256": "4c20a58a4933220ceb3a8fca9639f9a5bf8468d84b058c75cb7a0a7f143c6d10"
+    },
+    "results/PerSeM_A/fold_1/predictions.csv": {
+      "size": 103199,
+      "mtime_ns": 1792724391681482940,
+      "sha256": "9c99ff40e6d03a7a2ac5e7ad933b4e66c648e322161a67c72d28906be377e949"
+    },
+    "results/PerSeM_A/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792724166362386827,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM_A/fold_4/best.pt": {
+      "size": 20368970,
+      "mtime_ns": 1792724586510178770
+    },
+    "results/PerSeM_A/fold_4/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792724565138460942,
+      "sha256": "d9577e1861586b9fdfd75df4763e380a942a1038ad8b9dcaf829c68f5dfac7eb"
+    },
+    "results/PerSeM_A/fold_4/metrics.json": {
+      "size": 745,
+      "mtime_ns": 1792724725308940665,
+      "sha256": "c73205de4df10d66426494f5fad7ab868498e75abbb0dcb7c97e4284444207c6"
+    },
+    "results/PerSeM_A/fold_4/epochs.jsonl": {
+      "size": 2461,
+      "mtime_ns": 1792724724332135234,
+      "sha256": "0eb2d7d58fcee7a64d5e98a5931f15ce5f96300062f63d9177cc8f7c4fd5b861"
+    },
+    "results/PerSeM_A/fold_4/predictions.csv": {
+      "size": 102873,
+      "mtime_ns": 1792724725308722774,
+      "sha256": "5bad94d69b01fbf3a76aafb2c2fcad4fd6a7cfa0eef0b10941ea18836494e620"
+    },
+    "results/PerSeM_A/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792724565138193331,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM_A/fold_3/best.pt": {
+      "size": 20368970,
+      "mtime_ns": 1792724552489150479
+    },
+    "results/PerSeM_A/fold_3/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792724396943166290,
+      "sha256": "246155edd1f24f4b3471984e63beb4fd5a333b7fa7325993d2777e1c41d12945"
+    },
+    "results/PerSeM_A/fold_3/metrics.json": {
+      "size": 801,
+      "mtime_ns": 1792724697331101229,
+      "sha256": "a2f0b43221eb854f8ba0d2c91a21da3c0dbadd0ee61febf6ed4e00d69827111f"
+    },
+    "results/PerSeM_A/fold_3/epochs.jsonl": {
+      "size": 4659,
+      "mtime_ns": 1792724696327028518,
+      "sha256": "a83aa24989ec275b866f9bdb68ab7c26b1d77edc44d51eda461393beed823d70"
+    },
+    "results/PerSeM_A/fold_3/predictions.csv": {
+      "size": 103542,
+      "mtime_ns": 1792724697330925819,
+      "sha256": "18d14fa267cbee542e4d028d8f3a06185f26ff3d3915d2320019f0395f28269a"
+    },
+    "results/PerSeM_A/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792724396942855019,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM_A/fold_0/best.pt": {
+      "size": 20368970,
+      "mtime_ns": 1792724113698542288
+    },
+    "results/PerSeM_A/fold_0/started.json": {
+      "size": 1552,
+      "mtime_ns": 1792724047162682685,
+      "sha256": "5961f767d2cd663bb5cb23659d18f6056008ea4aa6c83a480a81bfa61276a7b6"
+    },
+    "results/PerSeM_A/fold_0/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792724256524229043,
+      "sha256": "002da35c1aafce425bc5c94da1c224d76b430adab33c99ff19623e9cdfacb38e"
+    },
+    "results/PerSeM_A/fold_0/epochs.jsonl": {
+      "size": 3190,
+      "mtime_ns": 1792724255512689406,
+      "sha256": "100109d1f8d4c2ccbfecdf10ab16510c43b936df2fdd25dc4ae963fcbbf62681"
+    },
+    "results/PerSeM_A/fold_0/predictions.csv": {
+      "size": 103562,
+      "mtime_ns": 1792724256522696682,
+      "sha256": "f7ae2ec2e3b09c2bc215f69e6515e32bbb9c6c92a49bd1104045869883a1d621"
+    },
+    "results/PerSeM_A/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792724047161905480,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM_A/fold_2/best.pt": {
+      "size": 20368970,
+      "mtime_ns": 1792724413260510386
+    },
+    "results/PerSeM_A/fold_2/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792724261070910569,
+      "sha256": "c225bc0b6f6222f1d7036fc9c41b107decb997fada5c50584871dc75ff3e449d"
+    },
+    "results/PerSeM_A/fold_2/metrics.json": {
+      "size": 797,
+      "mtime_ns": 1792724559844587239,
+      "sha256": "5f4538db7c64b8c2e4e0348df41a8a5e2e936ac5e5859f2198009a7c3e3848e2"
+    },
+    "results/PerSeM_A/fold_2/epochs.jsonl": {
+      "size": 4516,
+      "mtime_ns": 1792724558817446130,
+      "sha256": "7663cf9503961097a5fb5381bd8a5006e446afd0824feedccb5a6536891d7e3a"
+    },
+    "results/PerSeM_A/fold_2/predictions.csv": {
+      "size": 103770,
+      "mtime_ns": 1792724559844379468,
+      "sha256": "30927070772f14d95befd5f67cd37588cdc94802afd6b60d44d987fb68738913"
+    },
+    "results/PerSeM_A/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792724261070609306,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/Reformer/fold_1/best.pt": {
+      "size": 1022298,
+      "mtime_ns": 1792695243377577104
+    },
+    "results/Reformer/fold_1/started.json": {
+      "size": 637,
+      "mtime_ns": 1792695238363182561,
+      "sha256": "caf45d6a2d9eff4b17843c04591c0331a374b9b31bffe9ecdd07871272b60ca2"
+    },
+    "results/Reformer/fold_1/metrics.json": {
+      "size": 649,
+      "mtime_ns": 1792695270286605401,
+      "sha256": "38d8dde864de23b85fafae4f22b107aa465f85a47d6763d0b86f06d6b60e127a"
+    },
+    "results/Reformer/fold_1/epochs.jsonl": {
+      "size": 2445,
+      "mtime_ns": 1792695270069153812,
+      "sha256": "bed9295e7a1a18c9ae2303248e87a00b9f2718ebaa51f46a9330dc33bbb23eae"
+    },
+    "results/Reformer/fold_1/predictions.csv": {
+      "size": 102852,
+      "mtime_ns": 1792695270286386938,
+      "sha256": "4599928f291cc1759a0c297821ea18244f0f1d92b8e0176f85fcc4d98c175f1c"
+    },
+    "results/Reformer/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792695237467168988,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/Reformer/fold_4/best.pt": {
+      "size": 1022298,
+      "mtime_ns": 1792690554542518773
+    },
+    "results/Reformer/fold_4/started.json": {
+      "size": 637,
+      "mtime_ns": 1792690549315156908,
+      "sha256": "b33446caa0ee7f0db05fa83a05eebb6fb6660590658f8c720022038a9e08e503"
+    },
+    "results/Reformer/fold_4/metrics.json": {
+      "size": 647,
+      "mtime_ns": 1792690583003209284,
+      "sha256": "d4bde62bb4242f322cd14a2f37e41e8e6c16b5827015ff033d66febe86fbb4bf"
+    },
+    "results/Reformer/fold_4/epochs.jsonl": {
+      "size": 2448,
+      "mtime_ns": 1792690582793639359,
+      "sha256": "97fb0e6e4b19527fbcabb2a0ae243516b2972dd0f5be0f7164d25af812f628a4"
+    },
+    "results/Reformer/fold_4/predictions.csv": {
+      "size": 102858,
+      "mtime_ns": 1792690583003029403,
+      "sha256": "2ba321102af8860a35579a575367e06e1aa2131a98b75e4747e46934183757cb"
+    },
+    "results/Reformer/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792690548402748021,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/Reformer/fold_3/best.pt": {
+      "size": 1022298,
+      "mtime_ns": 1792695282156801124
+    },
+    "results/Reformer/fold_3/started.json": {
+      "size": 637,
+      "mtime_ns": 1792695275416275856,
+      "sha256": "ca7329e394c60a918a532e82bc56832ab45ffed233f48449287fe5fc80903045"
+    },
+    "results/Reformer/fold_3/metrics.json": {
+      "size": 650,
+      "mtime_ns": 1792695309908690675,
+      "sha256": "31a292cf41b24a542729f0adabfbc2396f5a8a62d4d4c4756b1df7a4388319d0"
+    },
+    "results/Reformer/fold_3/epochs.jsonl": {
+      "size": 2616,
+      "mtime_ns": 1792695309702022809,
+      "sha256": "3d750313ae042dd7970b44b784e5846f694a9269a3efced4e136a6474221d0f0"
+    },
+    "results/Reformer/fold_3/predictions.csv": {
+      "size": 102866,
+      "mtime_ns": 1792695309908460881,
+      "sha256": "0cad28f6f9e6026b57474dccaf82a17ba05cd18975fbe816fb2c96406a797e3d"
+    },
+    "results/Reformer/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792695274634775218,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/Reformer/fold_0/best.pt": {
+      "size": 1022298,
+      "mtime_ns": 1792690469936119446
+    },
+    "results/Reformer/fold_0/started.json": {
+      "size": 625,
+      "mtime_ns": 1792690467186803344,
+      "sha256": "af9d93c16f327b3ebedabf04113730e61d0635febf9e5eac70dc76d8d7536444"
+    },
+    "results/Reformer/fold_0/metrics.json": {
+      "size": 647,
+      "mtime_ns": 1792690497534114935,
+      "sha256": "b37d5450eae5d6d680a9c2954ccdbf5d4cd14c8c0f4aa32aa3e2f6795c5950dc"
+    },
+    "results/Reformer/fold_0/epochs.jsonl": {
+      "size": 2320,
+      "mtime_ns": 1792690497300131227,
+      "sha256": "514d81de0ef0a9894de232f8e6f1608be95835241c875bb5ed7a773e17e6d635"
+    },
+    "results/Reformer/fold_0/predictions.csv": {
+      "size": 102423,
+      "mtime_ns": 1792690497533758333,
+      "sha256": "f3df2df204e2d95a25381062949119ecf1fad7a2f3af6bd84e4c594a714f7c2e"
+    },
+    "results/Reformer/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792690466271053430,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/Reformer/fold_2/best.pt": {
+      "size": 1022298,
+      "mtime_ns": 1792690515347419091
+    },
+    "results/Reformer/fold_2/started.json": {
+      "size": 637,
+      "mtime_ns": 1792690503030491508,
+      "sha256": "46ac37ee282846c3f56e82d7ee7707e71ba59ae6ab01b3ab033ce3869f1d795c"
+    },
+    "results/Reformer/fold_2/metrics.json": {
+      "size": 650,
+      "mtime_ns": 1792690544001329788,
+      "sha256": "7c146f93aa203943f308ed5777b367efe39bbccc06ec5fc3a1e7fa1c2556e5c1"
+    },
+    "results/Reformer/fold_2/epochs.jsonl": {
+      "size": 3048,
+      "mtime_ns": 1792690543764409293,
+      "sha256": "1884d0a93197f626077b10ba74c23809db6f78fb01310a3040c9886cfd847900"
+    },
+    "results/Reformer/fold_2/predictions.csv": {
+      "size": 103553,
+      "mtime_ns": 1792690544001037997,
+      "sha256": "d5631826fc4a72c2c902c902fe3ab3c38f8c4d117c2d6afaefc600f6d5783689"
+    },
+    "results/Reformer/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792690502132973045,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/DLinear/fold_1/best.pt": {
+      "size": 1592834,
+      "mtime_ns": 1792678413984784895
+    },
+    "results/DLinear/fold_1/started.json": {
+      "size": 636,
+      "mtime_ns": 1792678403999607562,
+      "sha256": "de5e6f6557de82376f9209eed6bd19ae0660909d185201ae26118c36bc64a520"
+    },
+    "results/DLinear/fold_1/metrics.json": {
+      "size": 711,
+      "mtime_ns": 1792678422103627303,
+      "sha256": "1dd3c4ad9835d7a93f2ddb24a14500cf417ab235ceed9ffc3ce478fe962ee153"
+    },
+    "results/DLinear/fold_1/epochs.jsonl": {
+      "size": 4532,
+      "mtime_ns": 1792678422017833056,
+      "sha256": "7c5459567e16353fff4437d57b58cda76a1a850c4e1addc19c999046f439d706"
+    },
+    "results/DLinear/fold_1/predictions.csv": {
+      "size": 104387,
+      "mtime_ns": 1792678422103406932,
+      "sha256": "aab6be089858bdd8f3bf7282113dc5a8ab048bf2314955223d67f35d9a10db67"
+    },
+    "results/DLinear/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792678402150215928,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/DLinear/fold_4/best.pt": {
+      "size": 1592834,
+      "mtime_ns": 1792678441617715557
+    },
+    "results/DLinear/fold_4/started.json": {
+      "size": 636,
+      "mtime_ns": 1792678439365033108,
+      "sha256": "44ce429296dcd7dffc47b891ddcd549827cde8fa432aa8319bf546d73e389ec6"
+    },
+    "results/DLinear/fold_4/metrics.json": {
+      "size": 649,
+      "mtime_ns": 1792678449704016774,
+      "sha256": "116e1889fda5f1f0b94a5093389f4df6f36d8812acb88ae3777f491d45926a20"
+    },
+    "results/DLinear/fold_4/epochs.jsonl": {
+      "size": 2466,
+      "mtime_ns": 1792678449622211142,
+      "sha256": "60c94bd4b8d63a3b8f045da1ad2b35161b0be407d6c395b1933e4ba85f2dcbf7"
+    },
+    "results/DLinear/fold_4/predictions.csv": {
+      "size": 102864,
+      "mtime_ns": 1792678449703787210,
+      "sha256": "9642aa1d699b33d0726137b7f2c0c9df428037e2ebf62b67b4e98dd9a1d37bbb"
+    },
+    "results/DLinear/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792678438718028205,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/DLinear/fold_3/best.pt": {
+      "size": 1592834,
+      "mtime_ns": 1792678431929650602
+    },
+    "results/DLinear/fold_3/started.json": {
+      "size": 636,
+      "mtime_ns": 1792678427520866075,
+      "sha256": "94aed88e9dd840c7b76e699f21e53d7f57b38409291a319610da25fdf9cfcc86"
+    },
+    "results/DLinear/fold_3/metrics.json": {
+      "size": 714,
+      "mtime_ns": 1792678440419158834,
+      "sha256": "a55d3bf47df97a684ea7162b7388f79fee52a16ccc790a0726856d7614a8f740"
+    },
+    "results/DLinear/fold_3/epochs.jsonl": {
+      "size": 3046,
+      "mtime_ns": 1792678440336228129,
+      "sha256": "d72611c5ccd89d87ffd920ffc8d09f22c445c25df02c0405de44e7194cc2ad12"
+    },
+    "results/DLinear/fold_3/predictions.csv": {
+      "size": 102751,
+      "mtime_ns": 1792678440418821282,
+      "sha256": "dcff19eb480b0fffb85ca5cd51cdd074b024937832ecd432c9bc0b6d8ee0a7c8"
+    },
+    "results/DLinear/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792678426614845873,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/DLinear/fold_0/best.pt": {
+      "size": 1592834,
+      "mtime_ns": 1792678408122927255
+    },
+    "results/DLinear/fold_0/started.json": {
+      "size": 624,
+      "mtime_ns": 1792678403999178219,
+      "sha256": "81623353ef21f2c24ee1d3760e63fbc5b0d848330a5d99c04b04970314b35d5b"
+    },
+    "results/DLinear/fold_0/metrics.json": {
+      "size": 714,
+      "mtime_ns": 1792678416262727408,
+      "sha256": "f461cc377fb7be1d211c8d8f23e43583dc94963e392d705d655cec2a78dc4c4b"
+    },
+    "results/DLinear/fold_0/epochs.jsonl": {
+      "size": 2887,
+      "mtime_ns": 1792678416169797991,
+      "sha256": "096cfa1e2b7232f93c50b1057a9931b66bd14914f021a6cb194e334e7aa4f331"
+    },
+    "results/DLinear/fold_0/predictions.csv": {
+      "size": 102211,
+      "mtime_ns": 1792678416262463917,
+      "sha256": "eb1e2cce6f3127fcc08ad36f6e62c5c4cd1229d1e4c1c674915bda6b54917a9b"
+    },
+    "results/DLinear/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792678402151809587,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/DLinear/fold_2/best.pt": {
+      "size": 1592834,
+      "mtime_ns": 1792678426034919223
+    },
+    "results/DLinear/fold_2/started.json": {
+      "size": 636,
+      "mtime_ns": 1792678421708507829,
+      "sha256": "3cef4beb9351a8bbb4348d41634bd92ce9b86174c8c9e122ec097ae6777b58b8"
+    },
+    "results/DLinear/fold_2/metrics.json": {
+      "size": 703,
+      "mtime_ns": 1792678434470116462,
+      "sha256": "d0bfcb650463deaebad8e89085055d40d0d3271a6be59538dde9997e0f1ee29f"
+    },
+    "results/DLinear/fold_2/epochs.jsonl": {
+      "size": 3075,
+      "mtime_ns": 1792678434388460842,
+      "sha256": "37eeddcd1c8a8a19fdd8ff1676632b298526f88b761284b0cb3479349535eb4e"
+    },
+    "results/DLinear/fold_2/predictions.csv": {
+      "size": 103690,
+      "mtime_ns": 1792678434469809192,
+      "sha256": "e6fe6cb0a30f73dc246db09ad7097f247e70b85573cd73337aa6e9d5a872ffdc"
+    },
+    "results/DLinear/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792678420805582340,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/Autoformer/fold_1/best.pt": {
+      "size": 1012514,
+      "mtime_ns": 1792695463077259684
+    },
+    "results/Autoformer/fold_1/started.json": {
+      "size": 639,
+      "mtime_ns": 1792695458389648404,
+      "sha256": "92c01d679daa25b3b0d3082c76a018035385aa8c8422dc1dbdbff702f09006fe"
+    },
+    "results/Autoformer/fold_1/metrics.json": {
+      "size": 682,
+      "mtime_ns": 1792695485643505993,
+      "sha256": "22dab6b1c8769fe001e01d00f451eacef2e5b812afcf5fcc1a39aa2799bc4999"
+    },
+    "results/Autoformer/fold_1/epochs.jsonl": {
+      "size": 2448,
+      "mtime_ns": 1792695485414782328,
+      "sha256": "9d62979b2848538a26e5ec06199b649c14bf92450053a8d8aef98022bfa041b6"
+    },
+    "results/Autoformer/fold_1/predictions.csv": {
+      "size": 103144,
+      "mtime_ns": 1792695485643282847,
+      "sha256": "c35fc928abc0282313abf33a7b8e1e41fa70ed862f943ed6ae9d0203cba99eed"
+    },
+    "results/Autoformer/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792695457486906423,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/Autoformer/fold_4/best.pt": {
+      "size": 1012514,
+      "mtime_ns": 1792690767728719469
+    },
+    "results/Autoformer/fold_4/started.json": {
+      "size": 639,
+      "mtime_ns": 1792690763169847791,
+      "sha256": "f9d5441c8d9d8adc14c4af2c04246f4f957649deb00033766fee228528c247e8"
+    },
+    "results/Autoformer/fold_4/metrics.json": {
+      "size": 701,
+      "mtime_ns": 1792690791319860067,
+      "sha256": "ae39d962be5224ac027bff7bc1d822362e3552940265089f40e137aff4827e35"
+    },
+    "results/Autoformer/fold_4/epochs.jsonl": {
+      "size": 2473,
+      "mtime_ns": 1792690791071048841,
+      "sha256": "09ebfa00bc87468cde2a3ccaf765ee00f374a7cb54655396bb6d9d58e55c5358"
+    },
+    "results/Autoformer/fold_4/predictions.csv": {
+      "size": 103088,
+      "mtime_ns": 1792690791319558587,
+      "sha256": "266adce4c4d836668b8d4d22ca529f523e5827590a601a5878048c06deeae3bf"
+    },
+    "results/Autoformer/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792690762399503271,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/Autoformer/fold_3/best.pt": {
+      "size": 1012514,
+      "mtime_ns": 1792695505579685284
+    },
+    "results/Autoformer/fold_3/started.json": {
+      "size": 639,
+      "mtime_ns": 1792695490562555750,
+      "sha256": "6c7a7d62bc28360a3277232e7bbf8912db602d58838fd533ba8a9d12010caaef"
+    },
+    "results/Autoformer/fold_3/metrics.json": {
+      "size": 692,
+      "mtime_ns": 1792695528364049131,
+      "sha256": "3cd6f53f81c2bff246cb7b3afadb479cd1ac0cce2933b43df7fc277ad16b75ae"
+    },
+    "results/Autoformer/fold_3/epochs.jsonl": {
+      "size": 3479,
+      "mtime_ns": 1792695528203911331,
+      "sha256": "452d37ca7888f8accaf4370bd0429e1aeb59a0d09ae7cadd7cc2021dc62dbecf"
+    },
+    "results/Autoformer/fold_3/predictions.csv": {
+      "size": 103193,
+      "mtime_ns": 1792695528363825995,
+      "sha256": "3e33b85f5acb05200dddb6321a74236f67c7f487208147ba126bf54e29ba2fe7"
+    },
+    "results/Autoformer/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792695489816163890,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/Autoformer/fold_0/best.pt": {
+      "size": 1012514,
+      "mtime_ns": 1792690701382321192
+    },
+    "results/Autoformer/fold_0/started.json": {
+      "size": 627,
+      "mtime_ns": 1792690678777477602,
+      "sha256": "d80e37ca443b7bf27db1d7d77076b0970b289a8a94eb45192138b39260814638"
+    },
+    "results/Autoformer/fold_0/metrics.json": {
+      "size": 682,
+      "mtime_ns": 1792690724533790955,
+      "sha256": "9795aabeb6479915337eb52162b91a7bb84f15cd8960da1ae07e6ac100024c2b"
+    },
+    "results/Autoformer/fold_0/epochs.jsonl": {
+      "size": 4072,
+      "mtime_ns": 1792690724363678628,
+      "sha256": "f522c317396c217e6b094f2dd7bca7fe75e2ae13052b39a83a46d8ede8de87a1"
+    },
+    "results/Autoformer/fold_0/predictions.csv": {
+      "size": 104097,
+      "mtime_ns": 1792690724533415791,
+      "sha256": "adbc857929923a7658b5df214f947423d281918fc4a81557982bdfc78f1f517a"
+    },
+    "results/Autoformer/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792690678026899424,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/Autoformer/fold_2/best.pt": {
+      "size": 1012514,
+      "mtime_ns": 1792690735231445761
+    },
+    "results/Autoformer/fold_2/started.json": {
+      "size": 639,
+      "mtime_ns": 1792690729724525372,
+      "sha256": "4aa4f97bf49c199f6a59a8a3554b0bf775bb9445a54bcd069a2cc83f899e3236"
+    },
+    "results/Autoformer/fold_2/metrics.json": {
+      "size": 714,
+      "mtime_ns": 1792690758833808535,
+      "sha256": "738b66a47b70cbc637565b4e7d8a9bd3f6040a1ddeb3afaf113e4679ae34376e"
+    },
+    "results/Autoformer/fold_2/epochs.jsonl": {
+      "size": 2623,
+      "mtime_ns": 1792690758659901373,
+      "sha256": "9a20b704d51d54a821df2cfb52a0e92207a21920719471caa33eb6e72462186b"
+    },
+    "results/Autoformer/fold_2/predictions.csv": {
+      "size": 103081,
+      "mtime_ns": 1792690758833584307,
+      "sha256": "e51041802706eeb76aec10df416691c9791dfe02516cc01b6a60f8c1d7646c4e"
+    },
+    "results/Autoformer/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792690728827159139,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/TimeMoE/fold_1/best.pt": {
+      "size": 1663816,
+      "mtime_ns": 1792691356151149631
+    },
+    "results/TimeMoE/fold_1/started.json": {
+      "size": 636,
+      "mtime_ns": 1792691333062610971,
+      "sha256": "edee23b504b0aea14bfaf76cb81fb3aee3f8c9f4d57855d7a80dcff86257cbcc"
+    },
+    "results/TimeMoE/fold_1/metrics.json": {
+      "size": 714,
+      "mtime_ns": 1792691391534785644,
+      "sha256": "85a75e85f23a7f6a0a1062f3da3cd71e451c68c7d901d2cb53ae2b501740def4"
+    },
+    "results/TimeMoE/fold_1/epochs.jsonl": {
+      "size": 3479,
+      "mtime_ns": 1792691391286781253,
+      "sha256": "8fb91f3325f5c63164e9d33fc1dad87fdd136dcf4122be4cea754a881ac5ed06"
+    },
+    "results/TimeMoE/fold_1/predictions.csv": {
+      "size": 103928,
+      "mtime_ns": 1792691391533785626,
+      "sha256": "1e3a2bfe4ae2e94f27a83651b35f90c24af392650bcd15609565c193456d249a"
+    },
+    "results/TimeMoE/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792691332160858815,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/TimeMoE/fold_4/best.pt": {
+      "size": 1663816,
+      "mtime_ns": 1792696399358630744
+    },
+    "results/TimeMoE/fold_4/started.json": {
+      "size": 636,
+      "mtime_ns": 1792696328800092934,
+      "sha256": "dd6e09d65886accb659918541c5cdd6a86ebc0ead859878f3cb272518ea3e2b0"
+    },
+    "results/TimeMoE/fold_4/metrics.json": {
+      "size": 684,
+      "mtime_ns": 1792696434717634602,
+      "sha256": "fdda3b254f898cd94eb020790b904d224b1d6fe1ecc2d49ef077a07a6a8c924c"
+    },
+    "results/TimeMoE/fold_4/epochs.jsonl": {
+      "size": 6579,
+      "mtime_ns": 1792696434467197655,
+      "sha256": "4cf3fff1dbb616c2433f6559ddfb8adb97ce32935a8e93ad884321404ad71ab2"
+    },
+    "results/TimeMoE/fold_4/predictions.csv": {
+      "size": 107220,
+      "mtime_ns": 1792696434717333755,
+      "sha256": "f51f9e6cf69bee358c92c5f1074c994a8000234b82c4126967eaedb3f09830d9"
+    },
+    "results/TimeMoE/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792696327921142929,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/TimeMoE/fold_3/best.pt": {
+      "size": 1663816,
+      "mtime_ns": 1792691407339630695
+    },
+    "results/TimeMoE/fold_3/started.json": {
+      "size": 636,
+      "mtime_ns": 1792691396227161490,
+      "sha256": "1245922db1a44869e0e5ba72d913325f8c07c5dbe80a293eec46c6a5ccd6841d"
+    },
+    "results/TimeMoE/fold_3/metrics.json": {
+      "size": 646,
+      "mtime_ns": 1792691444396832176,
+      "sha256": "89cb1eeda9b4866923e3a2dfc3095da384d2b4c4ab77414665ff73e76c52a164"
+    },
+    "results/TimeMoE/fold_3/epochs.jsonl": {
+      "size": 2747,
+      "mtime_ns": 1792691444106696782,
+      "sha256": "ab50b59c1f4a1ef8468cc448f8ac326cfe1b5802a8625ead31d2e145e98678f7"
+    },
+    "results/TimeMoE/fold_3/predictions.csv": {
+      "size": 103302,
+      "mtime_ns": 1792691444396596542,
+      "sha256": "a25cb331c595a677223531ee762d542cd0c9fe1ff6d2dd00dafddab8429cfae8"
+    },
+    "results/TimeMoE/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792691395574035249,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/TimeMoE/fold_0/best.pt": {
+      "size": 1663816,
+      "mtime_ns": 1792696182007949022
+    },
+    "results/TimeMoE/fold_0/started.json": {
+      "size": 624,
+      "mtime_ns": 1792696141486258951,
+      "sha256": "d115accecfb9b9dc8ad9ddc61b2b8214e0edcdc1b04e6e4f527f05a88a7ca5f5"
+    },
+    "results/TimeMoE/fold_0/metrics.json": {
+      "size": 699,
+      "mtime_ns": 1792696216468075596,
+      "sha256": "4a7069a9af1cf27d0bc36f2bfeec2f1b380accc287c97ee73f68a0d64ae8d2cd"
+    },
+    "results/TimeMoE/fold_0/epochs.jsonl": {
+      "size": 4672,
+      "mtime_ns": 1792696216246739983,
+      "sha256": "cb0498857dd1e45f40f98457ceb90f387c2a204da209ed77ed0999043175bb3f"
+    },
+    "results/TimeMoE/fold_0/predictions.csv": {
+      "size": 105895,
+      "mtime_ns": 1792696216467818648,
+      "sha256": "9440a9decaee6a5d2ed7fa8376fd10362f3dfcd5320f8e03d0db2cc79ca68e9a"
+    },
+    "results/TimeMoE/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792696140583217337,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/TimeMoE/fold_2/best.pt": {
+      "size": 1663816,
+      "mtime_ns": 1792696289799881186
+    },
+    "results/TimeMoE/fold_2/started.json": {
+      "size": 636,
+      "mtime_ns": 1792696221391466629,
+      "sha256": "fe9c226b83bb14f746981139f77c0d650af08429a0c3cbd8ca8ef7e5942422e5"
+    },
+    "results/TimeMoE/fold_2/metrics.json": {
+      "size": 698,
+      "mtime_ns": 1792696323602103539,
+      "sha256": "a850d360e058b62aafd8c8d89ee305bdd07b187c4c07cb5050ed021d57b36415"
+    },
+    "results/TimeMoE/fold_2/epochs.jsonl": {
+      "size": 6448,
+      "mtime_ns": 1792696323351051599,
+      "sha256": "b9e3e95674ecf238a23aa8c69a3cbeadc103df0daadf8c31619989eba80e3773"
+    },
+    "results/TimeMoE/fold_2/predictions.csv": {
+      "size": 106925,
+      "mtime_ns": 1792696323601888461,
+      "sha256": "d1857493a8c6d3913761e79616cf9cf8d290102ff965db47f38fde85f82f94de"
+    },
+    "results/TimeMoE/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792696220776092611,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/TiRex/fold_1/best.pt": {
+      "size": 4934276,
+      "mtime_ns": 1792678565481655525
+    },
+    "results/TiRex/fold_1/started.json": {
+      "size": 635,
+      "mtime_ns": 1792678454807103992,
+      "sha256": "e82888f58613e0287959d914c3fbe266ed2075646c67397653f2f94170f43186"
+    },
+    "results/TiRex/fold_1/metrics.json": {
+      "size": 713,
+      "mtime_ns": 1792678695637866170,
+      "sha256": "ba44e36c7c5cbc5296a61da978c2d205d17cba9b18a739b617f58a987fea0b00"
+    },
+    "results/TiRex/fold_1/epochs.jsonl": {
+      "size": 4071,
+      "mtime_ns": 1792678695143389653,
+      "sha256": "1383eeebd4f74bc28dab1a755bfc976af5821ceeb6267b549d51bfe5480b80b4"
+    },
+    "results/TiRex/fold_1/predictions.csv": {
+      "size": 102840,
+      "mtime_ns": 1792678695637282254,
+      "sha256": "aabdc4e9de588d1939d2d4b104da1d5e4da2b18c7074f332866dec27baf97985"
+    },
+    "results/TiRex/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792678453886467841,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/TiRex/fold_4/best.pt": {
+      "size": 4934276,
+      "mtime_ns": 1792679250425043465
+    },
+    "results/TiRex/fold_4/started.json": {
+      "size": 635,
+      "mtime_ns": 1792679084633071153,
+      "sha256": "2c9f6e7f1e9629fbe9b71361da4c004f3df8c69af3113ee6888eec2962fd697f"
+    },
+    "results/TiRex/fold_4/metrics.json": {
+      "size": 715,
+      "mtime_ns": 1792679374354940306,
+      "sha256": "b67fc0676fe46163cb7c18e151be56ab3af185231f85bac7e537d97973c2fa91"
+    },
+    "results/TiRex/fold_4/epochs.jsonl": {
+      "size": 5118,
+      "mtime_ns": 1792679373873158711,
+      "sha256": "a916b064e7ee0e6cb07f8a4e273e7f1dae4d2b838762e21f6262069f5d4cf8aa"
+    },
+    "results/TiRex/fold_4/predictions.csv": {
+      "size": 103203,
+      "mtime_ns": 1792679374354637679,
+      "sha256": "4e124e8b9e59122598f12fc1d3e55ae7b5f37fb23805835b2f1cac9e68685406"
+    },
+    "results/TiRex/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792679083815750289,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/TiRex/fold_3/best.pt": {
+      "size": 4934276,
+      "mtime_ns": 1792678745265538777
+    },
+    "results/TiRex/fold_3/started.json": {
+      "size": 635,
+      "mtime_ns": 1792678700783856401,
+      "sha256": "ea25ea38be45568eed0e2f6b0086f70fccaa22f2ea6f02f737169be331910e27"
+    },
+    "results/TiRex/fold_3/metrics.json": {
+      "size": 717,
+      "mtime_ns": 1792678876539618800,
+      "sha256": "6fa0b646e0f2adc61fa16f9231746686a5a8a5b92e5114bc1fba2c429f8f31a8"
+    },
+    "results/TiRex/fold_3/epochs.jsonl": {
+      "size": 2893,
+      "mtime_ns": 1792678876041737062,
+      "sha256": "5acdd9e0b3124f75e6841a3dc61d1823f4452d76b9e47a4eb308017978380cc5"
+    },
+    "results/TiRex/fold_3/predictions.csv": {
+      "size": 102470,
+      "mtime_ns": 1792678876539416633,
+      "sha256": "db7049d8b9e712d7ecd20cd47852ddd06100e814cfaa9893397eae85630535dc"
+    },
+    "results/TiRex/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792678699888603888,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/TiRex/fold_0/best.pt": {
+      "size": 4934276,
+      "mtime_ns": 1792678652567407687
+    },
+    "results/TiRex/fold_0/started.json": {
+      "size": 623,
+      "mtime_ns": 1792678445501872822,
+      "sha256": "d98f3305d9445001729e64d4ae91e73ccc16da95bf5d9dffda4afcfa9160277c"
+    },
+    "results/TiRex/fold_0/metrics.json": {
+      "size": 696,
+      "mtime_ns": 1792678776770889540,
+      "sha256": "942c58e69cee34b2d75802d4890f31f084ce40ef8852b790c060706e2adb8d8a"
+    },
+    "results/TiRex/fold_0/epochs.jsonl": {
+      "size": 5814,
+      "mtime_ns": 1792678776297883805,
+      "sha256": "1839d363c87eb7b6e422a168a699c1c8b6bb5648c9363498b7af602a1a5519b8"
+    },
+    "results/TiRex/fold_0/predictions.csv": {
+      "size": 104835,
+      "mtime_ns": 1792678776769903126,
+      "sha256": "3d64f4b210565ce2b643ee0d3de6d51884bc89eefea2e82922ae5b5d02cef206"
+    },
+    "results/TiRex/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792678444622105341,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/TiRex/fold_2/best.pt": {
+      "size": 4934276,
+      "mtime_ns": 1792678955918526776
+    },
+    "results/TiRex/fold_2/started.json": {
+      "size": 635,
+      "mtime_ns": 1792678781822650806,
+      "sha256": "195fe10443ce2b332d62b8a63d9339c47694b017543d426d777d363751504693"
+    },
+    "results/TiRex/fold_2/metrics.json": {
+      "size": 716,
+      "mtime_ns": 1792679079736782106,
+      "sha256": "bb5f0073246f5b38f72ec314d75f0db197799e2d7948cc0f9f38749f3f5987c9"
+    },
+    "results/TiRex/fold_2/epochs.jsonl": {
+      "size": 5291,
+      "mtime_ns": 1792679079266409852,
+      "sha256": "34e1e76467fb8b366057230a89f2eac57b2abff3d283196144d3e0f2bb951750"
+    },
+    "results/TiRex/fold_2/predictions.csv": {
+      "size": 105671,
+      "mtime_ns": 1792679079736511228,
+      "sha256": "ebbf214619985f4207128fa7b4f48c5c39a1e876af265e9b5c4f232c42712cea"
+    },
+    "results/TiRex/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792678780906329390,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/FEDformer/fold_1/best.pt": {
+      "size": 1080602,
+      "mtime_ns": 1792696061599104865
+    },
+    "results/FEDformer/fold_1/started.json": {
+      "size": 638,
+      "mtime_ns": 1792696058277932039,
+      "sha256": "237f24753fbd851452597aa37ad00649c3d7d835ace3758b93ad211a450d697e"
+    },
+    "results/FEDformer/fold_1/metrics.json": {
+      "size": 651,
+      "mtime_ns": 1792696087618205562,
+      "sha256": "d562bc322d1f849deb53ae48a2d3325ff7be7ed68d980650f80a16a5ec752ca9"
+    },
+    "results/FEDformer/fold_1/epochs.jsonl": {
+      "size": 2321,
+      "mtime_ns": 1792696087359140585,
+      "sha256": "b2265962b7d0fdd9a3b1903dabedf4fdec4ea05f9479f62b592c94f6423aa2d0"
+    },
+    "results/FEDformer/fold_1/predictions.csv": {
+      "size": 103585,
+      "mtime_ns": 1792696087617994814,
+      "sha256": "8d4b8a06d5aaf9fb09f686ca15d007956985369e7894b75937349f4ef5e6131a"
+    },
+    "results/FEDformer/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792696057655629991,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/FEDformer/fold_4/best.pt": {
+      "size": 1080602,
+      "mtime_ns": 1792691301357557998
+    },
+    "results/FEDformer/fold_4/started.json": {
+      "size": 638,
+      "mtime_ns": 1792691279696586829,
+      "sha256": "e8642c15b3f968d7f67174d1fcabc1d5097dc63bcf37ff13af1c542e467e7d9b"
+    },
+    "results/FEDformer/fold_4/metrics.json": {
+      "size": 716,
+      "mtime_ns": 1792691328416095324,
+      "sha256": "a884aa06e922759d4120625f7eeff9c80fa51975e305f736b2753f1f4f049f85"
+    },
+    "results/FEDformer/fold_4/epochs.jsonl": {
+      "size": 3804,
+      "mtime_ns": 1792691328150632326,
+      "sha256": "fcb2de746e102f2e3cb7592dc4f664b7b80a281eed8bcdc060446acfa9dd5bbe"
+    },
+    "results/FEDformer/fold_4/predictions.csv": {
+      "size": 103402,
+      "mtime_ns": 1792691328415797799,
+      "sha256": "c8c3bda3aa3f7901b2a914537c1bfbc93807d2a3ba5034e2fb816f4bab54fc73"
+    },
+    "results/FEDformer/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792691279058552617,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/FEDformer/fold_3/best.pt": {
+      "size": 1080602,
+      "mtime_ns": 1792696110010418836
+    },
+    "results/FEDformer/fold_3/started.json": {
+      "size": 638,
+      "mtime_ns": 1792696092640587689,
+      "sha256": "21e2b54c5811634c011d7c329630003d75a878820a8c6237b296d6d771e104ba"
+    },
+    "results/FEDformer/fold_3/metrics.json": {
+      "size": 714,
+      "mtime_ns": 1792696135936745244,
+      "sha256": "e9ef290f19600df8812151ad44d55c91dc7305f1511390ed04a4f8ee6997b993"
+    },
+    "results/FEDformer/fold_3/epochs.jsonl": {
+      "size": 3467,
+      "mtime_ns": 1792696135760675253,
+      "sha256": "5078e163a6e18b6e3a1aa3be4789f3e93fcf5825e8ad031f2003bd02d3a2c8fe"
+    },
+    "results/FEDformer/fold_3/predictions.csv": {
+      "size": 103245,
+      "mtime_ns": 1792696135936605985,
+      "sha256": "e5f1898268f49b02f0071c990b958b15ccdac6cea1cddd1b3e02caf8cbdb1393"
+    },
+    "results/FEDformer/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792696091797394445,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/FEDformer/fold_0/best.pt": {
+      "size": 1080602,
+      "mtime_ns": 1792691191162897886
+    },
+    "results/FEDformer/fold_0/started.json": {
+      "size": 626,
+      "mtime_ns": 1792691158903927624,
+      "sha256": "90dd06c77b503dfff634b696af3f33e7e7549eff5473e36e57794478a1bd6f40"
+    },
+    "results/FEDformer/fold_0/metrics.json": {
+      "size": 719,
+      "mtime_ns": 1792691218324351818,
+      "sha256": "095e4c25668b84d164b37a8b54c3826805cc4cee335e936fe5a6011531c3a482"
+    },
+    "results/FEDformer/fold_0/epochs.jsonl": {
+      "size": 4655,
+      "mtime_ns": 1792691218127470600,
+      "sha256": "302835be3c037c04a899e73cd1311faa3dcac8b888ba0e414e7d81be6049cbd2"
+    },
+    "results/FEDformer/fold_0/predictions.csv": {
+      "size": 104494,
+      "mtime_ns": 1792691218324162874,
+      "sha256": "fbb5b41692ca3b2e1caa2d88b1d2593f2c9b37d85cc04a17b1e59a3779fce768"
+    },
+    "results/FEDformer/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792691158003287349,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/FEDformer/fold_2/best.pt": {
+      "size": 1080602,
+      "mtime_ns": 1792691248398807880
+    },
+    "results/FEDformer/fold_2/started.json": {
+      "size": 638,
+      "mtime_ns": 1792691223614599516,
+      "sha256": "e30ccf47ab38eedddd52b0c660d0728a2f737f3b206497d5be8a9cf4e98af156"
+    },
+    "results/FEDformer/fold_2/metrics.json": {
+      "size": 717,
+      "mtime_ns": 1792691274909122333,
+      "sha256": "3ac6020be3ea4de04a541be5ae555abdb442f21bf1c9c02ab9d47f37343baed1"
+    },
+    "results/FEDformer/fold_2/epochs.jsonl": {
+      "size": 4098,
+      "mtime_ns": 1792691274702607814,
+      "sha256": "649a97483c9608816e1af0341256ee483b64122612b36f4b32c6489840c938f2"
+    },
+    "results/FEDformer/fold_2/predictions.csv": {
+      "size": 104102,
+      "mtime_ns": 1792691274908806657,
+      "sha256": "eb77c2c2efe13aefcd2a3c23a29172c8402835782387af582ed67a3ef8770453"
+    },
+    "results/FEDformer/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792691222713674412,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/PerSeM_BC/fold_1/best.pt": {
+      "size": 35421888,
+      "mtime_ns": 1792727240571259106
+    },
+    "results/PerSeM_BC/fold_1/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792727228754751060,
+      "sha256": "d93bc4fba8c334fdf33ea2ce5e9365ef4dc0cf81ef204758869cc6ba9930d86a"
+    },
+    "results/PerSeM_BC/fold_1/metrics.json": {
+      "size": 747,
+      "mtime_ns": 1792727400695217535,
+      "sha256": "f8b2f9f2e25e6d31df456eb729b411365b39c9a43986eca2207863688878d158"
+    },
+    "results/PerSeM_BC/fold_1/epochs.jsonl": {
+      "size": 2321,
+      "mtime_ns": 1792727399485638615,
+      "sha256": "6e6d5027ec4fd20a7565a9534d5ab7fe63db2bf61c05c5d3c56713cbb1b2e394"
+    },
+    "results/PerSeM_BC/fold_1/predictions.csv": {
+      "size": 103429,
+      "mtime_ns": 1792727400695076854,
+      "sha256": "02514191dc5c0a8e974a893458a961ae32f0b43cca7a1f4778fd7aa056704653"
+    },
+    "results/PerSeM_BC/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792727228754561940,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM_BC/fold_4/best.pt": {
+      "size": 35421888,
+      "mtime_ns": 1792727762081976566
+    },
+    "results/PerSeM_BC/fold_4/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792727739319154251,
+      "sha256": "d24045d167d7acca1ac3131ad19fccf5f2ebc35aecd2c686c936d8a8c2fb52d7"
+    },
+    "results/PerSeM_BC/fold_4/metrics.json": {
+      "size": 747,
+      "mtime_ns": 1792727920852489024,
+      "sha256": "104aa3a1a9085599f8b38901d59eb95773d6cbaf2ad62494cff0627b16c7abc6"
+    },
+    "results/PerSeM_BC/fold_4/epochs.jsonl": {
+      "size": 2467,
+      "mtime_ns": 1792727919670877168,
+      "sha256": "dfa139406c72babaa4fcc6b156a534f4580c758ae6a13261ea5bf8ed79d27e7c"
+    },
+    "results/PerSeM_BC/fold_4/predictions.csv": {
+      "size": 102854,
+      "mtime_ns": 1792727920852339172,
+      "sha256": "115f9e21894ab4179cda0dd357eeac638be38bcb64751fc105b34b4d0ffc7954"
+    },
+    "results/PerSeM_BC/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792727739318962548,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM_BC/fold_3/best.pt": {
+      "size": 35421888,
+      "mtime_ns": 1792727576251470007
+    },
+    "results/PerSeM_BC/fold_3/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792727403942044089,
+      "sha256": "b0100e2835d798803197c3e8b53f99ece47b542586e1fb7f764610a206441f11"
+    },
+    "results/PerSeM_BC/fold_3/metrics.json": {
+      "size": 811,
+      "mtime_ns": 1792727742542843112,
+      "sha256": "cfc114c98b0d4478e59c5c25e6f6ffd7816201f68eaa0b5f92d87bd84df34086"
+    },
+    "results/PerSeM_BC/fold_3/epochs.jsonl": {
+      "size": 4536,
+      "mtime_ns": 1792727741412096305,
+      "sha256": "08ddb9cfc473be33512f606ccc62072fd425b498611ec4ba3c3744c244d801be"
+    },
+    "results/PerSeM_BC/fold_3/predictions.csv": {
+      "size": 102865,
+      "mtime_ns": 1792727742542709639,
+      "sha256": "22447510213bbe4d38ba17330cfa134e892b02221f7f98ce98f9e28c29b6641e"
+    },
+    "results/PerSeM_BC/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792727403941848519,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM_BC/fold_0/best.pt": {
+      "size": 35421888,
+      "mtime_ns": 1792727399146637726
+    },
+    "results/PerSeM_BC/fold_0/started.json": {
+      "size": 1553,
+      "mtime_ns": 1792727205753840402,
+      "sha256": "c00e2c961846f1bcb73ae2bcdca696c46ef41582958fd33e0e204d3d9e9ec9cd"
+    },
+    "results/PerSeM_BC/fold_0/metrics.json": {
+      "size": 811,
+      "mtime_ns": 1792727560769456574,
+      "sha256": "0e85e381de3b5ec99e7f7d8c3e706fc23dd2cd17f062b1c728976a51018188c2"
+    },
+    "results/PerSeM_BC/fold_0/epochs.jsonl": {
+      "size": 4816,
+      "mtime_ns": 1792727559669053953,
+      "sha256": "a32c05e41fd4e7ba1e4c42869c14adc3504558fcb5533fef76d7b98faecc5797"
+    },
+    "results/PerSeM_BC/fold_0/predictions.csv": {
+      "size": 103777,
+      "mtime_ns": 1792727560768056773,
+      "sha256": "0ee3fcc9ab5b265a79aa5b83c603d529fe47dce6e314ad00d235ed5ebf70c12b"
+    },
+    "results/PerSeM_BC/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792727205753660852,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM_BC/fold_2/best.pt": {
+      "size": 35421888,
+      "mtime_ns": 1792727575833109438
+    },
+    "results/PerSeM_BC/fold_2/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792727564062025604,
+      "sha256": "4eb1ac3e2c846a38ed411b7553e964df117224f3f838414d47922fbdff5052f8"
+    },
+    "results/PerSeM_BC/fold_2/metrics.json": {
+      "size": 748,
+      "mtime_ns": 1792727736013243784,
+      "sha256": "7d5e0ed3aa706c4038a899e86e736183f59e61953673fd8e71368210427261cb"
+    },
+    "results/PerSeM_BC/fold_2/epochs.jsonl": {
+      "size": 2326,
+      "mtime_ns": 1792727734954983000,
+      "sha256": "e6faa7c30128ff44eaefdbcf26a1be2934dfb0168fcb72ac1fa5d572795f1b28"
+    },
+    "results/PerSeM_BC/fold_2/predictions.csv": {
+      "size": 103147,
+      "mtime_ns": 1792727736013111972,
+      "sha256": "b95c2ee0936b811ea4c1a1449923dabb719722faadaea429e5124d02786e191f"
+    },
+    "results/PerSeM_BC/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792727564061834244,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/PerSeM_ABC/fold_1/best.pt": {
+      "size": 35847060,
+      "mtime_ns": 1792728039932521432
+    },
+    "results/PerSeM_ABC/fold_1/started.json": {
+      "size": 1566,
+      "mtime_ns": 1792727924161582744,
+      "sha256": "08ee8e07aaca6171b1fdb3e473762b1e89aa4dce266fdccec407960c9a1c18d8"
+    },
+    "results/PerSeM_ABC/fold_1/metrics.json": {
+      "size": 812,
+      "mtime_ns": 1792728212508381767,
+      "sha256": "3056e5ad9723a0dab8e9280ddac0fdb80dc5f16851d47469bf2546e7aa3f41ad"
+    },
+    "results/PerSeM_ABC/fold_1/epochs.jsonl": {
+      "size": 3648,
+      "mtime_ns": 1792728211176350963,
+      "sha256": "5de58fb40f706f9962d1e25844379f515b28fee127d8de0c96946ba90fc6c99a"
+    },
+    "results/PerSeM_ABC/fold_1/predictions.csv": {
+      "size": 103658,
+      "mtime_ns": 1792728212508245526,
+      "sha256": "3f3cf6a04c3bac43836fd1f9fc0758b96a84819fa95b0417b1b7aefd8adf1399"
+    },
+    "results/PerSeM_ABC/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792727924161340161,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM_ABC/fold_4/best.pt": {
+      "size": 35847060,
+      "mtime_ns": 1792728357217399563
+    },
+    "results/PerSeM_ABC/fold_4/started.json": {
+      "size": 1566,
+      "mtime_ns": 1792728252352111646,
+      "sha256": "1ca2902b7599af6ed66d26744be91204d972ff06af567010767092e7440f8861"
+    },
+    "results/PerSeM_ABC/fold_4/metrics.json": {
+      "size": 811,
+      "mtime_ns": 1792728529155460573,
+      "sha256": "9302d5d21007bd4a5745c00767d3bdcea7fff7694900ceff1038c359c8deaa3b"
+    },
+    "results/PerSeM_ABC/fold_4/epochs.jsonl": {
+      "size": 3460,
+      "mtime_ns": 1792728527856209558,
+      "sha256": "5e7a2e22bd786b2344f8d45def920bc4e568f5760fc2d04ac1042f05548590f7"
+    },
+    "results/PerSeM_ABC/fold_4/predictions.csv": {
+      "size": 103144,
+      "mtime_ns": 1792728529155307241,
+      "sha256": "9a36f8a0a147e7e1c1b617043a4758039680e7aa50237099de86cdf61bae318c"
+    },
+    "results/PerSeM_ABC/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792728252351861003,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM_ABC/fold_3/best.pt": {
+      "size": 35847060,
+      "mtime_ns": 1792728285557743641
+    },
+    "results/PerSeM_ABC/fold_3/started.json": {
+      "size": 1566,
+      "mtime_ns": 1792728215867499399,
+      "sha256": "47912587bdb75432fb1613ee1256d32d9d99b37b87112af7676c2a863b748a8b"
+    },
+    "results/PerSeM_ABC/fold_3/metrics.json": {
+      "size": 748,
+      "mtime_ns": 1792728460012244153,
+      "sha256": "a51a2ff6c52f311d4679954a29404007dea95f9a1dea3970a7e8bcfdb3720848"
+    },
+    "results/PerSeM_ABC/fold_3/epochs.jsonl": {
+      "size": 3054,
+      "mtime_ns": 1792728458770641992,
+      "sha256": "bd3c97325ba7b529bd28bf18f5fa3d5e26e9d57562545875deb533f6bd632d75"
+    },
+    "results/PerSeM_ABC/fold_3/predictions.csv": {
+      "size": 102824,
+      "mtime_ns": 1792728460012097292,
+      "sha256": "27dd039ccbaf762ab5c43df4dc9ff27fbaf4edfc10a841769e90bf7f9ca2d475"
+    },
+    "results/PerSeM_ABC/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792728215867241616,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM_ABC/fold_0/best.pt": {
+      "size": 35847060,
+      "mtime_ns": 1792727827227513728
+    },
+    "results/PerSeM_ABC/fold_0/started.json": {
+      "size": 1554,
+      "mtime_ns": 1792727745834301718,
+      "sha256": "b6fd83dce9f927c1c29f2ad39df128ba02b12f79bd709867b5b3c22276f0f45d"
+    },
+    "results/PerSeM_ABC/fold_0/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792728001057406462,
+      "sha256": "edd2aabfe669cb2007a08ab1ba9b2bf442b3a311e38feacd7875558f613a4c11"
+    },
+    "results/PerSeM_ABC/fold_0/epochs.jsonl": {
+      "size": 3153,
+      "mtime_ns": 1792727999841943629,
+      "sha256": "79b333f1b354638a9fcb8923b039b1bedf82b2d13d955d39c94e35439e786464"
+    },
+    "results/PerSeM_ABC/fold_0/predictions.csv": {
+      "size": 103389,
+      "mtime_ns": 1792728001055959041,
+      "sha256": "c99b2d15f3374baefb55d2b04d2832ad5f8dbc452e63efc153860e235fae34a9"
+    },
+    "results/PerSeM_ABC/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792727745834086054,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM_ABC/fold_2/best.pt": {
+      "size": 35847060,
+      "mtime_ns": 1792728073755983777
+    },
+    "results/PerSeM_ABC/fold_2/started.json": {
+      "size": 1566,
+      "mtime_ns": 1792728004297574038,
+      "sha256": "dfbaeab1e5fa9e13177ae5ec273da44c7610d3185e0b17a0089f3f3720c5f4f6"
+    },
+    "results/PerSeM_ABC/fold_2/metrics.json": {
+      "size": 812,
+      "mtime_ns": 1792728248837755656,
+      "sha256": "e8a4f84714f5ebaf0ac23919dc81b4e03b87976a1c6452249d265c78730e629b"
+    },
+    "results/PerSeM_ABC/fold_2/epochs.jsonl": {
+      "size": 3053,
+      "mtime_ns": 1792728247635718503,
+      "sha256": "0e79e6202f419cc99acf57309a4d42c6c6e8071a96036a7188193f63ac8147c7"
+    },
+    "results/PerSeM_ABC/fold_2/predictions.csv": {
+      "size": 103208,
+      "mtime_ns": 1792728248837621125,
+      "sha256": "b01a5c6d6dfdca5c973f2fcf68690efbde18261b1c173656f3d265384412e767"
+    },
+    "results/PerSeM_ABC/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792728004297348155,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/PerSeM_C/fold_1/best.pt": {
+      "size": 20557492,
+      "mtime_ns": 1792725560973765874
+    },
+    "results/PerSeM_C/fold_1/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792725380168022719,
+      "sha256": "9f5da27e64bbaa9c2d05c4ebff8ae97ef133b0b22cd7db5a15de4b1a62c74d23"
+    },
+    "results/PerSeM_C/fold_1/metrics.json": {
+      "size": 809,
+      "mtime_ns": 1792725736098842390,
+      "sha256": "9bc2f44a9bce8ab8021efe6ba9515bcfe584bbd403952347ece60b2f441935f7"
+    },
+    "results/PerSeM_C/fold_1/epochs.jsonl": {
+      "size": 4532,
+      "mtime_ns": 1792725734810987868,
+      "sha256": "fa39defe1a387f755bbaaf10e993ab3c9e15f4b669c0ff4e9a5b777b11a95c6d"
+    },
+    "results/PerSeM_C/fold_1/predictions.csv": {
+      "size": 103560,
+      "mtime_ns": 1792725736098596498,
+      "sha256": "68ecdb66bd8f6205dba01308c5b355b900de06add16c23660c5b91635174ecd0"
+    },
+    "results/PerSeM_C/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792725380167774509,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM_C/fold_4/best.pt": {
+      "size": 20557492,
+      "mtime_ns": 1792725931726337472
+    },
+    "results/PerSeM_C/fold_4/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792725907062708547,
+      "sha256": "3193bb61d10d66f8ea02103c7ae88252f79352852460eea1db6ac20d4e919357"
+    },
+    "results/PerSeM_C/fold_4/metrics.json": {
+      "size": 745,
+      "mtime_ns": 1792726100028510627,
+      "sha256": "dcecb9678445a18bc36d3796a616de9574fec95b2c0d9e564067e582a00f8c69"
+    },
+    "results/PerSeM_C/fold_4/epochs.jsonl": {
+      "size": 2451,
+      "mtime_ns": 1792726098802259674,
+      "sha256": "fabb3c46490be5dca3bcfa15f703d07950802367e922c5fcb8691a074d9e348b"
+    },
+    "results/PerSeM_C/fold_4/predictions.csv": {
+      "size": 102835,
+      "mtime_ns": 1792726100028137475,
+      "sha256": "10bb2f622ec7dbbdf8155972ae8cc54f79585c6b4b8680d93a70d7c51194b5ac"
+    },
+    "results/PerSeM_C/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792725907062383095,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM_C/fold_3/best.pt": {
+      "size": 20557492,
+      "mtime_ns": 1792725867154002437
+    },
+    "results/PerSeM_C/fold_3/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792725741813650754,
+      "sha256": "23458c60a3afdb6e563adb729edf104c198fb9b1d80aecba0643601a68a6a6ef"
+    },
+    "results/PerSeM_C/fold_3/metrics.json": {
+      "size": 801,
+      "mtime_ns": 1792726039948618956,
+      "sha256": "d2a13dc2a58562dadbcc8d8ce158f6558ba6f7c6a41ecb8cd3fe4830d3725c89"
+    },
+    "results/PerSeM_C/fold_3/epochs.jsonl": {
+      "size": 3801,
+      "mtime_ns": 1792726038831947810,
+      "sha256": "ac90fca7a9a633d1e8eb1f606409f5c65ba0b475cd6bfd022bda5e7a83f8a6ff"
+    },
+    "results/PerSeM_C/fold_3/predictions.csv": {
+      "size": 103413,
+      "mtime_ns": 1792726039948361904,
+      "sha256": "6609cebcc41ad370f7e1c7663455f300c6002409e724976965aece03d514a0c3"
+    },
+    "results/PerSeM_C/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792725741813371592,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM_C/fold_0/best.pt": {
+      "size": 20557492,
+      "mtime_ns": 1792725416127005528
+    },
+    "results/PerSeM_C/fold_0/started.json": {
+      "size": 1552,
+      "mtime_ns": 1792725196613728578,
+      "sha256": "c2c0f930fb9a2a5892bbc1235e1cd978cf6a1ccac8dca434a4d6802b14349524"
+    },
+    "results/PerSeM_C/fold_0/metrics.json": {
+      "size": 809,
+      "mtime_ns": 1792725596259878150,
+      "sha256": "56b01dd9b83f63de69bee14af42cc0d92ed52456254ac14faa3ca07654e77e9f"
+    },
+    "results/PerSeM_C/fold_0/epochs.jsonl": {
+      "size": 4965,
+      "mtime_ns": 1792725595038790778,
+      "sha256": "6e214759bae1d8f5c8345432dce8da94d2c85ecf513f9f4cec66356b8fd167e9"
+    },
+    "results/PerSeM_C/fold_0/predictions.csv": {
+      "size": 103294,
+      "mtime_ns": 1792725596258802287,
+      "sha256": "324c5a20ad99ebd21c66307d562d66d6ae4765e7713d1af28a7be1a28a811550"
+    },
+    "results/PerSeM_C/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792725196613371047,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM_C/fold_2/best.pt": {
+      "size": 20557492,
+      "mtime_ns": 1792725728635409397
+    },
+    "results/PerSeM_C/fold_2/started.json": {
+      "size": 1564,
+      "mtime_ns": 1792725601804307492,
+      "sha256": "42f0fd0b019d50d3bde23bdcf719c7c05a4595a18f31881b4420df49fd0152c1"
+    },
+    "results/PerSeM_C/fold_2/metrics.json": {
+      "size": 798,
+      "mtime_ns": 1792725901689561723,
+      "sha256": "ed5d0e3a851b8e03bc6b589c496452e4db98b1362251d03a9e893a1b6cca7fb2"
+    },
+    "results/PerSeM_C/fold_2/epochs.jsonl": {
+      "size": 3800,
+      "mtime_ns": 1792725900582145400,
+      "sha256": "3e1e65f91656497489d4c8bbe6c94b16e8615f19f5f22623cd3de59b8f2c359f"
+    },
+    "results/PerSeM_C/fold_2/predictions.csv": {
+      "size": 103317,
+      "mtime_ns": 1792725901689321802,
+      "sha256": "b5375287ee87bc96744391e0256ddfcacf3dbdea544b699d74102f9f0e74fd0a"
+    },
+    "results/PerSeM_C/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792725601804079950,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/PerSeM_AB/fold_1/best.pt": {
+      "size": 20795096,
+      "mtime_ns": 1792726126871319746
+    },
+    "results/PerSeM_AB/fold_1/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792726105241962648,
+      "sha256": "7bd5784e85e5ef40634e66bb76db5c76bd6b806278051693cc8c7065ed8bd46d"
+    },
+    "results/PerSeM_AB/fold_1/metrics.json": {
+      "size": 807,
+      "mtime_ns": 1792726283504784701,
+      "sha256": "185e1c3ff9d64cbbf555e9d6d5077f842cf5a90fd44e5ad6c078ddbc7a228b27"
+    },
+    "results/PerSeM_AB/fold_1/epochs.jsonl": {
+      "size": 2413,
+      "mtime_ns": 1792726282412108108,
+      "sha256": "641d31a8178c5197cbb08deb1fa856da166948b5f4bd5da1b540cc7a7f94ccaf"
+    },
+    "results/PerSeM_AB/fold_1/predictions.csv": {
+      "size": 102808,
+      "mtime_ns": 1792726283504527660,
+      "sha256": "2f193d2e60a85f0a437ab1a01e5a2fc1b06160bdfe94fecbd8f927019201e235"
+    },
+    "results/PerSeM_AB/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792726105241705357,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM_AB/fold_4/best.pt": {
+      "size": 20795096,
+      "mtime_ns": 1792726634416883630
+    },
+    "results/PerSeM_AB/fold_4/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792726548828731548,
+      "sha256": "c89d8f13487ddb9665101db843868688d3df6094f992cc2de39a2cb0cbd5a1e8"
+    },
+    "results/PerSeM_AB/fold_4/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792726730693488239,
+      "sha256": "a6b4c04f37903ca3203495132b6adf80273bd406442c243e104d5459b13a6947"
+    },
+    "results/PerSeM_AB/fold_4/epochs.jsonl": {
+      "size": 3648,
+      "mtime_ns": 1792726729930735877,
+      "sha256": "cb933194cbb2ff739e3373641a9a6c0033ddc407f5cffdbf7f7fb76e63f8b712"
+    },
+    "results/PerSeM_AB/fold_4/predictions.csv": {
+      "size": 103813,
+      "mtime_ns": 1792726730693342488,
+      "sha256": "af734dd4282cab913d9354fa8ffeb47d9db1f0b9a1ffdb3f4de95089355c79d8"
+    },
+    "results/PerSeM_AB/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792726548828533667,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM_AB/fold_3/best.pt": {
+      "size": 20795096,
+      "mtime_ns": 1792726363066052916
+    },
+    "results/PerSeM_AB/fold_3/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792726288622147541,
+      "sha256": "84d9f110f35d7d008c6707c8bf16cb81c2f35cfad5476f9fdf3aeaa0f946f4e3"
+    },
+    "results/PerSeM_AB/fold_3/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792726526048768494,
+      "sha256": "832262ba4812e60cf479722a978459132cc8b50fbc6b480c0f29a88d146deb5d"
+    },
+    "results/PerSeM_AB/fold_3/epochs.jsonl": {
+      "size": 3209,
+      "mtime_ns": 1792726525020406771,
+      "sha256": "61cdc082227b12496b6c970ddd72cbfc5ef88613739df6a378d7944471c1d447"
+    },
+    "results/PerSeM_AB/fold_3/predictions.csv": {
+      "size": 103846,
+      "mtime_ns": 1792726526048631274,
+      "sha256": "17c19a8daed7189c3a06b60e6b2c7f88ef66e8201d631a14f202aa80f1889c1e"
+    },
+    "results/PerSeM_AB/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792726288621801739,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM_AB/fold_0/best.pt": {
+      "size": 20795096,
+      "mtime_ns": 1792726169820605264
+    },
+    "results/PerSeM_AB/fold_0/started.json": {
+      "size": 1553,
+      "mtime_ns": 1792726045151013534,
+      "sha256": "d10e7f20e221c6e67fa3170f825bba78acb09853e54d8e50ac5228a9155ae08a"
+    },
+    "results/PerSeM_AB/fold_0/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792726327792086957,
+      "sha256": "7f5ac783d689183dc6bace6e5a6814e247600be29ae259c75a84ca58f952ba08"
+    },
+    "results/PerSeM_AB/fold_0/epochs.jsonl": {
+      "size": 3905,
+      "mtime_ns": 1792726326670292737,
+      "sha256": "f97057fbb410f40322b66dc3c0a67ac73aa8a51f7daf72e4f82ff9df6eff5a13"
+    },
+    "results/PerSeM_AB/fold_0/predictions.csv": {
+      "size": 103198,
+      "mtime_ns": 1792726327791297327,
+      "sha256": "80db3e360a012a0ccad8d3fac8496e411d3be4601c86d7030ceee8686a4882ca"
+    },
+    "results/PerSeM_AB/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792726045150735333,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM_AB/fold_2/best.pt": {
+      "size": 20795096,
+      "mtime_ns": 1792726383562166784
+    },
+    "results/PerSeM_AB/fold_2/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792726332570334292,
+      "sha256": "85e6a212021fc8ad54b2e131b6aed50eaecb516f43982ab850124c690a182df6"
+    },
+    "results/PerSeM_AB/fold_2/metrics.json": {
+      "size": 795,
+      "mtime_ns": 1792726543576394796,
+      "sha256": "84872e277c908cb652716176004d42b5c317bdf7722a1043bdbe9e653d548438"
+    },
+    "results/PerSeM_AB/fold_2/epochs.jsonl": {
+      "size": 2911,
+      "mtime_ns": 1792726542499110106,
+      "sha256": "df65d426ab849b6912bc3ab163ec183e4897dac64bdef92b9f8cb96ecce448e7"
+    },
+    "results/PerSeM_AB/fold_2/predictions.csv": {
+      "size": 103488,
+      "mtime_ns": 1792726543576167005,
+      "sha256": "fca07c40d48ff44db3bca230c997145b827dc7c8fbdff5308df757ba3922f1d2"
+    },
+    "results/PerSeM_AB/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792726332570033011,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/Pyraformer/fold_1/best.pt": {
+      "size": 1113966,
+      "mtime_ns": 1792685985953622226
+    },
+    "results/Pyraformer/fold_1/started.json": {
+      "size": 639,
+      "mtime_ns": 1792685957306914976,
+      "sha256": "53a1d1c0693f1604c851ea1f333bdbb8b50abc4ad2187de353f5c1993eb92d21"
+    },
+    "results/Pyraformer/fold_1/metrics.json": {
+      "size": 652,
+      "mtime_ns": 1792686009062046706,
+      "sha256": "0cd17523830def584f7be6e8e890d8d720b1536d6f171d92163e7e7a53a75a3a"
+    },
+    "results/Pyraformer/fold_1/epochs.jsonl": {
+      "size": 4809,
+      "mtime_ns": 1792686008889008064,
+      "sha256": "7028b6be897823b24b9ad2865da0aa0dcb2debf5f07d284bfd546bd78f615883"
+    },
+    "results/Pyraformer/fold_1/predictions.csv": {
+      "size": 102930,
+      "mtime_ns": 1792686009061346087,
+      "sha256": "e13f1d8e6ad16428fecd9b8b34b42bcd20e66b239078922fefeb2e75615d18a2"
+    },
+    "results/Pyraformer/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792685956389767360,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/Pyraformer/fold_4/best.pt": {
+      "size": 1113966,
+      "mtime_ns": 1792691806726067873
+    },
+    "results/Pyraformer/fold_4/started.json": {
+      "size": 639,
+      "mtime_ns": 1792691773677807080,
+      "sha256": "c2eeb2c22b9c32d3197dd2374ea3c71283fec2b300dc70ec41b8f1b4b65ef403"
+    },
+    "results/Pyraformer/fold_4/metrics.json": {
+      "size": 715,
+      "mtime_ns": 1792691828504046542,
+      "sha256": "a5ca4d9332a49d9515ff2a775335eacb6f75bbd3360a58f3ca9013a604d7b5b3"
+    },
+    "results/Pyraformer/fold_4/epochs.jsonl": {
+      "size": 5385,
+      "mtime_ns": 1792691828342437962,
+      "sha256": "7a6b28b15a6d2940ac4de875a7dfd3df5b9bb03877df432dd0be11e6d9458324"
+    },
+    "results/Pyraformer/fold_4/predictions.csv": {
+      "size": 102909,
+      "mtime_ns": 1792691828503882820,
+      "sha256": "d8c099418f2c72ea3eb7baacf8c5484f7faddee6b273957da1e42e0d3c494904"
+    },
+    "results/Pyraformer/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792691772786914541,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/Pyraformer/fold_3/best.pt": {
+      "size": 1113966,
+      "mtime_ns": 1792686018386583218
+    },
+    "results/Pyraformer/fold_3/started.json": {
+      "size": 639,
+      "mtime_ns": 1792686013916167109,
+      "sha256": "b426a23898fbd271d673088e3c2e8615503019693b0c9d2c751b0b3d9248535c"
+    },
+    "results/Pyraformer/fold_3/metrics.json": {
+      "size": 651,
+      "mtime_ns": 1792686041982634466,
+      "sha256": "aacdcdc1a7fa1765cc9310ee19e0a2e0abb1562d9c37db4dcbbbe7db32039c0b"
+    },
+    "results/Pyraformer/fold_3/epochs.jsonl": {
+      "size": 2475,
+      "mtime_ns": 1792686041820484330,
+      "sha256": "07ea7d0cabee7b6fa38af6546e880965c4e203c468b94d6ed222527fc7d064da"
+    },
+    "results/Pyraformer/fold_3/predictions.csv": {
+      "size": 102639,
+      "mtime_ns": 1792686041982386696,
+      "sha256": "a8f853caffcc8e1402b6363945c0ca5c29d61457972dd8dafa9863f2fc4429f4"
+    },
+    "results/Pyraformer/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792686012981229922,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/Pyraformer/fold_0/best.pt": {
+      "size": 1113966,
+      "mtime_ns": 1792691665531592878
+    },
+    "results/Pyraformer/fold_0/started.json": {
+      "size": 627,
+      "mtime_ns": 1792691649205199574,
+      "sha256": "5bd698aa9145c46d1a426b1e93942da9c653a3da7c6c1189c974b82f06642d60"
+    },
+    "results/Pyraformer/fold_0/metrics.json": {
+      "size": 653,
+      "mtime_ns": 1792691687376835036,
+      "sha256": "6bd61c7927e667399e89a4483b49373f010d6f7d726c6c88f98d0719bf7db706"
+    },
+    "results/Pyraformer/fold_0/epochs.jsonl": {
+      "size": 3651,
+      "mtime_ns": 1792691687213483207,
+      "sha256": "3d11c8df959bb6b15ae89f161db2e42e0c2e72a2a3b1448c06659f9b21bc41f8"
+    },
+    "results/Pyraformer/fold_0/predictions.csv": {
+      "size": 102853,
+      "mtime_ns": 1792691687376633013,
+      "sha256": "faed3222764afee49e4f2728e113de3a42c1922be7d530056f37fc8ae39c803b"
+    },
+    "results/Pyraformer/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792691648307598317,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/Pyraformer/fold_2/best.pt": {
+      "size": 1113966,
+      "mtime_ns": 1792691747356732159
+    },
+    "results/Pyraformer/fold_2/started.json": {
+      "size": 639,
+      "mtime_ns": 1792691692903325701,
+      "sha256": "9fb2864348d065d0db61bc178ac0dee99761b05d78b88ca113b3f6680b994ce3"
+    },
+    "results/Pyraformer/fold_2/metrics.json": {
+      "size": 718,
+      "mtime_ns": 1792691768396067858,
+      "sha256": "15d2b983a537e39c31f97d324570271945ea73ada7879bf7e55d5bad0fcab5a5"
+    },
+    "results/Pyraformer/fold_2/epochs.jsonl": {
+      "size": 7460,
+      "mtime_ns": 1792691768234622926,
+      "sha256": "b997d13b945395e1bc2ad62950199e10e348459e17ca473b04d8e991c6f994f9"
+    },
+    "results/Pyraformer/fold_2/predictions.csv": {
+      "size": 102923,
+      "mtime_ns": 1792691768395865255,
+      "sha256": "83ff9e55ed66721bae1adcae3cac3245fb0f8a2e22a1e3dcb680615936731c70"
+    },
+    "results/Pyraformer/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792691691998375959,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/Informer/fold_1/best.pt": {
+      "size": 906504,
+      "mtime_ns": 1792690592774585895
+    },
+    "results/Informer/fold_1/started.json": {
+      "size": 637,
+      "mtime_ns": 1792690588297129199,
+      "sha256": "c245b3f026293bc57a0ea2e373a5b36861fdf77d579c0f1efc7f96aaeef93762"
+    },
+    "results/Informer/fold_1/metrics.json": {
+      "size": 649,
+      "mtime_ns": 1792690616318239823,
+      "sha256": "df39d0a326d4879ade6d5729636612656b893a966ae29e3f9bf83e67f81cd689"
+    },
+    "results/Informer/fold_1/epochs.jsonl": {
+      "size": 2449,
+      "mtime_ns": 1792690616142833597,
+      "sha256": "3a0eb16646e4f32240ea4549d2a4840092d21a48c34dbca7372d06d85294d191"
+    },
+    "results/Informer/fold_1/predictions.csv": {
+      "size": 103351,
+      "mtime_ns": 1792690616316834605,
+      "sha256": "25f99aa25f3b646df57da7a5255d99e5074044d3eae8544d304aee21359d5b3d"
+    },
+    "results/Informer/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792690587377076981,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/Informer/fold_4/best.pt": {
+      "size": 906504,
+      "mtime_ns": 1792695430792274925
+    },
+    "results/Informer/fold_4/started.json": {
+      "size": 637,
+      "mtime_ns": 1792695400551129422,
+      "sha256": "860fa51f566f598ea3b8f95cb7f199472c3c3197b1bae1888f929c9d29e44da6"
+    },
+    "results/Informer/fold_4/metrics.json": {
+      "size": 703,
+      "mtime_ns": 1792695453198436609,
+      "sha256": "f1037f6150d36808a4b83cd12302fd50c48bcae940d8dc13055d665292fd3a3a"
+    },
+    "results/Informer/fold_4/epochs.jsonl": {
+      "size": 4916,
+      "mtime_ns": 1792695453020479929,
+      "sha256": "b93abbd5080620e1fbea3acac0444138dfe26dbf1a12884fcf709047c867d184"
+    },
+    "results/Informer/fold_4/predictions.csv": {
+      "size": 103483,
+      "mtime_ns": 1792695453198157125,
+      "sha256": "11ccb0dcd3dace80ed2989fcd8b4e4121aab2b6f5038e7d6c20c6a1105719abe"
+    },
+    "results/Informer/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792695399664918602,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/Informer/fold_3/best.pt": {
+      "size": 906504,
+      "mtime_ns": 1792690650289077106
+    },
+    "results/Informer/fold_3/started.json": {
+      "size": 637,
+      "mtime_ns": 1792690621494645924,
+      "sha256": "f743be497654435add779baccd6b4e0bcfcc104f6315d9c3ff77ffd47cbb27e8"
+    },
+    "results/Informer/fold_3/metrics.json": {
+      "size": 716,
+      "mtime_ns": 1792690673863046662,
+      "sha256": "e2f6debbb6e4417a63b2560b8dc5ae9ea3d775867c44f72d98c0898c114f134a"
+    },
+    "results/Informer/fold_3/epochs.jsonl": {
+      "size": 4676,
+      "mtime_ns": 1792690673675164017,
+      "sha256": "5ba7f7dc91e46d6d71485716c44bee2d34142713e73ba3ede4553a18e91b9c68"
+    },
+    "results/Informer/fold_3/predictions.csv": {
+      "size": 103111,
+      "mtime_ns": 1792690673862847551,
+      "sha256": "8784aff484c3af955ac5848a7a435073f6a8bf1a11e1cfd3b5959ab6aa091b1e"
+    },
+    "results/Informer/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792690620573336005,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/Informer/fold_0/best.pt": {
+      "size": 906504,
+      "mtime_ns": 1792695332987932899
+    },
+    "results/Informer/fold_0/started.json": {
+      "size": 625,
+      "mtime_ns": 1792695315176309866,
+      "sha256": "31fa077d3c80b8d4c9f5c25be9b5cf6d3625c10e9f07b88dcc4365c08b087c43"
+    },
+    "results/Informer/fold_0/metrics.json": {
+      "size": 651,
+      "mtime_ns": 1792695355793695476,
+      "sha256": "dd64b19750dab34550a1f0516e431aa657e2ac56413e04c84b9321caa3ba0b96"
+    },
+    "results/Informer/fold_0/epochs.jsonl": {
+      "size": 3795,
+      "mtime_ns": 1792695355616227556,
+      "sha256": "3b1b5f09fa63a27e3a5f0f9328b91947d30d214fe70c2b2798ada2de9a3c6de6"
+    },
+    "results/Informer/fold_0/predictions.csv": {
+      "size": 102469,
+      "mtime_ns": 1792695355791795152,
+      "sha256": "e0e92bc9f1336c210e8b052b77b32bbeb8a0df8c25e878ef764ec15670838ff9"
+    },
+    "results/Informer/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792695314424467185,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/Informer/fold_2/best.pt": {
+      "size": 906504,
+      "mtime_ns": 1792695372126864948
+    },
+    "results/Informer/fold_2/started.json": {
+      "size": 637,
+      "mtime_ns": 1792695360796667185,
+      "sha256": "763392d10569d10a726456d4510b9559e46af4094bb725db410371cd0f4c6deb"
+    },
+    "results/Informer/fold_2/metrics.json": {
+      "size": 702,
+      "mtime_ns": 1792695395140516847,
+      "sha256": "1a64c7ef5ccee467d98dd021e052aa154f9e3ca01eb53f055b23bb1ec5a62dff"
+    },
+    "results/Informer/fold_2/epochs.jsonl": {
+      "size": 3211,
+      "mtime_ns": 1792695394963820030,
+      "sha256": "b1cb8a314fc0743ac42e1f38068d3a3f24bc2b72e06cfea3147793abf7dc1407"
+    },
+    "results/Informer/fold_2/predictions.csv": {
+      "size": 102487,
+      "mtime_ns": 1792695395140270003,
+      "sha256": "20e712ec56436b7cec901c06d701e54430b1961f4ee95ddb0073eae5c4a776c8"
+    },
+    "results/Informer/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792695360246403388,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/LightTS/fold_1/best.pt": {
+      "size": 1900390,
+      "mtime_ns": 1792691602903952603
+    },
+    "results/LightTS/fold_1/started.json": {
+      "size": 636,
+      "mtime_ns": 1792691588569351546,
+      "sha256": "b6cac7fade031b8a293857159ecf3d414ad433358cf4df90c5d28f523bd6eff4"
+    },
+    "results/LightTS/fold_1/metrics.json": {
+      "size": 716,
+      "mtime_ns": 1792691616500432124,
+      "sha256": "20ab6490ea6647306dbdb5601120805923ccdebd8576e4bde4de166c5f411c77"
+    },
+    "results/LightTS/fold_1/epochs.jsonl": {
+      "size": 4396,
+      "mtime_ns": 1792691616394442608,
+      "sha256": "8755e013608c0419dbc8d4ea27d3100fffaa348761f8e75931bce1867dcb949f"
+    },
+    "results/LightTS/fold_1/predictions.csv": {
+      "size": 104201,
+      "mtime_ns": 1792691616500105189,
+      "sha256": "1863b6d4f37c0b3195c59ee39eed9e1ebab2985420da60ecda2f18e7fc83a297"
+    },
+    "results/LightTS/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792691587661331066,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/LightTS/fold_4/best.pt": {
+      "size": 1900390,
+      "mtime_ns": 1792685938622599385
+    },
+    "results/LightTS/fold_4/started.json": {
+      "size": 636,
+      "mtime_ns": 1792685932797718793,
+      "sha256": "d5784e9ff1fc57f6430b18084442c7cf8d4eff1f86003fad33cc6e50ff33db94"
+    },
+    "results/LightTS/fold_4/metrics.json": {
+      "size": 713,
+      "mtime_ns": 1792685952646886511,
+      "sha256": "7271e1a14565e75c39ae1358b056618294e21def85be2d4ad48eff57bd34774b"
+    },
+    "results/LightTS/fold_4/epochs.jsonl": {
+      "size": 2910,
+      "mtime_ns": 1792685952579705732,
+      "sha256": "c507063e733d5b8a334270f63165a02030f1c54cb8e0af5cdf41244c52358d45"
+    },
+    "results/LightTS/fold_4/predictions.csv": {
+      "size": 103013,
+      "mtime_ns": 1792685952646753511,
+      "sha256": "587da06953b4a9a573d773d02b7a7b5b324ae5bf6de0f273ae654ba4ed70661e"
+    },
+    "results/LightTS/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792685931863497534,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/LightTS/fold_3/best.pt": {
+      "size": 1900390,
+      "mtime_ns": 1792691630417697086
+    },
+    "results/LightTS/fold_3/started.json": {
+      "size": 636,
+      "mtime_ns": 1792691621896883878,
+      "sha256": "0422e2224a34989c6ccfc5d19e796047a181affd4762613f5f629a0a46f9d764"
+    },
+    "results/LightTS/fold_3/metrics.json": {
+      "size": 701,
+      "mtime_ns": 1792691643982256321,
+      "sha256": "2095d363da9e142e8a4295d3267bb601a6469da8d0d465492cefe1a07b34290e"
+    },
+    "results/LightTS/fold_3/epochs.jsonl": {
+      "size": 3332,
+      "mtime_ns": 1792691643879851797,
+      "sha256": "6e5bbb484c3ff0f3e450ba505f41dcf9c57cdedb7d913dd05bfca5ad7ca1eb7c"
+    },
+    "results/LightTS/fold_3/predictions.csv": {
+      "size": 104135,
+      "mtime_ns": 1792691643982001618,
+      "sha256": "bccc3e5fe812625580fc789411fe6260e071f089da6e3985f09f89fbf9e87a00"
+    },
+    "results/LightTS/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792691620991598264,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/LightTS/fold_0/best.pt": {
+      "size": 1900390,
+      "mtime_ns": 1792685882675883681
+    },
+    "results/LightTS/fold_0/started.json": {
+      "size": 624,
+      "mtime_ns": 1792685876027691327,
+      "sha256": "ef7ba077b31901d95944f6d4f9f943b9f88b43741c57c840bee64c8d06ef0f97"
+    },
+    "results/LightTS/fold_0/metrics.json": {
+      "size": 713,
+      "mtime_ns": 1792685896847224583,
+      "sha256": "6bd2a2d673de3f4796d638ba0af97ac6471e36f5595f1076749fee94a5652987"
+    },
+    "results/LightTS/fold_0/epochs.jsonl": {
+      "size": 3051,
+      "mtime_ns": 1792685896744847516,
+      "sha256": "5f74902aa81ec4a3e9d38c2abc5fa0516087662312453d02a3b109235b22ae30"
+    },
+    "results/LightTS/fold_0/predictions.csv": {
+      "size": 103662,
+      "mtime_ns": 1792685896845847257,
+      "sha256": "0e502843be1e3334b705abe35e9e4b0982ef8a5ca21656ce3a3da82908f3fe16"
+    },
+    "results/LightTS/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792685875109766568,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/LightTS/fold_2/best.pt": {
+      "size": 1900390,
+      "mtime_ns": 1792685913631654170
+    },
+    "results/LightTS/fold_2/started.json": {
+      "size": 636,
+      "mtime_ns": 1792685901938291614,
+      "sha256": "52af31550eed20f9d3efbcc82dc7c6c5dcf3d7d225c50fa55d75b8b154d695c6"
+    },
+    "results/LightTS/fold_2/metrics.json": {
+      "size": 682,
+      "mtime_ns": 1792685927567868265,
+      "sha256": "79b2be23028e1656d237f3464b6e69aa1fae07de73ca307da699d7b682256751"
+    },
+    "results/LightTS/fold_2/epochs.jsonl": {
+      "size": 3795,
+      "mtime_ns": 1792685927464769174,
+      "sha256": "ae70b763436f1bf35d961a3a2ba26d2be137a4e466bf500b1fc35c8fea166985"
+    },
+    "results/LightTS/fold_2/predictions.csv": {
+      "size": 104597,
+      "mtime_ns": 1792685927567670016,
+      "sha256": "131ba4a340705e658c8a2b95f1268755518fd5a5d9daced7724d444a75ecf043"
+    },
+    "results/LightTS/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792685901032387819,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    },
+    "results/PerSeM_AC/fold_1/best.pt": {
+      "size": 35420998,
+      "mtime_ns": 1792726862837449420
+    },
+    "results/PerSeM_AC/fold_1/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792726733965165829,
+      "sha256": "97b611d258e34a62f3864a4fd86be717e7d1f36ee2bf7f3dfe6d28000b9c7fa6"
+    },
+    "results/PerSeM_AC/fold_1/metrics.json": {
+      "size": 809,
+      "mtime_ns": 1792727025669807555,
+      "sha256": "209b85bc5194affe520c1a969e3a47d191a5d63ae57cd982bfc2ccfb45899be1"
+    },
+    "results/PerSeM_AC/fold_1/epochs.jsonl": {
+      "size": 3940,
+      "mtime_ns": 1792727024423618370,
+      "sha256": "704d8b5302864e0ed24da2372bd20522a2f71354859acf4d239acd8390547f5c"
+    },
+    "results/PerSeM_AC/fold_1/predictions.csv": {
+      "size": 103438,
+      "mtime_ns": 1792727025669667645,
+      "sha256": "dbc3d60a99b0ee1bc80776b4732e997add945e5a6385f20686c171fde95d98b4"
+    },
+    "results/PerSeM_AC/fold_1/preprocessing.json": {
+      "size": 13056,
+      "mtime_ns": 1792726733964976898,
+      "sha256": "20b281503c916e00a899b8c610ad67c2217b13efeef99776606f24de4488ef6c"
+    },
+    "results/PerSeM_AC/fold_4/best.pt": {
+      "size": 35420998,
+      "mtime_ns": 1792727065081491359
+    },
+    "results/PerSeM_AC/fold_4/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792727042120675006,
+      "sha256": "a11f230d21fce4af5ea7ad0e31ca5287cba088f14cc7c04e4bd3a3841326bb2a"
+    },
+    "results/PerSeM_AC/fold_4/metrics.json": {
+      "size": 748,
+      "mtime_ns": 1792727225484072185,
+      "sha256": "9ea09f14b1bc427017f5087340145a795610acd7f85dbfc7067c8855c9decc35"
+    },
+    "results/PerSeM_AC/fold_4/epochs.jsonl": {
+      "size": 2462,
+      "mtime_ns": 1792727224248172160,
+      "sha256": "f0e4661f0a2ec6e953a66e8134fe69b1c1724bc37da8e033abfe897bdafad974"
+    },
+    "results/PerSeM_AC/fold_4/predictions.csv": {
+      "size": 102801,
+      "mtime_ns": 1792727225483937875,
+      "sha256": "363d99c70ba6db89111d3a1e62f6464d1ae514df9e23330ef35f29e1659b0371"
+    },
+    "results/PerSeM_AC/fold_4/preprocessing.json": {
+      "size": 13026,
+      "mtime_ns": 1792727042120492346,
+      "sha256": "5f5abb331127cd45527ddb06bf71235a5950fed464fbc80d988cec23605a3cc1"
+    },
+    "results/PerSeM_AC/fold_3/best.pt": {
+      "size": 35420998,
+      "mtime_ns": 1792727040969514475
+    },
+    "results/PerSeM_AC/fold_3/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792727029047090033,
+      "sha256": "94a159a4ebe5029b2e2527aa4eb9e780c08735a815418093d5d1dc3f7dc51978"
+    },
+    "results/PerSeM_AC/fold_3/metrics.json": {
+      "size": 746,
+      "mtime_ns": 1792727202496074306,
+      "sha256": "13f980b310bfef64952e52029c15b64c496e962390fffced91b58f860de791fb"
+    },
+    "results/PerSeM_AC/fold_3/epochs.jsonl": {
+      "size": 2324,
+      "mtime_ns": 1792727201384110130,
+      "sha256": "81ece7f93dcdb5171afb657a351ad1f4a48789348f373068893036aa7dd59376"
+    },
+    "results/PerSeM_AC/fold_3/predictions.csv": {
+      "size": 102656,
+      "mtime_ns": 1792727202495933005,
+      "sha256": "60bff2de07a94c89e42f6f94a8d37129fe5575319dd414b7711b4c72e013420a"
+    },
+    "results/PerSeM_AC/fold_3/preprocessing.json": {
+      "size": 13068,
+      "mtime_ns": 1792727029046910923,
+      "sha256": "dcc0f16df1a30d77142ef188ab8b3993c18f4faae3c8a91ee2f975e173b18795"
+    },
+    "results/PerSeM_AC/fold_0/best.pt": {
+      "size": 35420998,
+      "mtime_ns": 1792726688664964079
+    },
+    "results/PerSeM_AC/fold_0/started.json": {
+      "size": 1553,
+      "mtime_ns": 1792726531191047589,
+      "sha256": "99c78bbd72276733fce96556790dba272cebad64c618a1f235edaceddbe52335"
+    },
+    "results/PerSeM_AC/fold_0/metrics.json": {
+      "size": 810,
+      "mtime_ns": 1792726854129048149,
+      "sha256": "4782916185d088c9da94c818b4d56501a98ec79e88d20b2547eed93cf656d4b3"
+    },
+    "results/PerSeM_AC/fold_0/epochs.jsonl": {
+      "size": 3932,
+      "mtime_ns": 1792726852990116732,
+      "sha256": "03ff190b254d3367f58d94ebbba9a731ab1fc660c4c67b759474e16e284fe84f"
+    },
+    "results/PerSeM_AC/fold_0/predictions.csv": {
+      "size": 103058,
+      "mtime_ns": 1792726854128912328,
+      "sha256": "ce27c878385ed55b2a0304f6b163aacbf31f1435968fdd607ade5e51c26caa23"
+    },
+    "results/PerSeM_AC/fold_0/preprocessing.json": {
+      "size": 13055,
+      "mtime_ns": 1792726531190773828,
+      "sha256": "e2550c3f61a2d6828da33e2572e8029880b72a11262a38898daa910773d1f865"
+    },
+    "results/PerSeM_AC/fold_2/best.pt": {
+      "size": 35420998,
+      "mtime_ns": 1792726879779727975
+    },
+    "results/PerSeM_AC/fold_2/started.json": {
+      "size": 1565,
+      "mtime_ns": 1792726857382994457,
+      "sha256": "02a8430b8298f3ef6ba95d38cd303f5205758f77225f6a5a062f7b60f79be447"
+    },
+    "results/PerSeM_AC/fold_2/metrics.json": {
+      "size": 747,
+      "mtime_ns": 1792727038836084490,
+      "sha256": "ac98489b601d2e2e175aa029f37859fa99a3487514445734e527d2a0e791f94f"
+    },
+    "results/PerSeM_AC/fold_2/epochs.jsonl": {
+      "size": 2478,
+      "mtime_ns": 1792727037742656194,
+      "sha256": "96c7f19deeaa276b8532b8834e08477f2acb43c8b60ec96cf09148a7d70d5e41"
+    },
+    "results/PerSeM_AC/fold_2/predictions.csv": {
+      "size": 103076,
+      "mtime_ns": 1792727038835939009,
+      "sha256": "6e5b60423b35f5879d9efcbc6c5a08f25896dad0563a9963c2178714185debac"
+    },
+    "results/PerSeM_AC/fold_2/preprocessing.json": {
+      "size": 13058,
+      "mtime_ns": 1792726857382797866,
+      "sha256": "14ca03fc9b6ae847b537c6fae8b36fb872fbfc0c02c3f8f7ec6448e44b2bebc8"
+    },
+    "results/XLSTMMixer/fold_1/best.pt": {
+      "size": 5037984,
+      "mtime_ns": 1792679838544843706
+    },
+    "results/XLSTMMixer/fold_1/started.json": {
+      "size": 640,
+      "mtime_ns": 1792679379270601986,
+      "sha256": "b259e888c6741ee91388ae30c3db5f90ad2608359d61e977eb9a4836e1dae50a"
+    },
+    "results/XLSTMMixer/fold_1/metrics.json": {
+      "size": 705,
+      "mtime_ns": 1792682212951751726,
+      "sha256": "3950740f7eb51152445935e4815bdc388930971a64eaba7c45cc3b069a824920"
+    },
+    "results/XLSTMMixer/fold_1/epochs.jsonl": {
+      "size": 2608,
+      "mtime_ns": 1792682202940437634,
+      "sha256": "139277827251135797634df4de067c1d2ea371d0f4ddb7eb8d56dddd8a40213e"
+    },
+    "results/XLSTMMixer/fold_1/predictions.csv": {
+      "size": 102531,
+      "mtime_ns": 1792682212951441634,
+      "sha256": "de023650239bc988af9b8e9f35bf61f6d24d028bb01783e6ad604bab0eff6cce"
+    },
+    "results/XLSTMMixer/fold_1/preprocessing.json": {
+      "size": 10152,
+      "mtime_ns": 1792679378389479163,
+      "sha256": "770d13e8080bc3850ea408bce99fc5cd87b92c998e37c526b076495793d3832b"
+    },
+    "results/XLSTMMixer/fold_4/best.pt": {
+      "size": 5037984,
+      "mtime_ns": 1792689252803854473
+    },
+    "results/XLSTMMixer/fold_4/started.json": {
+      "size": 640,
+      "mtime_ns": 1792688166831864382,
+      "sha256": "230d73d6a6f117805162179821f7c78f067c2bf4e3358ff1b35e18084d437f73"
+    },
+    "results/XLSTMMixer/fold_4/metrics.json": {
+      "size": 656,
+      "mtime_ns": 1792691583268938317,
+      "sha256": "a2d3c700d415123548515a4e16e74e7eb9d8782d5c11c1f5ddf0dedd9fe918ef"
+    },
+    "results/XLSTMMixer/fold_4/epochs.jsonl": {
+      "size": 3195,
+      "mtime_ns": 1792691574165799763,
+      "sha256": "9c3e49dcaa39083b2482d0f31227dbd7497b1174c437216e1ce9294261a97443"
+    },
+    "results/XLSTMMixer/fold_4/predictions.csv": {
+      "size": 103780,
+      "mtime_ns": 1792691583268749254,
+      "sha256": "8eef00fd55d46faa1dc0e88a0103a4790736f332f4c027cf360145ef042d63f8"
+    },
+    "results/XLSTMMixer/fold_4/preprocessing.json": {
+      "size": 10122,
+      "mtime_ns": 1792688165902624910,
+      "sha256": "e7fafdbf611b40d54eeebf9db15d85c45a9d08a1a7c6c3d427776a78841280e3"
+    },
+    "results/XLSTMMixer/fold_3/best.pt": {
+      "size": 5037984,
+      "mtime_ns": 1792683477663763642
+    },
+    "results/XLSTMMixer/fold_3/started.json": {
+      "size": 640,
+      "mtime_ns": 1792682218323842158,
+      "sha256": "7a6ecea5886953e6a0c1c47a615cc04107eba632468d0df636f2501b2681ce83"
+    },
+    "results/XLSTMMixer/fold_3/metrics.json": {
+      "size": 715,
+      "mtime_ns": 1792685871187019807,
+      "sha256": "c5d12a963dc3975f833da6ec19863828e43a90053f3e83c90a80e91e3c7ea904"
+    },
+    "results/XLSTMMixer/fold_3/epochs.jsonl": {
+      "size": 3342,
+      "mtime_ns": 1792685861334134672,
+      "sha256": "5471287d3bce6abc03f92e2212c7a80813a927bd368121533de0a16b052b9f4e"
+    },
+    "results/XLSTMMixer/fold_3/predictions.csv": {
+      "size": 103631,
+      "mtime_ns": 1792685871186840918,
+      "sha256": "bf11c989ef54080b7e92995cba6c77f05965ecda27c381c23acb690e5eada04c"
+    },
+    "results/XLSTMMixer/fold_3/preprocessing.json": {
+      "size": 10164,
+      "mtime_ns": 1792682217402599049,
+      "sha256": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70"
+    },
+    "results/XLSTMMixer/fold_0/best.pt": {
+      "size": 5037984,
+      "mtime_ns": 1792682802581057221
+    },
+    "results/XLSTMMixer/fold_0/started.json": {
+      "size": 628,
+      "mtime_ns": 1792678881756568756,
+      "sha256": "0d599624a3d6bb25a17897b7514fc336e6f115aea169dd10faf3323bf8d907df"
+    },
+    "results/XLSTMMixer/fold_0/metrics.json": {
+      "size": 721,
+      "mtime_ns": 1792685244202355880,
+      "sha256": "72e7a02abac989f690762a2df8003a40d2cdb140772b3c57f8dac0035aa2db83"
+    },
+    "results/XLSTMMixer/fold_0/epochs.jsonl": {
+      "size": 5832,
+      "mtime_ns": 1792685234258871263,
+      "sha256": "c082cded848fd3a49a6e2283387c3bafd737aa5e28e02b1b09ff624d0ae3ea0a"
+    },
+    "results/XLSTMMixer/fold_0/predictions.csv": {
+      "size": 104741,
+      "mtime_ns": 1792685244201982552,
+      "sha256": "c8e300c2234009e3549136089b71ee6287fda7a5fa2bbd601ba73851d21adfff"
+    },
+    "results/XLSTMMixer/fold_0/preprocessing.json": {
+      "size": 10151,
+      "mtime_ns": 1792678880845477564,
+      "sha256": "2b8f3db6846b98dedad0c1fd542fa1cccc6d40e8b2cb33d83de33af728e139b7"
+    },
+    "results/XLSTMMixer/fold_2/best.pt": {
+      "size": 5037984,
+      "mtime_ns": 1792685862315936348
+    },
+    "results/XLSTMMixer/fold_2/started.json": {
+      "size": 640,
+      "mtime_ns": 1792685249120263935,
+      "sha256": "96e694dec3b436d33e20c09c2bdcdcb18f60af513055ae91f9510130ea396469"
+    },
+    "results/XLSTMMixer/fold_2/metrics.json": {
+      "size": 701,
+      "mtime_ns": 1792688161442840982,
+      "sha256": "ffa76234bfbf99abe4cb03a9bdf3598a666cfa637a90f9601f432974174cd152"
+    },
+    "results/XLSTMMixer/fold_2/epochs.jsonl": {
+      "size": 2757,
+      "mtime_ns": 1792688152357471348,
+      "sha256": "6743eaa29cd2fbdd46575b581b13090098b2c66a337fabca726fb831e77da480"
+    },
+    "results/XLSTMMixer/fold_2/predictions.csv": {
+      "size": 103405,
+      "mtime_ns": 1792688161442632672,
+      "sha256": "1353af1effd3b9ff8d4d56ad0ad687f77bc06005097ed3a2342bd7cbe2bc7eda"
+    },
+    "results/XLSTMMixer/fold_2/preprocessing.json": {
+      "size": 10154,
+      "mtime_ns": 1792685248470538329,
+      "sha256": "ccc9c9d5224d2fab626b93c1c5bd521d794c8820fb08b162a5fdbe9b932ca02e"
+    }
+  }
+}

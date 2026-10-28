@@ -1,0 +1,229 @@
+{
+  "identity": {
+    "protocol": "linear-history-v1:Yminus10to6-to-Yminus5to1:company-inner3:ridge1e-4",
+    "source_sha256": {
+      "data_linear_history.py": "e2473264c1c4091465b0897d41b82380c030b8ca0a25acb335656cb98231c204",
+      "data.py": "a940f7581bf1cc880ce09c07c21b0f98982d9f75a3a1f5de971890376b358771",
+      "data_annual_risk.py": "2a16d9169b198408d2a7965877d5ff9607d3011efc1d8afb5df66f19173a415c",
+      "run.py": "9a3ab69a895b95e8df92b7fa3ac970939f2149a89e2712a6ab858aa2f6d20ec2",
+      "run_persem.py": "3f1c824f10e95a3bbb718fbf6fcb5ddbab943b011ecb3c3c8aa62e06c97a2325",
+      "run_annual_risk.py": "28798d3dddd92a7888abbe39ffde65e73967e2e3881984b3a83a1f9be09251ee",
+      "config.json": "c50261e640891e166535a387a3225f7c143ec816f1431376f7a81aec8e613b9d",
+      "cache/linear_history_v1/preserved_identity.json": "daac78d89ef6f8175ed8433fdced4f596652dd0ceaa2d651dee329e6fbb1ed7c",
+      "cache/annual_risk_v1/samples.npz": "066bc30e8331c179a6b5ada1bf78f28fa839e2929207d42012dc79e906c40e8f",
+      "cache/annual_risk_v1/samples.csv": "615067e1d6e13ffaa1f1ab5e4a26debb47e3ffe100bd74e67f5769e28d737853",
+      "cache/annual_risk_v1/manifest.json": "f6572d05d3979764f0baa2a79be1a029a6eebc7eb7991740c6b76479cc4de999",
+      "cache/annual_risk_v1/training_protocol.json": "64961f16d50da879f6024fe841aa2b0c3d5f91b5e4961fcab0f94cc27347a6fe",
+      "datasets/supplement_2001_2019/features/enhanced_with_official_supplement/financial_combined_2001_onward.parquet": "f838a8ce73ce62f55f6ae29493b69394942ecd7d436d87119f2399cc951cc97c",
+      "datasets/supplement_2001_2019/assembled/governance_original_columns_2001_2023.parquet": "f3081b2706e5e88978151ba48b3e8b45cdb14a636ae005f5e1c161e7e37147ef",
+      "datasets/supplement_2001_2019/features/enhanced_with_official_supplement/financial_features_long.parquet": "296508f338ba4296ae4306c1b0b5bda1c5735e95c990f51ff7d5bada35e91d15",
+      "datasets/supplement_2001_2019/assembled/governance_core_cell_sources.parquet": "207beba82d96f11f6bca1892e104c4dc5a0cddd2360dc8e58236ca06cd0af2fd"
+    },
+    "financial_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "governance_indices": [
+      30,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      55,
+      56,
+      57,
+      59,
+      60
+    ],
+    "categorical_indices": [
+      31,
+      32,
+      51,
+      52,
+      53,
+      54,
+      58
+    ],
+    "feature_dimension": 2160,
+    "history": "FY Y-10..Y-6; financial quarterly; governance annual Q4",
+    "recent": "unchanged annual-risk cache; financial quarterly; governance Q4",
+    "availability": "max(period+6 months,known publication)<=June30Y; node>=IPO",
+    "ages": "report ages in years; financial (41-t)/4; governance (38-4*t)/4",
+    "ridge_lambda": 0.0001,
+    "identity_version": 1
+  },
+  "fingerprint": "ccdbf1e762dc7d6ee5759f213b1d59a2d68a6e188860556c753382e2cc242039",
+  "raw_sha256": "907af2e2ac8fe820a7c0af5144de4ef7cc7457f802c2e925694b1bcbdae12fa4",
+  "coverage": {
+    "samples": 11199,
+    "any_history": 4935,
+    "empty_history": 6264,
+    "financial_cells": 1778703,
+    "governance_cells": 208052,
+    "financial_samples": 4935,
+    "governance_samples": 4935
+  },
+  "matched_source_dates": {
+    "financial": 653302,
+    "governance": 86142
+  },
+  "late_masked_cells": {
+    "financial": 1024,
+    "governance": 0
+  },
+  "arrays": {
+    "H_financial": [
+      11199,
+      20,
+      30
+    ],
+    "H_governance": [
+      11199,
+      5,
+      24
+    ],
+    "H_financial_mask": [
+      11199,
+      20,
+      30
+    ],
+    "H_governance_mask": [
+      11199,
+      5,
+      24
+    ],
+    "H_financial_age": [
+      11199,
+      20,
+      30
+    ],
+    "H_governance_age": [
+      11199,
+      5,
+      24
+    ],
+    "H_financial_valid": [
+      11199,
+      20
+    ],
+    "H_governance_valid": [
+      11199,
+      5
+    ],
+    "H_financial_periods": [
+      11199,
+      20
+    ],
+    "H_governance_periods": [
+      11199,
+      5
+    ],
+    "X_financial": [
+      11199,
+      20,
+      30
+    ],
+    "X_governance": [
+      11199,
+      5,
+      24
+    ],
+    "X_financial_mask": [
+      11199,
+      20,
+      30
+    ],
+    "X_governance_mask": [
+      11199,
+      5,
+      24
+    ],
+    "X_financial_age": [
+      11199,
+      20,
+      30
+    ],
+    "X_governance_age": [
+      11199,
+      5,
+      24
+    ],
+    "history_available": [
+      11199
+    ],
+    "codes": [
+      11199
+    ],
+    "cutoffs": [
+      11199
+    ],
+    "years": [
+      11199
+    ],
+    "fold": [
+      11199
+    ],
+    "sample_index": [
+      11199
+    ],
+    "labels": [
+      11199
+    ],
+    "listing_dates": [
+      11199
+    ],
+    "feature_names": [
+      61
+    ],
+    "financial_indices": [
+      30
+    ],
+    "governance_indices": [
+      24
+    ]
+  },
+  "sample_identity_sha256": "5731649fb925c79f303d60933626ef6b225023f97f61cd75214846f452f1188b",
+  "data_integrity": "All 11199 annual samples retained; X copied from frozen cache"
+}

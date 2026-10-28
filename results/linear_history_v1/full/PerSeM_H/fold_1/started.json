@@ -1,0 +1,87 @@
+{
+  "identity": {
+    "fingerprint": "b6c223b41ddd506e9eaff9317dda7ffe944afbbf1c459cc30c7f67040b0999b8",
+    "experiment": "linear_history_v1",
+    "model": "PerSeM_H",
+    "scheme": "full",
+    "fold": 1,
+    "protocol_fingerprint": "b01d71c1555dac0c2832c1c816fa57273e9bc3e78a6576d834f4907d39f02f0a",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+      "fold": 1,
+      "numeric_sha256": "79530f49d67dfb3307b9003b16fdebdbda6b2e3321a39e2343d3318749d1505c",
+      "preprocessing_sha256": "603714216e2a1864ccf62b9487a793c3678ab124fe8e653b74e88305619a769b",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007662574803696,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+    "validation_indices_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+    "test_indices_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59",
+    "history_metadata_sha256": "d02961262f08978ca2808571c0c8dd2c60c9889012ff03c5f6d8e21d6ef435a2"
+  },
+  "config": {
+    "seed": 42,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dim": 64,
+    "depth": 2,
+    "dropout": 0.1,
+    "text_dim": 64,
+    "threshold": 0.5,
+    "gradient_clip": 1.0,
+    "bert_batch_size": 128,
+    "torch_threads": 6,
+    "auxiliary_loss_weight": 0.01,
+    "graph_microbatch_size": 16,
+    "max_optimizer_steps": 10500,
+    "validate_every_steps": 105,
+    "patience_checks": 15
+  },
+  "pos_weight": 12.882231404958677,
+  "split_statistics": {
+    "training": {
+      "windows": 6719,
+      "companies": 926,
+      "positives": 484,
+      "negatives": 6235,
+      "prevalence": 0.07203452894776008
+    },
+    "validation": {
+      "windows": 2240,
+      "companies": 309,
+      "positives": 161,
+      "negatives": 2079,
+      "prevalence": 0.071875
+    },
+    "test": {
+      "windows": 2240,
+      "companies": 308,
+      "positives": 161,
+      "negatives": 2079,
+      "prevalence": 0.071875
+    }
+  },
+  "feature_check": {
+    "train_n": 6719,
+    "validation_n": 2240,
+    "test_n": 2240,
+    "history_available": 4935,
+    "inner_counts": [
+      2239,
+      2240,
+      2240
+    ]
+  },
+  "predictor_metadata_fingerprint": "de651638aeb6828d17b4badff52e69ea6efeaea5d0a3d9b42614ad3cbe26b627",
+  "started_at": "2026-10-28T12:16:39Z",
+  "pid": 106,
+  "device": "cuda:0"
+}

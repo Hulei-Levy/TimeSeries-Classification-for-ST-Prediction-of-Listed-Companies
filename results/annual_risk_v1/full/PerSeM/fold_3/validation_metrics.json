@@ -1,0 +1,51 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.9450892857142857,
+  "precision": 0.5798319327731093,
+  "recall": 0.8571428571428571,
+  "f1": 0.6917293233082706,
+  "specificity": 0.9518999518999519,
+  "mcc": 0.6780959799741417,
+  "roc_auc": 0.9692219443772239,
+  "ap": 0.6968080275995252,
+  "brier": 0.04677982857820797,
+  "ece_10_bins": 0.06591294598142018,
+  "top_decile_capture": 0.8509316770186336,
+  "tn": 1979,
+  "fp": 100,
+  "fn": 23,
+  "tp": 138,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "a96dd397fd7669d349f054fa51c42c81409ccedd737db9c9e5afbf54391414c5",
+    "experiment": "annual_risk_v1",
+    "model": "PerSeM",
+    "scheme": "full",
+    "fold": 3,
+    "protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+      "fold": 3,
+      "numeric_sha256": "376ad58f81a9c46ae8ba7ccb3b101391af2cee3b123dfb1dd9e4e4fcaf9f9b1e",
+      "preprocessing_sha256": "0ff0b56fc71bdb6219ca02a7d1f1530a717d39a37eed946f3b103f125c4e2027",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007664069802434,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "selected_index_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+    "full_train_index_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+    "validation_index_sha256": "883b85492e66cd23f103438f30eec85e2c65295b7ea6f919762049756faabbd7",
+    "test_index_sha256": "a461781454845c7421d7f65e96c786442baf45b66333dda345b62ef5b8feb379",
+    "sampling_manifest_sha256": "d1c5d5c12aff145483bf885d649ee315f2f9b2aeb3a76659f68bd5e203294081"
+  },
+  "best_step": 735,
+  "checkpoint_selection": "maximum validation AP"
+}

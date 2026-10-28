@@ -1,0 +1,21 @@
+{
+  "python": "3.11.11 | packaged by conda-forge | (main, Dec  5 2024, 14:17:24) [GCC 13.3.0]",
+  "python_implementation": "CPython",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.35",
+  "package_versions": {
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.2",
+    "scikit-learn": "1.6.1",
+    "transformers": "4.48.3"
+  },
+  "torch_cuda_version": "12.4",
+  "cudnn_version": 90100,
+  "cuda_available": true,
+  "gpu_names": [
+    "NVIDIA GeForce RTX 3090",
+    "NVIDIA GeForce RTX 3090"
+  ],
+  "container_image": "huawei-q2-lhx:20260923",
+  "container_image_id": "sha256:079c1a319b52f1059cc6d2c22f3b0f41a619c7226aacdedb9a86830d6eb732cf",
+  "container_identity_source": "host-verified image identity supplied by experiment controller"
+}

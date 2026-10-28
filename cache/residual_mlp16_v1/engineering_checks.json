@@ -1,0 +1,34 @@
+{
+  "fingerprint": "11d4f6c904d6169420172d6f25459d55784d803d34cf72df7d44963f61e01bf3",
+  "checks": {
+    "PerSeM_R_MLP16": {
+      "passed": true,
+      "model": "PerSeM_R_MLP16",
+      "fold": 0,
+      "device": "cuda:1",
+      "examples": 64,
+      "parameters": 1406738,
+      "optimizer_steps": 1,
+      "feature_contract": {
+        "train_n": 6720,
+        "validation_n": 2240,
+        "test_n": 2239,
+        "history_available": 4935,
+        "inner_counts": [
+          2240,
+          2240,
+          2240
+        ]
+      },
+      "batch_invariance": true,
+      "empty_history_fallback": true,
+      "extra_bias_masked": true,
+      "full_correction_masked": true,
+      "nonlinear_interaction": 0.005929350852966309,
+      "frozen_predictor_features": true,
+      "text_and_extra_gradients": true,
+      "cuda_peak_reserved_bytes": 140509184,
+      "checked_at": "2026-10-28T13:37:49Z"
+    }
+  }
+}

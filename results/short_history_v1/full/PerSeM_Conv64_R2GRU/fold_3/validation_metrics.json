@@ -1,0 +1,50 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.946875,
+  "precision": 0.5921052631578947,
+  "recall": 0.8385093167701864,
+  "f1": 0.6940874035989717,
+  "specificity": 0.9552669552669553,
+  "mcc": 0.6780424486594591,
+  "roc_auc": 0.9598887424974382,
+  "ap": 0.720277694694297,
+  "brier": 0.047466121377197926,
+  "ece_10_bins": 0.07568635538586282,
+  "top_decile_capture": 0.8322981366459627,
+  "tn": 1986,
+  "fp": 93,
+  "fn": 26,
+  "tp": 135,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "25d485a2af51c5dd44ced574e18b47afcc4c809fcd39f6f608e59592a7e63582",
+    "experiment": "short_history_v1",
+    "model": "PerSeM_Conv64_R2GRU",
+    "scheme": "full",
+    "fold": 3,
+    "protocol_fingerprint": "ccf9187020a5ffde589711afae42d6561e59a5221c04ba42517a16b9e0d9ab69",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+      "fold": 3,
+      "numeric_sha256": "376ad58f81a9c46ae8ba7ccb3b101391af2cee3b123dfb1dd9e4e4fcaf9f9b1e",
+      "preprocessing_sha256": "0ff0b56fc71bdb6219ca02a7d1f1530a717d39a37eed946f3b103f125c4e2027",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007664069802434,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "train_indices_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+    "validation_indices_sha256": "883b85492e66cd23f103438f30eec85e2c65295b7ea6f919762049756faabbd7",
+    "test_indices_sha256": "a461781454845c7421d7f65e96c786442baf45b66333dda345b62ef5b8feb379",
+    "history_metadata_sha256": "03b41a7e33b2db08bdcf930d5c9cb153eceaf3f54b66b86d013a45a00d9f677c"
+  },
+  "best_step": 210,
+  "checkpoint_selection": "maximum validation AP; mean of three probabilities"
+}

@@ -1,0 +1,50 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.9392857142857143,
+  "precision": 0.5464684014869888,
+  "recall": 0.9130434782608695,
+  "f1": 0.6837209302325581,
+  "specificity": 0.9413179413179413,
+  "mcc": 0.6788320821242736,
+  "roc_auc": 0.9760127151431499,
+  "ap": 0.7280023108966949,
+  "brier": 0.05006388067113575,
+  "ece_10_bins": 0.06820764783146192,
+  "top_decile_capture": 0.8509316770186336,
+  "tn": 1957,
+  "fp": 122,
+  "fn": 14,
+  "tp": 147,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "2cb0879e4c97ac18f322d31e2c3587e380d9cda93ca201f74cc535974e77a7e4",
+    "experiment": "annual_risk_baselines_v1",
+    "model": "LightTS",
+    "scheme": "full",
+    "fold": 3,
+    "protocol_fingerprint": "b7114795190e5b0b0922d931aeec2eaf1033564344e9910a972ad6c960bc061d",
+    "parent_protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+      "fold": 3,
+      "numeric_sha256": "376ad58f81a9c46ae8ba7ccb3b101391af2cee3b123dfb1dd9e4e4fcaf9f9b1e",
+      "preprocessing_sha256": "0ff0b56fc71bdb6219ca02a7d1f1530a717d39a37eed946f3b103f125c4e2027",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007664069802434,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "train_index_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+    "validation_index_sha256": "883b85492e66cd23f103438f30eec85e2c65295b7ea6f919762049756faabbd7",
+    "test_index_sha256": "a461781454845c7421d7f65e96c786442baf45b66333dda345b62ef5b8feb379"
+  },
+  "best_step": 525,
+  "checkpoint_selection": "maximum validation AP"
+}

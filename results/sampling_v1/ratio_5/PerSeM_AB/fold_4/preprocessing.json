@@ -1,0 +1,613 @@
+{
+  "continuous": {
+    "F010101A": {
+      "median": 2.607093334197998,
+      "mean": 4.834625180820221,
+      "scale": 25.676024266301848,
+      "observed_count": 85988
+    },
+    "F010701B": {
+      "median": 6.813641309738159,
+      "mean": 114.93670465409645,
+      "scale": 3248.463349801322,
+      "observed_count": 45684
+    },
+    "F010201A": {
+      "median": 2.0454769134521484,
+      "mean": 4.12406593302761,
+      "scale": 25.44186808482456,
+      "observed_count": 85600
+    },
+    "F011701A": {
+      "median": 0.38670599460601807,
+      "mean": 0.5494709996444702,
+      "scale": 2.4306821073270455,
+      "observed_count": 85997
+    },
+    "F011201A": {
+      "median": 0.2790420353412628,
+      "mean": 0.3015084013477401,
+      "scale": 0.17054264086229176,
+      "observed_count": 85986
+    },
+    "F012301B": {
+      "median": 0.03249847888946533,
+      "mean": 0.09371713288776472,
+      "scale": 0.4731914135135469,
+      "observed_count": 79588
+    },
+    "F010401A": {
+      "median": 0.6586400270462036,
+      "mean": 2.0583865744118692,
+      "scale": 18.508559977161777,
+      "observed_count": 79808
+    },
+    "F011901A": {
+      "median": 0.0278795026242733,
+      "mean": 0.06945105243939974,
+      "scale": 0.09709238722384336,
+      "observed_count": 85997
+    },
+    "F030101A": {
+      "median": 0.6504939198493958,
+      "mean": 0.6411725366054866,
+      "scale": 0.16728232442543467,
+      "observed_count": 85988
+    },
+    "F031501A": {
+      "median": 0.9078876972198486,
+      "mean": 0.8531130089471579,
+      "scale": 0.1542715491912504,
+      "observed_count": 85986
+    },
+    "F040201B": {
+      "median": 1.8656939268112183,
+      "mean": 39.587380751060415,
+      "scale": 4210.8947316186295,
+      "observed_count": 79627
+    },
+    "F040501B": {
+      "median": 1.5149099826812744,
+      "mean": 31.1470692238626,
+      "scale": 1577.7747127028872,
+      "observed_count": 79165
+    },
+    "F041201B": {
+      "median": 0.4112984985113144,
+      "mean": 0.5250339921372713,
+      "scale": 0.470788020830912,
+      "observed_count": 79840
+    },
+    "F041401B": {
+      "median": 1.7748949527740479,
+      "mean": 4.3716235612628145,
+      "scale": 20.57382902541948,
+      "observed_count": 79804
+    },
+    "F041701B": {
+      "median": 0.25610604882240295,
+      "mean": 0.3141167312596295,
+      "scale": 0.2563063237616318,
+      "observed_count": 79849
+    },
+    "F041801B": {
+      "median": 0.37038490176200867,
+      "mean": 0.5121950924169163,
+      "scale": 0.9513490545765468,
+      "observed_count": 79846
+    },
+    "F040901B": {
+      "median": 0.6915588974952698,
+      "mean": 2.3984698456016806,
+      "scale": 45.70927517491146,
+      "observed_count": 76463
+    },
+    "F050501B": {
+      "median": 0.03379700146615505,
+      "mean": 0.039208312563251455,
+      "scale": 0.2626311977305853,
+      "observed_count": 79854
+    },
+    "F051401B": {
+      "median": 0.10676909983158112,
+      "mean": 0.06647263728483431,
+      "scale": 4.060254868692583,
+      "observed_count": 79866
+    },
+    "F050101B": {
+      "median": 0.028679417446255684,
+      "mean": 0.03701957592609717,
+      "scale": 0.050478194830286045,
+      "observed_count": 79857
+    },
+    "F050201B": {
+      "median": 0.02311999909579754,
+      "mean": 0.03012977751703511,
+      "scale": 0.04526000750834509,
+      "observed_count": 79857
+    },
+    "F051501B": {
+      "median": 0.09652289748191833,
+      "mean": 0.056406756825690504,
+      "scale": 4.058752411657819,
+      "observed_count": 79866
+    },
+    "F052101B": {
+      "median": 0.12198399752378464,
+      "mean": 0.15607019926045215,
+      "scale": 0.2645790295940761,
+      "observed_count": 47101
+    },
+    "F053201B": {
+      "median": 0.042055677622556686,
+      "mean": 0.05568148817679774,
+      "scale": 0.08054661508300665,
+      "observed_count": 79661
+    },
+    "F053401B": {
+      "median": 0.04996800050139427,
+      "mean": 0.11610068940276697,
+      "scale": 3.125511815016751,
+      "observed_count": 46987
+    },
+    "F080601A": {
+      "median": 0.043880999088287354,
+      "mean": 0.17964484222196664,
+      "scale": 0.4836746904298605,
+      "observed_count": 86365
+    },
+    "F081001B": {
+      "median": -0.05630099959671497,
+      "mean": 0.14889458684507614,
+      "scale": 31.031904487194854,
+      "observed_count": 69364
+    },
+    "F081601B": {
+      "median": 0.04075299948453903,
+      "mean": 0.1727859784207526,
+      "scale": 2.2756541424847345,
+      "observed_count": 79248
+    },
+    "F081201B": {
+      "median": -0.06519199907779694,
+      "mean": 0.5874151612870617,
+      "scale": 77.43701618831683,
+      "observed_count": 68040
+    },
+    "F082802A": {
+      "median": 0.016210505738854408,
+      "mean": 0.07618930504468653,
+      "scale": 0.476349583861985,
+      "observed_count": 86351
+    },
+    "AF_CFEATUREPROFILE-CompanySize": {
+      "median": 1357848064.0,
+      "mean": 2167607387.0178466,
+      "scale": 3950105889.2706766,
+      "observed_count": 75813
+    },
+    "CG_Agm-A0101b": {
+      "median": 8.0,
+      "mean": 8.731832317452419,
+      "scale": 3.1558136210244743,
+      "observed_count": 40195
+    },
+    "CG_Agm-A0201b": {
+      "median": 6.0,
+      "mean": 6.384183142559833,
+      "scale": 2.611520857696543,
+      "observed_count": 19220
+    },
+    "CG_Agm-A0301b": {
+      "median": 3.0,
+      "mean": 3.176018901358535,
+      "scale": 1.5849408903637792,
+      "observed_count": 40632
+    },
+    "CG_CommissionSta-StrategyCommitteeTimes": {
+      "median": 1.0,
+      "mean": 1.8834964716594582,
+      "scale": 1.5203433824303407,
+      "observed_count": 21965
+    },
+    "CG_CommissionSta-AuditCommitteeTimes": {
+      "median": 4.0,
+      "mean": 4.624917622248583,
+      "scale": 1.418046304394489,
+      "observed_count": 30348
+    },
+    "CG_CommissionSta-RemAssComMemberTimes": {
+      "median": 1.0,
+      "mean": 1.7706490285241836,
+      "scale": 1.0818423343105106,
+      "observed_count": 24190
+    },
+    "CG_ManagerShareSalary-Top3SumSalary": {
+      "median": 2377200.0,
+      "mean": 2926862.42922854,
+      "scale": 2737747.496614949,
+      "observed_count": 29159
+    },
+    "CG_ManagerShareSalary-Top3DirectorSumSalary": {
+      "median": 2031900.0,
+      "mean": 2483428.445302051,
+      "scale": 2471317.8113500495,
+      "observed_count": 29159
+    },
+    "CG_ManagerShareSalary-Top3SupervisorSumSalary": {
+      "median": 669700.0,
+      "mean": 790164.3297736297,
+      "scale": 600018.7842659042,
+      "observed_count": 29153
+    },
+    "CG_ManagerShareSalary-Top3ManageSumSalary": {
+      "median": 2212400.0,
+      "mean": 2712405.7867072,
+      "scale": 2595348.381325957,
+      "observed_count": 29153
+    },
+    "CG_ManagerShareSalary-DirectorHoldsharesNum": {
+      "median": 3.0,
+      "mean": 2.801325403568394,
+      "scale": 1.6916462078145307,
+      "observed_count": 29425
+    },
+    "CG_ManagerShareSalary-SupervisorHoldsharesNum": {
+      "median": 0.0,
+      "mean": 0.6431945624468989,
+      "scale": 0.924230598491948,
+      "observed_count": 29425
+    },
+    "HLD_CR-Shrcr1": {
+      "median": 30.75,
+      "mean": 32.74632573311404,
+      "scale": 13.726523643221846,
+      "observed_count": 75813
+    },
+    "HLD_CR-Shrz": {
+      "median": 3.062713146209717,
+      "mean": 7.092822013254722,
+      "scale": 18.866173494504586,
+      "observed_count": 75813
+    },
+    "HLD_CR-Shrhfd3": {
+      "median": 0.1201540008187294,
+      "mean": 0.14670254653669884,
+      "scale": 0.10402122858110842,
+      "observed_count": 75813
+    },
+    "HLD_CR-Shrhfd5": {
+      "median": 0.12324614077806473,
+      "mean": 0.1492503688670139,
+      "scale": 0.10306819012626606,
+      "observed_count": 75813
+    },
+    "HLD_CR-Shrhfd10": {
+      "median": 0.12447299808263779,
+      "mean": 0.15047793076469038,
+      "scale": 0.10249095624406865,
+      "observed_count": 75754
+    },
+    "HLD_CR-Shrs": {
+      "median": 27.979999542236328,
+      "mean": 27.930208680266347,
+      "scale": 13.078461952010016,
+      "observed_count": 75754
+    },
+    "EN_EquityNatureAll-LargestHolderRate": {
+      "median": 30.75,
+      "mean": 32.750519179446236,
+      "scale": 13.72674253493456,
+      "observed_count": 75813
+    },
+    "PT_LCRDSPENDING-RDPersonRatio": {
+      "median": 16.670000076293945,
+      "mean": 21.41495324454954,
+      "scale": 14.580143600067847,
+      "observed_count": 48813
+    },
+    "PT_LCRDSPENDING-RDSpendSumRatio": {
+      "median": 5.210000038146973,
+      "mean": 16.545797745043433,
+      "scale": 508.1513818106421,
+      "observed_count": 55298
+    },
+    "BDT_ManaGovAbil-Boardsize": {
+      "median": 9.0,
+      "mean": 8.066785927251043,
+      "scale": 1.456293155882087,
+      "observed_count": 75465
+    },
+    "BDT_ManaGovAbil-IndDirectorRatio": {
+      "median": 36.3636360168457,
+      "mean": 37.90143581744984,
+      "scale": 5.513845408201579,
+      "observed_count": 75465
+    }
+  },
+  "categorical": {
+    "AF_CFEATUREPROFILE-Big4": {
+      "vocabulary": [
+        0.0,
+        1.0
+      ],
+      "missing_index": 2,
+      "unseen_index": 3
+    },
+    "CG_Ybasic-Y0501b": {
+      "vocabulary": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "missing_index": 3,
+      "unseen_index": 4
+    },
+    "IC_EvaluationRepInfo-IsDisclosingEvaRep": {
+      "vocabulary": [
+        1.0,
+        2.0
+      ],
+      "missing_index": 2,
+      "unseen_index": 3
+    },
+    "IC_EvaluationRepInfo-IsDeficiency": {
+      "vocabulary": [
+        1.0,
+        2.0
+      ],
+      "missing_index": 2,
+      "unseen_index": 3
+    },
+    "IC_AuditRepInfo-IsDisclosingAuditRep": {
+      "vocabulary": [
+        1.0,
+        2.0
+      ],
+      "missing_index": 2,
+      "unseen_index": 3
+    },
+    "LA_SUMMARY-IsInvolvedLA": {
+      "vocabulary": [
+        0.0
+      ],
+      "missing_index": 1,
+      "unseen_index": 2
+    },
+    "BDT_ManaGovAbil-ContrshrNature": {
+      "vocabulary": [
+        0.0,
+        1.0
+      ],
+      "missing_index": 2,
+      "unseen_index": 3
+    }
+  },
+  "base_input_dimension": 207,
+  "fit_scope": "training companies only; observed valid window cells",
+  "modality_layout": {
+    "financial": {
+      "value_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "observed_indices": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "age_indices": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172
+      ]
+    },
+    "governance": {
+      "value_indices": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "observed_indices": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142
+      ],
+      "age_indices": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203
+      ]
+    },
+    "text_available_index": 204,
+    "text_age_index": 205,
+    "valid_index": 206
+  }
+}

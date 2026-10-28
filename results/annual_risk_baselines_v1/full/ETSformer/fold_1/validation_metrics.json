@@ -1,0 +1,50 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.9504464285714286,
+  "precision": 0.6288659793814433,
+  "recall": 0.7577639751552795,
+  "f1": 0.6873239436619718,
+  "specificity": 0.9653679653679653,
+  "mcc": 0.6640549947686235,
+  "roc_auc": 0.9545439607551409,
+  "ap": 0.7105498493233662,
+  "brier": 0.043345623989972895,
+  "ece_10_bins": 0.040482704932427234,
+  "top_decile_capture": 0.782608695652174,
+  "tn": 2007,
+  "fp": 72,
+  "fn": 39,
+  "tp": 122,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "91240bf7a22d6796282e1e032925bc7647356dfaee103602753e157dd2a8efd4",
+    "experiment": "annual_risk_baselines_v1",
+    "model": "ETSformer",
+    "scheme": "full",
+    "fold": 1,
+    "protocol_fingerprint": "b7114795190e5b0b0922d931aeec2eaf1033564344e9910a972ad6c960bc061d",
+    "parent_protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+      "fold": 1,
+      "numeric_sha256": "79530f49d67dfb3307b9003b16fdebdbda6b2e3321a39e2343d3318749d1505c",
+      "preprocessing_sha256": "603714216e2a1864ccf62b9487a793c3678ab124fe8e653b74e88305619a769b",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007662574803696,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "train_index_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+    "validation_index_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+    "test_index_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59"
+  },
+  "best_step": 1050,
+  "checkpoint_selection": "maximum validation AP"
+}

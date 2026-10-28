@@ -1,0 +1,370 @@
+{
+  "protocol": "annual-risk-v1:June30Y-to-FYY:5FY:company5:seed42",
+  "seed": 42,
+  "source_sha256": {
+    "data_annual_risk.py": "2a16d9169b198408d2a7965877d5ff9607d3011efc1d8afb5df66f19173a415c",
+    "data.py": "a940f7581bf1cc880ce09c07c21b0f98982d9f75a3a1f5de971890376b358771",
+    "datasets/annual_risk_v1/candidate_labels.parquet": "1ebfa14f35624c0c1dd7320f6313ecb3422a2f48e351ad20822a8fcc820ffd17",
+    "datasets/annual_risk_v1/amounts.parquet": "aa19a06cef1d9e534f7b3da5d6e2681d71613838f3f31ff9d2c448ba885ed16d",
+    "datasets/annual_risk_v1/audit.json": "a17d768a3060d0b8b75d5e0f8ad7f01ec3f5eebcf6ca5c4db78a40fb21701f90",
+    "cache/annual_risk_v1/preserved_identity.json": "235e157b0dbd64dfadabf4752400a8ba5fbce6aff57ee11bbdc6327ac9037f23",
+    "datasets/st_event_history/company_coverage.csv": "f15c8cbf519fe6e88ad89a04cda7ee5ccbe4dd0153560f1208ea6e9f35749130",
+    "datasets/supplement_2001_2019/features/enhanced_with_official_supplement/financial_combined_2001_onward.parquet": "f838a8ce73ce62f55f6ae29493b69394942ecd7d436d87119f2399cc951cc97c",
+    "datasets/supplement_2001_2019/features/enhanced_with_official_supplement/financial_features_long.parquet": "296508f338ba4296ae4306c1b0b5bda1c5735e95c990f51ff7d5bada35e91d15",
+    "datasets/supplement_2001_2019/assembled/governance_original_columns_2001_2023.parquet": "f3081b2706e5e88978151ba48b3e8b45cdb14a636ae005f5e1c161e7e37147ef",
+    "datasets/supplement_2001_2019/assembled/governance_core_cell_sources.parquet": "207beba82d96f11f6bca1892e104c4dc5a0cddd2360dc8e58236ca06cd0af2fd"
+  },
+  "artifact_sha256": {
+    "samples.npz": "066bc30e8331c179a6b5ada1bf78f28fa839e2929207d42012dc79e906c40e8f",
+    "samples.csv": "615067e1d6e13ffaa1f1ab5e4a26debb47e3ffe100bd74e67f5769e28d737853",
+    "documents.jsonl": "782682d0c5849a191e5f07dcbe2e85ffeae93de0b59d7eff600109aabd3330bd",
+    "carry_baseline.npz": "ac32fe4ed818be7db6813fcfce5aa5e9a9b839827052ff1153a8303f3b3a9159",
+    "carry_baseline.json": "1d7bcdecc57d9a1d03b12b61747c3280ab6caf293e82375ee90be17f5d42e18a",
+    "bert_manifest.json": "27112dc5e1cf855bae7ef6735e3f753417006d8a86c8338d15bb2170f7e672dd",
+    "fold_0.json": "fc16ea8c51cf8f4656e8dc7937451a8af16498ce8a952d3b77dd5ae5f9a2184e",
+    "fold_1.json": "09e81665688ddef87114f9e41e08219782d6765b0d32b9e80ab50ad2a2b888c9",
+    "fold_2.json": "a070a23c8bff65d463de0a475eb87a87f28d0167ba837a707cfb6760fe0b3463",
+    "fold_3.json": "d1c5d5c12aff145483bf885d649ee315f2f9b2aeb3a76659f68bd5e203294081",
+    "fold_4.json": "929b1fa3724b638a77b72339e11ce72c4af0c3aeeb25566cef71bc2fb764f48f"
+  },
+  "counts": {
+    "candidates": 11206,
+    "samples": 11199,
+    "positives": 806,
+    "unknown_excluded": 7,
+    "companies": 1543,
+    "documents": 21357
+  },
+  "audit": {
+    "fold_groups": [
+      {
+        "group": 0,
+        "samples": 2239,
+        "positives": 162,
+        "companies": 309
+      },
+      {
+        "group": 1,
+        "samples": 2240,
+        "positives": 161,
+        "companies": 308
+      },
+      {
+        "group": 2,
+        "samples": 2240,
+        "positives": 161,
+        "companies": 309
+      },
+      {
+        "group": 3,
+        "samples": 2240,
+        "positives": 161,
+        "companies": 309
+      },
+      {
+        "group": 4,
+        "samples": 2240,
+        "positives": 161,
+        "companies": 308
+      }
+    ],
+    "known_source_date_counts": {
+      "financial": 653302,
+      "governance": 86142
+    },
+    "late_masked_sample_positions": {
+      "financial_cells": 367276,
+      "governance_cells": 1188
+    },
+    "document_exclusions": {
+      "outside_roster": 90303
+    },
+    "old_intersection": {
+      "intersection_samples": 10721,
+      "new_samples": 478,
+      "checked": [
+        "values",
+        "ages",
+        "observed",
+        "valid_time",
+        "doc_ages",
+        "periods",
+        "semantic_doc_ids"
+      ],
+      "exact_equal": true,
+      "old_samples_sha256": "d6a48370b582de6eb3d3fbf9268147beca74806a287782c631f214b3b399cf54"
+    },
+    "fold_statistics": [
+      {
+        "full": {
+          "windows": 6720,
+          "companies": 926,
+          "positives": 483,
+          "negatives": 6237,
+          "prevalence": 0.071875
+        },
+        "ratio_3": {
+          "windows": 1932,
+          "companies": 886,
+          "positives": 483,
+          "negatives": 1449,
+          "prevalence": 0.25
+        },
+        "ratio_4": {
+          "windows": 2415,
+          "companies": 926,
+          "positives": 483,
+          "negatives": 1932,
+          "prevalence": 0.2
+        },
+        "validation": {
+          "windows": 2240,
+          "companies": 308,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        },
+        "test": {
+          "windows": 2239,
+          "companies": 309,
+          "positives": 162,
+          "negatives": 2077,
+          "prevalence": 0.07235372934345691
+        }
+      },
+      {
+        "full": {
+          "windows": 6719,
+          "companies": 926,
+          "positives": 484,
+          "negatives": 6235,
+          "prevalence": 0.07203452894776008
+        },
+        "ratio_3": {
+          "windows": 1936,
+          "companies": 884,
+          "positives": 484,
+          "negatives": 1452,
+          "prevalence": 0.25
+        },
+        "ratio_4": {
+          "windows": 2420,
+          "companies": 926,
+          "positives": 484,
+          "negatives": 1936,
+          "prevalence": 0.2
+        },
+        "validation": {
+          "windows": 2240,
+          "companies": 309,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        },
+        "test": {
+          "windows": 2240,
+          "companies": 308,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        }
+      },
+      {
+        "full": {
+          "windows": 6719,
+          "companies": 925,
+          "positives": 484,
+          "negatives": 6235,
+          "prevalence": 0.07203452894776008
+        },
+        "ratio_3": {
+          "windows": 1936,
+          "companies": 887,
+          "positives": 484,
+          "negatives": 1452,
+          "prevalence": 0.25
+        },
+        "ratio_4": {
+          "windows": 2420,
+          "companies": 925,
+          "positives": 484,
+          "negatives": 1936,
+          "prevalence": 0.2
+        },
+        "validation": {
+          "windows": 2240,
+          "companies": 309,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        },
+        "test": {
+          "windows": 2240,
+          "companies": 309,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        }
+      },
+      {
+        "full": {
+          "windows": 6719,
+          "companies": 926,
+          "positives": 484,
+          "negatives": 6235,
+          "prevalence": 0.07203452894776008
+        },
+        "ratio_3": {
+          "windows": 1936,
+          "companies": 880,
+          "positives": 484,
+          "negatives": 1452,
+          "prevalence": 0.25
+        },
+        "ratio_4": {
+          "windows": 2420,
+          "companies": 926,
+          "positives": 484,
+          "negatives": 1936,
+          "prevalence": 0.2
+        },
+        "validation": {
+          "windows": 2240,
+          "companies": 308,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        },
+        "test": {
+          "windows": 2240,
+          "companies": 309,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        }
+      },
+      {
+        "full": {
+          "windows": 6720,
+          "companies": 926,
+          "positives": 483,
+          "negatives": 6237,
+          "prevalence": 0.071875
+        },
+        "ratio_3": {
+          "windows": 1932,
+          "companies": 882,
+          "positives": 483,
+          "negatives": 1449,
+          "prevalence": 0.25
+        },
+        "ratio_4": {
+          "windows": 2415,
+          "companies": 926,
+          "positives": 483,
+          "negatives": 1932,
+          "prevalence": 0.2
+        },
+        "validation": {
+          "windows": 2239,
+          "companies": 309,
+          "positives": 162,
+          "negatives": 2077,
+          "prevalence": 0.07235372934345691
+        },
+        "test": {
+          "windows": 2240,
+          "companies": 308,
+          "positives": 161,
+          "negatives": 2079,
+          "prevalence": 0.071875
+        }
+      }
+    ],
+    "carry": {
+      "samples": 11199,
+      "coverage_count": 5,
+      "coverage": 0.000446468434681668,
+      "covered_positive_targets": 0,
+      "predicted_positive": 0,
+      "reasons": {
+        "no_decisive_original_version_in_window": 11194,
+        "decisive_verified_original_report": 5
+      },
+      "reference_age_years": {
+        "1": 1,
+        "2": 1,
+        "3": 1,
+        "4": 1,
+        "5": 1
+      },
+      "original_documents_sha256": {
+        "/data_disk/disk_1/hl/workspace/The_Latest_ST_Project/datasets/supplement_2001_2019/financial/official_supplement_600530_2011/2011_annual_report.pdf": "82f196f781d6a2a3309e88a130eff1048eb53a4db592dcbd946933e9d6cc7230"
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "eligible": 2239,
+          "covered": 5,
+          "positive_targets": 0
+        },
+        {
+          "fold": 1,
+          "eligible": 2240,
+          "covered": 0,
+          "positive_targets": 0
+        },
+        {
+          "fold": 2,
+          "eligible": 2240,
+          "covered": 0,
+          "positive_targets": 0
+        },
+        {
+          "fold": 3,
+          "eligible": 2240,
+          "covered": 0,
+          "positive_targets": 0
+        },
+        {
+          "fold": 4,
+          "eligible": 2240,
+          "covered": 0,
+          "positive_targets": 0
+        }
+      ],
+      "interpretation": "Strict version-verifiable continuation only; abstention is not nonrisk. No positive coverage means no evidence of risk detection."
+    },
+    "bert": {
+      "reused": 20400,
+      "new": 957,
+      "total": 21357
+    },
+    "comparison_eligible": {
+      "financial": {
+        "windows": 9713,
+        "positives": 782
+      },
+      "governance": {
+        "windows": 9712,
+        "positives": 781
+      },
+      "text": {
+        "windows": 9711,
+        "positives": 782
+      }
+    }
+  },
+  "point_in_time_verified": false,
+  "label": "Annual consolidated audited RiskY=(NPY<0 and NPY-1<0) or equityY<0; three-valued unknown excluded from training; repeated risk included.",
+  "target": "June30Y forecasts fiscal-year Y; Y=2006..2024.",
+  "sequence": "20 reporting-quarter nodes in Y-5..Y-1. Node is report period, not a historic real-time forecast. No source before window or IPO.",
+  "availability": "max(report period +6 calendar months, known publication)<=sample cutoff. Original input vintages unverified; proxy does not establish real-time validity.",
+  "ages": "Quarters from source reporting period to prediction cutoff, not actual publication age. Latest prior-year Q4=2; earliest Q1=21; missing=0 with mask.",
+  "missingness": "No financial forward fill; normal annual governance and semiannual text holding only. Missing scheduled report/field resets. No imputation/scaling here.",
+  "cross_validation": "Five company groups rebalanced on annual labels; test=k, validation=(k+1)%5, training remaining3. No out-of-time claim.",
+  "sampling": "Full/1:3/1:4; all positives; strict same year; least-contributing negative company then size softmatch; no replacement; ratio3 first3of4; no future ST exclusion.",
+  "preprocessing": "Fit on original full fold training pool; actual selected N/P loss weight. Ex-post transition fields are for evaluation only.",
+  "cohort": "Uploaded company roster, not market-wide representative prevalence.",
+  "carry": "Only verifiable original reporting versions with decisive legal-window information; abstain otherwise. Five covered nonrisk rows cannot assess risk detection."
+}

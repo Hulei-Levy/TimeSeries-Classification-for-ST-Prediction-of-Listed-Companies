@@ -1,0 +1,208 @@
+{
+  "fingerprint": "b01d71c1555dac0c2832c1c816fa57273e9bc3e78a6576d834f4907d39f02f0a",
+  "design": {
+    "experiment": "linear_history_v1",
+    "version": 1,
+    "models": [
+      "PerSeM_H",
+      "PerSeM_R"
+    ],
+    "expected_fits": 10,
+    "reused_reference_fits": 5,
+    "task": "June30 Y predicts annual risk Y; unchanged annual_risk_v1 cohort, full company-fold training",
+    "historical_periods": "H=Y-10..Y-6, X=Y-5..Y-1; historical-period reference, not a claim of a forecast issued before X",
+    "reconstruction": "54 numeric variables; finance Linear60to20, governance Linear15to5; values/masks/report ages",
+    "predictor": "three inner company-group cross-fitted masked ridge predictors; lambda=0.0001; no classifier gradient",
+    "classification": "base PerSeM absolute64 LayerNorm; extra Linear2160to64; concatenate then Linear128to1",
+    "inference": "H one feature view; R training uses own excluded inner model, validation/test mean of three probabilities",
+    "extra_missing": "whole extra projection including bias is zero when unavailable",
+    "selection": "unchanged validation AP, 10500 max updates / 105 validation interval / 15 stale checks, threshold0.5",
+    "scope": "no new contrastive loss, no sampling, no probability trajectory generator; no original files modified"
+  },
+  "parent_protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+  "parent_protocol_sha256": "64961f16d50da879f6024fe841aa2b0c3d5f91b5e4961fcab0f94cc27347a6fe",
+  "config": {
+    "seed": 42,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dim": 64,
+    "depth": 2,
+    "dropout": 0.1,
+    "text_dim": 64,
+    "threshold": 0.5,
+    "gradient_clip": 1.0,
+    "bert_batch_size": 128,
+    "torch_threads": 6,
+    "auxiliary_loss_weight": 0.01,
+    "graph_microbatch_size": 16,
+    "max_optimizer_steps": 10500,
+    "validate_every_steps": 105,
+    "patience_checks": 15
+  },
+  "preprocessing": {
+    "0": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "1271c24079ed9facbb3859f7c639dda90817ca76ded94919b97a634f15d3f403",
+      "fold": 0,
+      "numeric_sha256": "eed038e5a0b73bbe5547080f8e041e0baded035b0c3a2f968d015745be286949",
+      "preprocessing_sha256": "bee2ea2cdf03532745e63a19728c209bd02417de998a407efb7e55a7e548d2cd",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007661955804219,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "1": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+      "fold": 1,
+      "numeric_sha256": "79530f49d67dfb3307b9003b16fdebdbda6b2e3321a39e2343d3318749d1505c",
+      "preprocessing_sha256": "603714216e2a1864ccf62b9487a793c3678ab124fe8e653b74e88305619a769b",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007662574803696,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "2": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "d4cc4844880b2d9bc85fd2a37dbcc7d0c1753131dd07e6fff0d7d58f4d612cc8",
+      "fold": 2,
+      "numeric_sha256": "fd9c4e98da468aeb5e548950f06ee21920f9e9db43b6221a270c081f747bdb3f",
+      "preprocessing_sha256": "bb64e192e24703dd9ed6997a4a1a246d42882cb3df49741f897bdb44de79d079",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007663261803116,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "3": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+      "fold": 3,
+      "numeric_sha256": "376ad58f81a9c46ae8ba7ccb3b101391af2cee3b123dfb1dd9e4e4fcaf9f9b1e",
+      "preprocessing_sha256": "0ff0b56fc71bdb6219ca02a7d1f1530a717d39a37eed946f3b103f125c4e2027",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007664069802434,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "4": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "95fee8f15e058fdd497e70f50790eec43cff1558cf8d81620fe00b56b4d53859",
+      "fold": 4,
+      "numeric_sha256": "a3ed3215c60c7c7781914f4b68ddd9b0f7d689cf932701521ccc27e8041e29ee",
+      "preprocessing_sha256": "13fcd30f2fcc6a91006a767e0fc229e4ec4c71f09e64e19594983359ef749884",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007664937801704,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    }
+  },
+  "source_sha256": {
+    "run_linear_history.py": "720d9faec70b977235a8ce639e2133e27c96efdfb1195482156cd2de828ebbd6",
+    "data_linear_history.py": "e2473264c1c4091465b0897d41b82380c030b8ca0a25acb335656cb98231c204",
+    "run_annual_risk.py": "28798d3dddd92a7888abbe39ffde65e73967e2e3881984b3a83a1f9be09251ee",
+    "run_annual_baselines.py": "83c422cbe93cd182285107ff0e408630537cab65fc12d1b6c0d2432d1c31e4a2",
+    "data_annual_risk.py": "2a16d9169b198408d2a7965877d5ff9607d3011efc1d8afb5df66f19173a415c",
+    "run.py": "9a3ab69a895b95e8df92b7fa3ac970939f2149a89e2712a6ab858aa2f6d20ec2",
+    "run_persem.py": "3f1c824f10e95a3bbb718fbf6fcb5ddbab943b011ecb3c3c8aa62e06c97a2325",
+    "models_persem.py": "96c8751a3adf8bfac459ce459ab5483f265ce6fd02149849e7469e7c3a3ac921",
+    "data.py": "a940f7581bf1cc880ce09c07c21b0f98982d9f75a3a1f5de971890376b358771",
+    "config.json": "c50261e640891e166535a387a3225f7c143ec816f1431376f7a81aec8e613b9d"
+  },
+  "history_artifacts": {
+    "cache/linear_history_v1/raw.npz": "907af2e2ac8fe820a7c0af5144de4ef7cc7457f802c2e925694b1bcbdae12fa4",
+    "cache/linear_history_v1/raw_manifest.json": "ef96585758f5988cbea2534b14a4bb085d91ea891a211b92d9a144c7f1c59e23",
+    "cache/linear_history_v1/fold_0/features.npz": "88aff174d84cdc3827ca9875317c635f54b15c3e34f869ebcca96193a671b076",
+    "cache/linear_history_v1/fold_0/models.npz": "ad1462b3503976f2868be009ac5bb6db8c85f4a9fbba8d1c5ed28f96fdaf4abd",
+    "cache/linear_history_v1/fold_0/metadata.json": "dd8e9bc4849b3a09b36ba54a0e31f85a55015381f2451a920b7c5895e1e6deba",
+    "cache/linear_history_v1/fold_1/features.npz": "29103acd1539898695e49fa9bbe4477c9bfa86708e1c3588fd799503a8be4193",
+    "cache/linear_history_v1/fold_1/models.npz": "2b87ba7aa74e3583da03c1a259f4ab9facd00998c8463f3f973ed9b4e9f4180a",
+    "cache/linear_history_v1/fold_1/metadata.json": "d02961262f08978ca2808571c0c8dd2c60c9889012ff03c5f6d8e21d6ef435a2",
+    "cache/linear_history_v1/fold_2/features.npz": "3fb7da239480804a20659e6f35271bbc5682ba85c17cd0f1e2e90a191f86c0d3",
+    "cache/linear_history_v1/fold_2/models.npz": "4d31d163025fbbf65efc278cd852deb93493442820f7c5ac95a398cfe7535d00",
+    "cache/linear_history_v1/fold_2/metadata.json": "27bd1a2e714d135c48cac50951b8b66546625cd87501d68e0e489465794381db",
+    "cache/linear_history_v1/fold_3/features.npz": "f36824408e83ebe2b97c50f9d8d5e989b2320b425dbbfd44a977673cf4e00787",
+    "cache/linear_history_v1/fold_3/models.npz": "b27ab3d9c2de7860d6cbd5d227bc2481af04f81a91dfe6dce58f4f3849af9049",
+    "cache/linear_history_v1/fold_3/metadata.json": "61a2f5f908b111c5c490b2914e4896e44d203b0c9fc016328d10765d9dd88c86",
+    "cache/linear_history_v1/fold_4/features.npz": "7b454d4fd93db6fe73a0b9173599336a0fbb7e607576c952d198762b46ea416a",
+    "cache/linear_history_v1/fold_4/models.npz": "3168ab9072ea8fee51b85416aa9244788c6d7a813536fe622c2ad55c5fb42839",
+    "cache/linear_history_v1/fold_4/metadata.json": "73188cc98b8231281e320b069d2c7164c632e36b16f1e3472d170dc1fd92b6d5"
+  },
+  "data_identity": {
+    "protocol": "annual-risk-v1:June30Y-to-FYY:5FY:company5:seed42",
+    "manifest_sha256": "f6572d05d3979764f0baa2a79be1a029a6eebc7eb7991740c6b76479cc4de999",
+    "artifacts": {
+      "samples.npz": "066bc30e8331c179a6b5ada1bf78f28fa839e2929207d42012dc79e906c40e8f",
+      "samples.csv": "615067e1d6e13ffaa1f1ab5e4a26debb47e3ffe100bd74e67f5769e28d737853",
+      "documents.jsonl": "782682d0c5849a191e5f07dcbe2e85ffeae93de0b59d7eff600109aabd3330bd",
+      "carry_baseline.npz": "ac32fe4ed818be7db6813fcfce5aa5e9a9b839827052ff1153a8303f3b3a9159",
+      "carry_baseline.json": "1d7bcdecc57d9a1d03b12b61747c3280ab6caf293e82375ee90be17f5d42e18a",
+      "bert_manifest.json": "27112dc5e1cf855bae7ef6735e3f753417006d8a86c8338d15bb2170f7e672dd",
+      "fold_0.json": "fc16ea8c51cf8f4656e8dc7937451a8af16498ce8a952d3b77dd5ae5f9a2184e",
+      "fold_1.json": "09e81665688ddef87114f9e41e08219782d6765b0d32b9e80ab50ad2a2b888c9",
+      "fold_2.json": "a070a23c8bff65d463de0a475eb87a87f28d0167ba837a707cfb6760fe0b3463",
+      "fold_3.json": "d1c5d5c12aff145483bf885d649ee315f2f9b2aeb3a76659f68bd5e203294081",
+      "fold_4.json": "929b1fa3724b638a77b72339e11ce72c4af0c3aeeb25566cef71bc2fb764f48f"
+    },
+    "sources": {
+      "data_annual_risk.py": "2a16d9169b198408d2a7965877d5ff9607d3011efc1d8afb5df66f19173a415c",
+      "data.py": "a940f7581bf1cc880ce09c07c21b0f98982d9f75a3a1f5de971890376b358771",
+      "datasets/annual_risk_v1/candidate_labels.parquet": "1ebfa14f35624c0c1dd7320f6313ecb3422a2f48e351ad20822a8fcc820ffd17",
+      "datasets/annual_risk_v1/amounts.parquet": "aa19a06cef1d9e534f7b3da5d6e2681d71613838f3f31ff9d2c448ba885ed16d",
+      "datasets/annual_risk_v1/audit.json": "a17d768a3060d0b8b75d5e0f8ad7f01ec3f5eebcf6ca5c4db78a40fb21701f90",
+      "cache/annual_risk_v1/preserved_identity.json": "235e157b0dbd64dfadabf4752400a8ba5fbce6aff57ee11bbdc6327ac9037f23",
+      "datasets/st_event_history/company_coverage.csv": "f15c8cbf519fe6e88ad89a04cda7ee5ccbe4dd0153560f1208ea6e9f35749130",
+      "datasets/supplement_2001_2019/features/enhanced_with_official_supplement/financial_combined_2001_onward.parquet": "f838a8ce73ce62f55f6ae29493b69394942ecd7d436d87119f2399cc951cc97c",
+      "datasets/supplement_2001_2019/features/enhanced_with_official_supplement/financial_features_long.parquet": "296508f338ba4296ae4306c1b0b5bda1c5735e95c990f51ff7d5bada35e91d15",
+      "datasets/supplement_2001_2019/assembled/governance_original_columns_2001_2023.parquet": "f3081b2706e5e88978151ba48b3e8b45cdb14a636ae005f5e1c161e7e37147ef",
+      "datasets/supplement_2001_2019/assembled/governance_core_cell_sources.parquet": "207beba82d96f11f6bca1892e104c4dc5a0cddd2360dc8e58236ca06cd0af2fd"
+    },
+    "bert": {
+      "manifest_sha256": "27112dc5e1cf855bae7ef6735e3f753417006d8a86c8338d15bb2170f7e672dd",
+      "embeddings_sha256": "2da2dbdfe65b4565b6d3b67cffc84064c22af68a15d6a660cca498babf392714",
+      "complete_sha256": "e9976a4409b994e3d3ab7a57d2637ed5b9ff054936db8c0b27da03ea6cfea65e"
+    }
+  },
+  "runtime_environment": {
+    "python": "3.11.11 | packaged by conda-forge | (main, Dec  5 2024, 14:17:24) [GCC 13.3.0]",
+    "python_implementation": "CPython",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.35",
+    "package_versions": {
+      "torch": "2.6.0+cu124",
+      "numpy": "2.2.2",
+      "scikit-learn": "1.6.1",
+      "transformers": "4.48.3"
+    },
+    "torch_cuda_version": "12.4",
+    "cudnn_version": 90100,
+    "cuda_available": true,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ],
+    "container_image": "huawei-q2-lhx:20260923",
+    "container_image_id": "sha256:079c1a319b52f1059cc6d2c22f3b0f41a619c7226aacdedb9a86830d6eb732cf",
+    "container_identity_source": "host-verified image identity supplied by experiment controller"
+  },
+  "preserved_identity_sha256": "daac78d89ef6f8175ed8433fdced4f596652dd0ceaa2d651dee329e6fbb1ed7c"
+}

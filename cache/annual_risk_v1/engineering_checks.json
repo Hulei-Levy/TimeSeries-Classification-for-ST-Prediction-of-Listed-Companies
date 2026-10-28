@@ -1,0 +1,278 @@
+{
+  "fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+  "checks": {
+    "ratio_3:FinancialLR": {
+      "passed": true,
+      "model": "FinancialLR",
+      "scheme": "ratio_3",
+      "fold": 0,
+      "examples": 8,
+      "input_dimension": 1800,
+      "converged": true,
+      "solver_iterations": 22,
+      "checked_at": "2026-10-26T09:42:09Z"
+    },
+    "full:FinancialLR": {
+      "passed": true,
+      "model": "FinancialLR",
+      "scheme": "full",
+      "fold": 0,
+      "examples": 8,
+      "input_dimension": 1800,
+      "converged": true,
+      "solver_iterations": 23,
+      "checked_at": "2026-10-26T09:42:09Z"
+    },
+    "full:PerSeM": {
+      "passed": true,
+      "model": "PerSeM",
+      "scheme": "full",
+      "fold": 0,
+      "device": "cuda:0",
+      "examples": 8,
+      "parameters": 1369537,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": null,
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:14Z"
+    },
+    "ratio_3:PerSeM": {
+      "passed": true,
+      "model": "PerSeM",
+      "scheme": "ratio_3",
+      "fold": 0,
+      "device": "cuda:1",
+      "examples": 8,
+      "parameters": 1369537,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": null,
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:14Z"
+    },
+    "full:PerSeM_AB": {
+      "passed": true,
+      "model": "PerSeM_AB",
+      "scheme": "full",
+      "fold": 0,
+      "device": "cuda:0",
+      "examples": 8,
+      "parameters": 5176978,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": [
+          0,
+          1,
+          3
+        ],
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:15Z"
+    },
+    "ratio_3:PerSeM_AB": {
+      "passed": true,
+      "model": "PerSeM_AB",
+      "scheme": "ratio_3",
+      "fold": 0,
+      "device": "cuda:1",
+      "examples": 8,
+      "parameters": 5176978,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": [
+          0,
+          1,
+          3
+        ],
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:15Z"
+    },
+    "full:PerSeM_ABC": {
+      "passed": true,
+      "model": "PerSeM_ABC",
+      "scheme": "full",
+      "fold": 0,
+      "device": "cuda:0",
+      "examples": 8,
+      "parameters": 8923170,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": [
+          0,
+          1,
+          3
+        ],
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:17Z"
+    },
+    "ratio_3:PerSeM_ABC": {
+      "passed": true,
+      "model": "PerSeM_ABC",
+      "scheme": "ratio_3",
+      "fold": 0,
+      "device": "cuda:1",
+      "examples": 8,
+      "parameters": 8923170,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": [
+          0,
+          1,
+          3
+        ],
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:17Z"
+    },
+    "ratio_4:FinancialLR": {
+      "passed": true,
+      "model": "FinancialLR",
+      "scheme": "ratio_4",
+      "fold": 0,
+      "examples": 8,
+      "input_dimension": 1800,
+      "converged": true,
+      "solver_iterations": 34,
+      "checked_at": "2026-10-26T09:42:21Z"
+    },
+    "ratio_4:PerSeM": {
+      "passed": true,
+      "model": "PerSeM",
+      "scheme": "ratio_4",
+      "fold": 0,
+      "device": "cuda:0",
+      "examples": 8,
+      "parameters": 1369537,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": null,
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:22Z"
+    },
+    "ratio_4:PerSeM_AB": {
+      "passed": true,
+      "model": "PerSeM_AB",
+      "scheme": "ratio_4",
+      "fold": 0,
+      "device": "cuda:0",
+      "examples": 8,
+      "parameters": 5176978,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": [
+          0,
+          1,
+          3
+        ],
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:23Z"
+    },
+    "ratio_4:PerSeM_ABC": {
+      "passed": true,
+      "model": "PerSeM_ABC",
+      "scheme": "ratio_4",
+      "fold": 0,
+      "device": "cuda:0",
+      "examples": 8,
+      "parameters": 8923170,
+      "optimizer_steps": 1,
+      "positive_exposures": 4,
+      "batch_invariance": true,
+      "boundary_checks": {
+        "history_candidate_counts": [
+          0,
+          1,
+          3
+        ],
+        "missing_current_year": true,
+        "missing_modalities": [
+          "financial",
+          "governance",
+          "text",
+          "all"
+        ],
+        "finite_gradients": true
+      },
+      "checked_at": "2026-10-26T09:42:25Z"
+    }
+  }
+}

@@ -1,0 +1,4836 @@
+{
+  "n": 2145,
+  "positive": 20,
+  "prevalence": 0.009324009324009324,
+  "accuracy": 0.8456876456876457,
+  "precision": 0.03582089552238806,
+  "recall": 0.6,
+  "f1": 0.0676056338028169,
+  "specificity": 0.848,
+  "mcc": 0.11860712751260895,
+  "roc_auc": 0.7643058823529412,
+  "ap": 0.037726507753107055,
+  "brier": 0.11286478750024334,
+  "ece_10_bins": 0.26761930718983246,
+  "top_decile_capture": 0.55,
+  "tn": 1802,
+  "fp": 323,
+  "fn": 8,
+  "tp": 12,
+  "threshold": 0.5,
+  "experiment": "sampled_baselines_v1",
+  "model": "TimesNet",
+  "fold": 3,
+  "sampling_ratio": 5,
+  "fingerprint": "deb06ddfe498d32a6251745c29d223153aea798b8025a6a51278d518d02edd96",
+  "baseline_fingerprint": "aa08df924ec57cc2ba83c54de2d58d8b1faf1901467844f3d626d5c2a0e3a50a",
+  "best_epoch": 3,
+  "best_validation_ap": 0.06210455378038173,
+  "parameters": 1331713,
+  "seconds": 6.54,
+  "training_seed": 42,
+  "pos_weight": 5.0,
+  "sampling": {
+    "company_repetition": {
+      "companies_with_multiple_selected_windows": 19,
+      "maximum_negative_windows_per_company": 1,
+      "maximum_total_windows_per_company": 2,
+      "negative_company_cap": 1,
+      "positive_companies_are_not_excluded_from_earlier_negative_candidates": true,
+      "positive_negative_company_overlap": 19,
+      "unique_negative_companies": 300
+    },
+    "dataset_sha256": "d6a48370b582de6eb3d3fbf9268147beca74806a287782c631f214b3b399cf54",
+    "fold": 3,
+    "index_sha256": {
+      "test": "16f8d8170f836ecf4ab75d434d600056bcfdb45f4b2b356227e6d90ae03779f4",
+      "train_full": "cf89acbb98d8258c9febf28298ccc80a65a803b222108091ba5a4f8e34f0b2fc",
+      "train_selected": "7ba0f1862252230a38ee4505eac4d2a697c631a02cc68adc4322338d775094e2",
+      "validation": "2f768c5cfeabef0e624bd7f7f1bfbfd6faefb9dc7523fdcad12fe427e9840ce4"
+    },
+    "matched_positives": [
+      {
+        "controls": [
+          {
+            "code": "300423",
+            "cutoff": "2020-06-30",
+            "distance": 0.0020175624148244253,
+            "in_ratio3": true,
+            "sample_index": 5283,
+            "size": 6851514368.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5772,
+            "year": 2020
+          },
+          {
+            "code": "002675",
+            "cutoff": "2020-06-30",
+            "distance": 0.014747651294765518,
+            "in_ratio3": true,
+            "sample_index": 2086,
+            "size": 6967349760.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 277,
+            "year": 2020
+          },
+          {
+            "code": "300190",
+            "cutoff": "2020-06-30",
+            "distance": 0.049352426119597226,
+            "in_ratio3": true,
+            "sample_index": 3923,
+            "size": 7212673536.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3672,
+            "year": 2020
+          },
+          {
+            "code": "000901",
+            "cutoff": "2020-06-30",
+            "distance": 0.055374912078217875,
+            "in_ratio3": false,
+            "sample_index": 124,
+            "size": 6495517696.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1919,
+            "year": 2020
+          },
+          {
+            "code": "603818",
+            "cutoff": "2020-06-30",
+            "distance": 0.05957727899678389,
+            "in_ratio3": false,
+            "sample_index": 9261,
+            "size": 7286800384.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2718,
+            "year": 2020
+          }
+        ],
+        "positive": {
+          "code": "000523",
+          "cutoff": "2020-06-30",
+          "sample_index": 14,
+          "size": 6865351680.0,
+          "size_available": true,
+          "year": 2020
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "600557",
+            "cutoff": "2008-06-30",
+            "distance": 0.017658083720828444,
+            "in_ratio3": true,
+            "sample_index": 7942,
+            "size": 938457088.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3715,
+            "year": 2008
+          },
+          {
+            "code": "002099",
+            "cutoff": "2008-06-30",
+            "distance": 0.03171409274546022,
+            "in_ratio3": true,
+            "sample_index": 406,
+            "size": 925358400.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 127,
+            "year": 2008
+          },
+          {
+            "code": "002041",
+            "cutoff": "2008-06-30",
+            "distance": 0.0907327961163027,
+            "in_ratio3": true,
+            "sample_index": 262,
+            "size": 872325312.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3317,
+            "year": 2008
+          },
+          {
+            "code": "600211",
+            "cutoff": "2008-06-30",
+            "distance": 0.09077945869633197,
+            "in_ratio3": false,
+            "sample_index": 7593,
+            "size": 872284608.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4615,
+            "year": 2008
+          },
+          {
+            "code": "600222",
+            "cutoff": "2008-06-30",
+            "distance": 0.1597055285302993,
+            "in_ratio3": false,
+            "sample_index": 7612,
+            "size": 814186688.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5958,
+            "year": 2008
+          }
+        ],
+        "positive": {
+          "code": "000955",
+          "cutoff": "2008-06-30",
+          "sample_index": 150,
+          "size": 955175616.0,
+          "size_available": true,
+          "year": 2008
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002190",
+            "cutoff": "2013-06-30",
+            "distance": 0.0004306814731656061,
+            "in_ratio3": true,
+            "sample_index": 655,
+            "size": 2694460160.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 143,
+            "year": 2013
+          },
+          {
+            "code": "600186",
+            "cutoff": "2013-06-30",
+            "distance": 0.0896743396427162,
+            "in_ratio3": true,
+            "sample_index": 7573,
+            "size": 2948518656.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1864,
+            "year": 2013
+          },
+          {
+            "code": "002096",
+            "cutoff": "2013-06-30",
+            "distance": 0.1129564197527344,
+            "in_ratio3": true,
+            "sample_index": 393,
+            "size": 2407700480.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4129,
+            "year": 2013
+          },
+          {
+            "code": "002456",
+            "cutoff": "2013-06-30",
+            "distance": 0.12422446206965532,
+            "in_ratio3": false,
+            "sample_index": 1461,
+            "size": 2380722688.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2857,
+            "year": 2013
+          },
+          {
+            "code": "601798",
+            "cutoff": "2013-06-30",
+            "distance": 0.13222502727402485,
+            "in_ratio3": false,
+            "sample_index": 8106,
+            "size": 2361751552.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6083,
+            "year": 2013
+          }
+        ],
+        "positive": {
+          "code": "002006",
+          "cutoff": "2013-06-30",
+          "sample_index": 205,
+          "size": 2695620864.0,
+          "size_available": true,
+          "year": 2013
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002090",
+            "cutoff": "2021-06-30",
+            "distance": 0.0030766520814147214,
+            "in_ratio3": true,
+            "sample_index": 365,
+            "size": 3716258560.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5055,
+            "year": 2021
+          },
+          {
+            "code": "603466",
+            "cutoff": "2021-06-30",
+            "distance": 0.009604886203582907,
+            "in_ratio3": true,
+            "sample_index": 8809,
+            "size": 3740598528.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 180,
+            "year": 2021
+          },
+          {
+            "code": "300439",
+            "cutoff": "2021-06-30",
+            "distance": 0.009674759210959394,
+            "in_ratio3": true,
+            "sample_index": 5363,
+            "size": 3740859904.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2039,
+            "year": 2021
+          },
+          {
+            "code": "300120",
+            "cutoff": "2021-06-30",
+            "distance": 0.009761739442854633,
+            "in_ratio3": false,
+            "sample_index": 3602,
+            "size": 3668852736.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4908,
+            "year": 2021
+          },
+          {
+            "code": "300048",
+            "cutoff": "2021-06-30",
+            "distance": 0.013427784449543623,
+            "in_ratio3": false,
+            "sample_index": 3198,
+            "size": 3754925824.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1700,
+            "year": 2021
+          }
+        ],
+        "positive": {
+          "code": "002022",
+          "cutoff": "2021-06-30",
+          "sample_index": 221,
+          "size": 3704842496.0,
+          "size_available": true,
+          "year": 2021
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300095",
+            "cutoff": "2013-06-30",
+            "distance": 0.0022586183290087547,
+            "in_ratio3": true,
+            "sample_index": 3470,
+            "size": 868568960.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 457,
+            "year": 2013
+          },
+          {
+            "code": "000790",
+            "cutoff": "2013-06-30",
+            "distance": 0.00495800042640937,
+            "in_ratio3": true,
+            "sample_index": 60,
+            "size": 862323392.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6,
+            "year": 2013
+          },
+          {
+            "code": "002253",
+            "cutoff": "2013-06-30",
+            "distance": 0.008589396751069955,
+            "in_ratio3": true,
+            "sample_index": 902,
+            "size": 874085120.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2034,
+            "year": 2013
+          },
+          {
+            "code": "002104",
+            "cutoff": "2013-06-30",
+            "distance": 0.016774484202560558,
+            "in_ratio3": false,
+            "sample_index": 428,
+            "size": 852193728.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4631,
+            "year": 2013
+          },
+          {
+            "code": "002599",
+            "cutoff": "2013-06-30",
+            "distance": 0.017769626885382195,
+            "in_ratio3": false,
+            "sample_index": 1905,
+            "size": 882146368.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5133,
+            "year": 2013
+          }
+        ],
+        "positive": {
+          "code": "002134",
+          "cutoff": "2013-06-30",
+          "sample_index": 513,
+          "size": 866609408.0,
+          "size_available": true,
+          "year": 2013
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300383",
+            "cutoff": "2018-06-30",
+            "distance": 0.0031534576672456183,
+            "in_ratio3": true,
+            "sample_index": 5067,
+            "size": 8917623808.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 270,
+            "year": 2018
+          },
+          {
+            "code": "300317",
+            "cutoff": "2018-06-30",
+            "distance": 0.019200857663069115,
+            "in_ratio3": true,
+            "sample_index": 4693,
+            "size": 9061882880.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1988,
+            "year": 2018
+          },
+          {
+            "code": "300017",
+            "cutoff": "2018-06-30",
+            "distance": 0.02585516402152166,
+            "in_ratio3": true,
+            "sample_index": 2982,
+            "size": 8662651904.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1129,
+            "year": 2018
+          },
+          {
+            "code": "002672",
+            "cutoff": "2018-06-30",
+            "distance": 0.08206611898974714,
+            "in_ratio3": false,
+            "sample_index": 2072,
+            "size": 8189148672.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2506,
+            "year": 2018
+          },
+          {
+            "code": "002531",
+            "cutoff": "2018-06-30",
+            "distance": 0.11305168357115392,
+            "in_ratio3": false,
+            "sample_index": 1685,
+            "size": 7939294208.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2157,
+            "year": 2018
+          }
+        ],
+        "positive": {
+          "code": "002190",
+          "cutoff": "2018-06-30",
+          "sample_index": 660,
+          "size": 8889546752.0,
+          "size_available": true,
+          "year": 2018
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002933",
+            "cutoff": "2024-06-30",
+            "distance": 0.004641914619806897,
+            "in_ratio3": true,
+            "sample_index": 2737,
+            "size": 1759601536.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4976,
+            "year": 2024
+          },
+          {
+            "code": "603058",
+            "cutoff": "2024-06-30",
+            "distance": 0.0049740801160460535,
+            "in_ratio3": true,
+            "sample_index": 8326,
+            "size": 1760186112.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5697,
+            "year": 2024
+          },
+          {
+            "code": "603255",
+            "cutoff": "2024-06-30",
+            "distance": 0.005805500979828793,
+            "in_ratio3": true,
+            "sample_index": 8595,
+            "size": 1761650176.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 222,
+            "year": 2024
+          },
+          {
+            "code": "688700",
+            "cutoff": "2024-06-30",
+            "distance": 0.009238558739319558,
+            "in_ratio3": false,
+            "sample_index": 10693,
+            "size": 1767708416.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1990,
+            "year": 2024
+          },
+          {
+            "code": "688278",
+            "cutoff": "2024-06-30",
+            "distance": 0.010463060576906713,
+            "in_ratio3": false,
+            "sample_index": 10224,
+            "size": 1769874304.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1510,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "002253",
+          "cutoff": "2024-06-30",
+          "sample_index": 913,
+          "size": 1751452544.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002028",
+            "cutoff": "2019-06-30",
+            "distance": 0.014893893631885646,
+            "in_ratio3": true,
+            "sample_index": 254,
+            "size": 6789827072.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4467,
+            "year": 2019
+          },
+          {
+            "code": "002542",
+            "cutoff": "2019-06-30",
+            "distance": 0.02365471513633821,
+            "in_ratio3": true,
+            "sample_index": 1707,
+            "size": 6849572864.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2175,
+            "year": 2019
+          },
+          {
+            "code": "300428",
+            "cutoff": "2019-06-30",
+            "distance": 0.04195626428151655,
+            "in_ratio3": true,
+            "sample_index": 5316,
+            "size": 6414591488.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5648,
+            "year": 2019
+          },
+          {
+            "code": "002374",
+            "cutoff": "2019-06-30",
+            "distance": 0.048644101232117265,
+            "in_ratio3": false,
+            "sample_index": 1258,
+            "size": 6371834880.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4772,
+            "year": 2019
+          },
+          {
+            "code": "002023",
+            "cutoff": "2019-06-30",
+            "distance": 0.06855398707840266,
+            "in_ratio3": false,
+            "sample_index": 235,
+            "size": 6246226944.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5219,
+            "year": 2019
+          }
+        ],
+        "positive": {
+          "code": "002255",
+          "cutoff": "2019-06-30",
+          "sample_index": 924,
+          "size": 6689449472.0,
+          "size_available": true,
+          "year": 2019
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300275",
+            "cutoff": "2017-06-30",
+            "distance": 0.0004509977845188473,
+            "in_ratio3": true,
+            "sample_index": 4469,
+            "size": 861857088.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2115,
+            "year": 2017
+          },
+          {
+            "code": "603339",
+            "cutoff": "2017-06-30",
+            "distance": 0.00046450558838273537,
+            "in_ratio3": true,
+            "sample_index": 8723,
+            "size": 861068416.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2779,
+            "year": 2017
+          },
+          {
+            "code": "300460",
+            "cutoff": "2017-06-30",
+            "distance": 0.0008030684268014454,
+            "in_ratio3": true,
+            "sample_index": 5445,
+            "size": 862160576.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4196,
+            "year": 2017
+          },
+          {
+            "code": "002388",
+            "cutoff": "2017-06-30",
+            "distance": 0.004493233234434513,
+            "in_ratio3": false,
+            "sample_index": 1289,
+            "size": 865347968.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3415,
+            "year": 2017
+          },
+          {
+            "code": "002757",
+            "cutoff": "2017-06-30",
+            "distance": 0.006656845061414174,
+            "in_ratio3": false,
+            "sample_index": 2223,
+            "size": 867222272.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5690,
+            "year": 2017
+          }
+        ],
+        "positive": {
+          "code": "002260",
+          "cutoff": "2017-06-30",
+          "sample_index": 944,
+          "size": 861468480.0,
+          "size_available": true,
+          "year": 2017
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "605555",
+            "cutoff": "2023-06-30",
+            "distance": 0.004969984579091147,
+            "in_ratio3": true,
+            "sample_index": 9662,
+            "size": 3683599872.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4649,
+            "year": 2023
+          },
+          {
+            "code": "688057",
+            "cutoff": "2023-06-30",
+            "distance": 0.0062039802387197085,
+            "in_ratio3": true,
+            "sample_index": 9809,
+            "size": 3688148224.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5260,
+            "year": 2023
+          },
+          {
+            "code": "300318",
+            "cutoff": "2023-06-30",
+            "distance": 0.0067131923532883775,
+            "in_ratio3": true,
+            "sample_index": 4710,
+            "size": 3690026752.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4554,
+            "year": 2023
+          },
+          {
+            "code": "002481",
+            "cutoff": "2023-06-30",
+            "distance": 0.015266873169739625,
+            "in_ratio3": false,
+            "sample_index": 1555,
+            "size": 3721725440.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5041,
+            "year": 2023
+          },
+          {
+            "code": "688526",
+            "cutoff": "2023-06-30",
+            "distance": 0.016234283030755137,
+            "in_ratio3": false,
+            "sample_index": 10511,
+            "size": 3725327616.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4374,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "002288",
+          "cutoff": "2023-06-30",
+          "sample_index": 1003,
+          "size": 3665337856.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002492",
+            "cutoff": "2024-06-30",
+            "distance": 0.0,
+            "in_ratio3": true,
+            "sample_index": 1584,
+            "size": 1950647424.0,
+            "size_available": true,
+            "size_distance_skipped": true,
+            "tie_rank": 1102,
+            "year": 2024
+          },
+          {
+            "code": "688578",
+            "cutoff": "2024-06-30",
+            "distance": 0.0,
+            "in_ratio3": true,
+            "sample_index": 10569,
+            "size": 3442172160.0,
+            "size_available": true,
+            "size_distance_skipped": true,
+            "tie_rank": 1824,
+            "year": 2024
+          },
+          {
+            "code": "300699",
+            "cutoff": "2024-06-30",
+            "distance": 0.0,
+            "in_ratio3": true,
+            "sample_index": 6495,
+            "size": 6330103296.0,
+            "size_available": true,
+            "size_distance_skipped": true,
+            "tie_rank": 4483,
+            "year": 2024
+          },
+          {
+            "code": "688118",
+            "cutoff": "2024-06-30",
+            "distance": 0.0,
+            "in_ratio3": false,
+            "sample_index": 9945,
+            "size": 1020816896.0,
+            "size_available": true,
+            "size_distance_skipped": true,
+            "tie_rank": 4507,
+            "year": 2024
+          },
+          {
+            "code": "300290",
+            "cutoff": "2024-06-30",
+            "distance": 0.0,
+            "in_ratio3": false,
+            "sample_index": 4574,
+            "size": 1527244800.0,
+            "size_available": true,
+            "size_distance_skipped": true,
+            "tie_rank": 4595,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "002308",
+          "cutoff": "2024-06-30",
+          "sample_index": 1063,
+          "size": null,
+          "size_available": false,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002466",
+            "cutoff": "2015-06-30",
+            "distance": 0.019553530111014794,
+            "in_ratio3": true,
+            "sample_index": 1519,
+            "size": 6665921024.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3349,
+            "year": 2015
+          },
+          {
+            "code": "002340",
+            "cutoff": "2015-06-30",
+            "distance": 0.12940178557778026,
+            "in_ratio3": true,
+            "sample_index": 1170,
+            "size": 7736608768.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 661,
+            "year": 2015
+          },
+          {
+            "code": "300070",
+            "cutoff": "2015-06-30",
+            "distance": 0.18682338019493017,
+            "in_ratio3": true,
+            "sample_index": 3318,
+            "size": 8193859584.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5834,
+            "year": 2015
+          },
+          {
+            "code": "002399",
+            "cutoff": "2015-06-30",
+            "distance": 0.19623963520238163,
+            "in_ratio3": false,
+            "sample_index": 1329,
+            "size": 8271379456.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 850,
+            "year": 2015
+          },
+          {
+            "code": "002535",
+            "cutoff": "2015-06-30",
+            "distance": 0.2209746368272576,
+            "in_ratio3": false,
+            "sample_index": 1695,
+            "size": 5449844224.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4005,
+            "year": 2015
+          }
+        ],
+        "positive": {
+          "code": "002379",
+          "cutoff": "2015-06-30",
+          "sample_index": 1268,
+          "size": 6797545984.0,
+          "size_available": true,
+          "year": 2015
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688368",
+            "cutoff": "2024-06-30",
+            "distance": 0.0020685908523070395,
+            "in_ratio3": true,
+            "sample_index": 10379,
+            "size": 2516320000.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 952,
+            "year": 2024
+          },
+          {
+            "code": "301082",
+            "cutoff": "2024-06-30",
+            "distance": 0.0021610730328944783,
+            "in_ratio3": true,
+            "sample_index": 7255,
+            "size": 2516087296.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2524,
+            "year": 2024
+          },
+          {
+            "code": "688190",
+            "cutoff": "2024-06-30",
+            "distance": 0.0031737260588045046,
+            "in_ratio3": true,
+            "sample_index": 10085,
+            "size": 2529545984.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6234,
+            "year": 2024
+          },
+          {
+            "code": "300774",
+            "cutoff": "2024-06-30",
+            "distance": 0.0034030345874782597,
+            "in_ratio3": false,
+            "sample_index": 6730,
+            "size": 2512964352.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2486,
+            "year": 2024
+          },
+          {
+            "code": "300512",
+            "cutoff": "2024-06-30",
+            "distance": 0.0036562178590315852,
+            "in_ratio3": false,
+            "sample_index": 5746,
+            "size": 2512328192.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 470,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "002388",
+          "cutoff": "2024-06-30",
+          "sample_index": 1296,
+          "size": 2521530624.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "000523",
+            "cutoff": "2018-06-30",
+            "distance": 0.005059889535111495,
+            "in_ratio3": true,
+            "sample_index": 12,
+            "size": 4170269440.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3441,
+            "year": 2018
+          },
+          {
+            "code": "002170",
+            "cutoff": "2018-06-30",
+            "distance": 0.007132066534769166,
+            "in_ratio3": true,
+            "sample_index": 609,
+            "size": 4178919936.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3369,
+            "year": 2018
+          },
+          {
+            "code": "300033",
+            "cutoff": "2018-06-30",
+            "distance": 0.017026896192160024,
+            "in_ratio3": true,
+            "sample_index": 3057,
+            "size": 4079171328.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2098,
+            "year": 2018
+          },
+          {
+            "code": "300252",
+            "cutoff": "2018-06-30",
+            "distance": 0.020859132187808882,
+            "in_ratio3": false,
+            "sample_index": 4335,
+            "size": 4063568896.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2156,
+            "year": 2018
+          },
+          {
+            "code": "002551",
+            "cutoff": "2018-06-30",
+            "distance": 0.022184938629152384,
+            "in_ratio3": false,
+            "sample_index": 1771,
+            "size": 4058184960.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4338,
+            "year": 2018
+          }
+        ],
+        "positive": {
+          "code": "002420",
+          "cutoff": "2018-06-30",
+          "sample_index": 1360,
+          "size": 4149221632.0,
+          "size_available": true,
+          "year": 2018
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002169",
+            "cutoff": "2017-06-30",
+            "distance": 0.0019487413169763101,
+            "in_ratio3": true,
+            "sample_index": 591,
+            "size": 3061015808.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6258,
+            "year": 2017
+          },
+          {
+            "code": "002215",
+            "cutoff": "2017-06-30",
+            "distance": 0.0032753174283257636,
+            "in_ratio3": true,
+            "sample_index": 774,
+            "size": 3077048576.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3100,
+            "year": 2017
+          },
+          {
+            "code": "601616",
+            "cutoff": "2017-06-30",
+            "distance": 0.022645354860401312,
+            "in_ratio3": true,
+            "sample_index": 8080,
+            "size": 2998314240.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5237,
+            "year": 2017
+          },
+          {
+            "code": "002369",
+            "cutoff": "2017-06-30",
+            "distance": 0.04512886689683526,
+            "in_ratio3": false,
+            "sample_index": 1239,
+            "size": 3208567040.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5644,
+            "year": 2017
+          },
+          {
+            "code": "002303",
+            "cutoff": "2017-06-30",
+            "distance": 0.050702819269677235,
+            "in_ratio3": false,
+            "sample_index": 1041,
+            "size": 3226501376.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1244,
+            "year": 2017
+          }
+        ],
+        "positive": {
+          "code": "002427",
+          "cutoff": "2017-06-30",
+          "sample_index": 1376,
+          "size": 3066986752.0,
+          "size_available": true,
+          "year": 2017
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300702",
+            "cutoff": "2023-06-30",
+            "distance": 0.012370516813838606,
+            "in_ratio3": true,
+            "sample_index": 6515,
+            "size": 5800601600.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4721,
+            "year": 2023
+          },
+          {
+            "code": "300957",
+            "cutoff": "2023-06-30",
+            "distance": 0.01441814844711331,
+            "in_ratio3": true,
+            "sample_index": 7093,
+            "size": 5812491264.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5790,
+            "year": 2023
+          },
+          {
+            "code": "300398",
+            "cutoff": "2023-06-30",
+            "distance": 0.022448957274477266,
+            "in_ratio3": true,
+            "sample_index": 5141,
+            "size": 5859358208.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 774,
+            "year": 2023
+          },
+          {
+            "code": "603686",
+            "cutoff": "2023-06-30",
+            "distance": 0.024882317566632395,
+            "in_ratio3": false,
+            "sample_index": 9134,
+            "size": 5588488192.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 553,
+            "year": 2023
+          },
+          {
+            "code": "300596",
+            "cutoff": "2023-06-30",
+            "distance": 0.026821344134592806,
+            "in_ratio3": false,
+            "sample_index": 6088,
+            "size": 5577662464.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3039,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "002528",
+          "cutoff": "2023-06-30",
+          "sample_index": 1677,
+          "size": 5729287168.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300055",
+            "cutoff": "2019-06-30",
+            "distance": 0.03504459838963214,
+            "in_ratio3": true,
+            "sample_index": 3238,
+            "size": 7998004224.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3302,
+            "year": 2019
+          },
+          {
+            "code": "002460",
+            "cutoff": "2019-06-30",
+            "distance": 0.03518158318299669,
+            "in_ratio3": true,
+            "sample_index": 1495,
+            "size": 7999099904.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3409,
+            "year": 2019
+          },
+          {
+            "code": "300026",
+            "cutoff": "2019-06-30",
+            "distance": 0.03886181271305489,
+            "in_ratio3": true,
+            "sample_index": 3028,
+            "size": 7428215296.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2312,
+            "year": 2019
+          },
+          {
+            "code": "002191",
+            "cutoff": "2019-06-30",
+            "distance": 0.050648134745699736,
+            "in_ratio3": false,
+            "sample_index": 672,
+            "size": 8123780096.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1960,
+            "year": 2019
+          },
+          {
+            "code": "300287",
+            "cutoff": "2019-06-30",
+            "distance": 0.061108047072334415,
+            "in_ratio3": false,
+            "sample_index": 4533,
+            "size": 7264790016.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4831,
+            "year": 2019
+          }
+        ],
+        "positive": {
+          "code": "002535",
+          "cutoff": "2019-06-30",
+          "sample_index": 1699,
+          "size": 7722571776.0,
+          "size_available": true,
+          "year": 2019
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688101",
+            "cutoff": "2020-06-30",
+            "distance": 0.0006407903741560972,
+            "in_ratio3": true,
+            "sample_index": 9910,
+            "size": 2398607104.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2921,
+            "year": 2020
+          },
+          {
+            "code": "603020",
+            "cutoff": "2020-06-30",
+            "distance": 0.0008568791300191947,
+            "in_ratio3": true,
+            "sample_index": 8210,
+            "size": 2395017472.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3030,
+            "year": 2020
+          },
+          {
+            "code": "300407",
+            "cutoff": "2020-06-30",
+            "distance": 0.0014905015101511765,
+            "in_ratio3": true,
+            "sample_index": 5207,
+            "size": 2393500416.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6114,
+            "year": 2020
+          },
+          {
+            "code": "300041",
+            "cutoff": "2020-06-30",
+            "distance": 0.004746737306319915,
+            "in_ratio3": false,
+            "sample_index": 3131,
+            "size": 2408475904.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1292,
+            "year": 2020
+          },
+          {
+            "code": "300474",
+            "cutoff": "2020-06-30",
+            "distance": 0.005002547708315319,
+            "in_ratio3": false,
+            "sample_index": 5528,
+            "size": 2409092096.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1711,
+            "year": 2020
+          }
+        ],
+        "positive": {
+          "code": "002592",
+          "cutoff": "2020-06-30",
+          "sample_index": 1890,
+          "size": 2397070592.0,
+          "size_available": true,
+          "year": 2020
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "603227",
+            "cutoff": "2023-06-30",
+            "distance": 0.006743977703717263,
+            "in_ratio3": true,
+            "sample_index": 8572,
+            "size": 7989249536.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3613,
+            "year": 2023
+          },
+          {
+            "code": "603236",
+            "cutoff": "2023-06-30",
+            "distance": 0.025439938074011792,
+            "in_ratio3": true,
+            "sample_index": 8592,
+            "size": 8140021248.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1885,
+            "year": 2023
+          },
+          {
+            "code": "603881",
+            "cutoff": "2023-06-30",
+            "distance": 0.0419100522840381,
+            "in_ratio3": true,
+            "sample_index": 9329,
+            "size": 8275198464.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1566,
+            "year": 2023
+          },
+          {
+            "code": "603035",
+            "cutoff": "2023-06-30",
+            "distance": 0.0544000087042491,
+            "in_ratio3": false,
+            "sample_index": 8261,
+            "size": 7515389440.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 288,
+            "year": 2023
+          },
+          {
+            "code": "688363",
+            "cutoff": "2023-06-30",
+            "distance": 0.05595123390139278,
+            "in_ratio3": false,
+            "sample_index": 10365,
+            "size": 7503740416.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1162,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "002665",
+          "cutoff": "2023-06-30",
+          "sample_index": 2042,
+          "size": 7935551488.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "301313",
+            "cutoff": "2023-06-30",
+            "distance": 0.0008587770540238182,
+            "in_ratio3": true,
+            "sample_index": 7430,
+            "size": 826569728.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1024,
+            "year": 2023
+          },
+          {
+            "code": "300828",
+            "cutoff": "2023-06-30",
+            "distance": 0.0020337466974034157,
+            "in_ratio3": true,
+            "sample_index": 6844,
+            "size": 825599104.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3384,
+            "year": 2023
+          },
+          {
+            "code": "688035",
+            "cutoff": "2023-06-30",
+            "distance": 0.0036379802683192963,
+            "in_ratio3": true,
+            "sample_index": 9771,
+            "size": 824275712.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1076,
+            "year": 2023
+          },
+          {
+            "code": "300534",
+            "cutoff": "2023-06-30",
+            "distance": 0.0038839864737632013,
+            "in_ratio3": false,
+            "sample_index": 5808,
+            "size": 824072960.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4281,
+            "year": 2023
+          },
+          {
+            "code": "603268",
+            "cutoff": "2023-06-30",
+            "distance": 0.007847362251293788,
+            "in_ratio3": false,
+            "sample_index": 8622,
+            "size": 833797376.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2703,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "002750",
+          "cutoff": "2023-06-30",
+          "sample_index": 2221,
+          "size": 827279872.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "301083",
+            "cutoff": "2024-06-30",
+            "distance": 0.002153185843429384,
+            "in_ratio3": true,
+            "sample_index": 7258,
+            "size": 945448384.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5215,
+            "year": 2024
+          },
+          {
+            "code": "603722",
+            "cutoff": "2024-06-30",
+            "distance": 0.0037241829655592085,
+            "in_ratio3": true,
+            "sample_index": 9181,
+            "size": 946934848.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5633,
+            "year": 2024
+          },
+          {
+            "code": "300831",
+            "cutoff": "2024-06-30",
+            "distance": 0.004359834568006704,
+            "in_ratio3": true,
+            "sample_index": 6849,
+            "size": 947536960.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5388,
+            "year": 2024
+          },
+          {
+            "code": "300731",
+            "cutoff": "2024-06-30",
+            "distance": 0.004515172643067444,
+            "in_ratio3": false,
+            "sample_index": 6628,
+            "size": 947684160.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5972,
+            "year": 2024
+          },
+          {
+            "code": "301012",
+            "cutoff": "2024-06-30",
+            "distance": 0.006038030803150463,
+            "in_ratio3": false,
+            "sample_index": 7171,
+            "size": 949128448.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4419,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "002762",
+          "cutoff": "2024-06-30",
+          "sample_index": 2239,
+          "size": 943414848.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688212",
+            "cutoff": "2022-06-30",
+            "distance": 0.0006552174291307722,
+            "in_ratio3": true,
+            "sample_index": 10135,
+            "size": 621041600.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5593,
+            "year": 2022
+          },
+          {
+            "code": "301016",
+            "cutoff": "2022-06-30",
+            "distance": 0.006996583556553304,
+            "in_ratio3": true,
+            "sample_index": 7175,
+            "size": 616307648.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2307,
+            "year": 2022
+          },
+          {
+            "code": "300951",
+            "cutoff": "2022-06-30",
+            "distance": 0.010387506879716568,
+            "in_ratio3": true,
+            "sample_index": 7086,
+            "size": 627115264.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2290,
+            "year": 2022
+          },
+          {
+            "code": "688260",
+            "cutoff": "2022-06-30",
+            "distance": 0.011600090393329765,
+            "in_ratio3": false,
+            "sample_index": 10198,
+            "size": 613476992.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2315,
+            "year": 2022
+          },
+          {
+            "code": "300669",
+            "cutoff": "2022-06-30",
+            "distance": 0.012350741928798925,
+            "in_ratio3": false,
+            "sample_index": 6375,
+            "size": 628347648.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4107,
+            "year": 2022
+          }
+        ],
+        "positive": {
+          "code": "002808",
+          "cutoff": "2022-06-30",
+          "sample_index": 2321,
+          "size": 620634816.0,
+          "size_available": true,
+          "year": 2022
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300668",
+            "cutoff": "2022-06-30",
+            "distance": 0.006058230550781474,
+            "in_ratio3": true,
+            "sample_index": 6368,
+            "size": 562444864.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4132,
+            "year": 2022
+          },
+          {
+            "code": "300461",
+            "cutoff": "2022-06-30",
+            "distance": 0.015382525235320799,
+            "in_ratio3": true,
+            "sample_index": 5459,
+            "size": 567713792.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3490,
+            "year": 2022
+          },
+          {
+            "code": "301133",
+            "cutoff": "2022-06-30",
+            "distance": 0.01922001958330455,
+            "in_ratio3": true,
+            "sample_index": 7295,
+            "size": 569896576.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5391,
+            "year": 2022
+          },
+          {
+            "code": "300990",
+            "cutoff": "2022-06-30",
+            "distance": 0.019656455688760843,
+            "in_ratio3": false,
+            "sample_index": 7139,
+            "size": 548166144.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5964,
+            "year": 2022
+          },
+          {
+            "code": "603991",
+            "cutoff": "2022-06-30",
+            "distance": 0.022401384466768093,
+            "in_ratio3": false,
+            "sample_index": 9492,
+            "size": 571712512.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4729,
+            "year": 2022
+          }
+        ],
+        "positive": {
+          "code": "002816",
+          "cutoff": "2022-06-30",
+          "sample_index": 2359,
+          "size": 559047744.0,
+          "size_available": true,
+          "year": 2022
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300521",
+            "cutoff": "2024-06-30",
+            "distance": 0.00784640728986119,
+            "in_ratio3": true,
+            "sample_index": 5785,
+            "size": 587955904.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3989,
+            "year": 2024
+          },
+          {
+            "code": "688316",
+            "cutoff": "2024-06-30",
+            "distance": 0.012936874877208737,
+            "in_ratio3": true,
+            "sample_index": 10294,
+            "size": 600303424.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2944,
+            "year": 2024
+          },
+          {
+            "code": "688478",
+            "cutoff": "2024-06-30",
+            "distance": 0.029620419602373715,
+            "in_ratio3": true,
+            "sample_index": 10471,
+            "size": 610402624.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5062,
+            "year": 2024
+          },
+          {
+            "code": "001367",
+            "cutoff": "2024-06-30",
+            "distance": 0.04660784997730261,
+            "in_ratio3": false,
+            "sample_index": 197,
+            "size": 565601920.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4127,
+            "year": 2024
+          },
+          {
+            "code": "688092",
+            "cutoff": "2024-06-30",
+            "distance": 0.053730258390078944,
+            "in_ratio3": false,
+            "sample_index": 9892,
+            "size": 625298176.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2496,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "002848",
+          "cutoff": "2024-06-30",
+          "sample_index": 2481,
+          "size": 592587392.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300719",
+            "cutoff": "2024-06-30",
+            "distance": 0.000860628322076451,
+            "in_ratio3": true,
+            "sample_index": 6600,
+            "size": 1240929920.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4469,
+            "year": 2024
+          },
+          {
+            "code": "688129",
+            "cutoff": "2024-06-30",
+            "distance": 0.0009671749964539345,
+            "in_ratio3": true,
+            "sample_index": 9961,
+            "size": 1241062144.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1184,
+            "year": 2024
+          },
+          {
+            "code": "301228",
+            "cutoff": "2024-06-30",
+            "distance": 0.001137646690391847,
+            "in_ratio3": true,
+            "sample_index": 7387,
+            "size": 1241273728.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4185,
+            "year": 2024
+          },
+          {
+            "code": "688600",
+            "cutoff": "2024-06-30",
+            "distance": 0.004037801023180521,
+            "in_ratio3": false,
+            "sample_index": 10600,
+            "size": 1234866176.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1210,
+            "year": 2024
+          },
+          {
+            "code": "605398",
+            "cutoff": "2024-06-30",
+            "distance": 0.005063474368029119,
+            "in_ratio3": false,
+            "sample_index": 9649,
+            "size": 1233600256.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4380,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "002868",
+          "cutoff": "2024-06-30",
+          "sample_index": 2537,
+          "size": 1239862400.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300393",
+            "cutoff": "2018-06-30",
+            "distance": 0.022639972645315254,
+            "in_ratio3": true,
+            "sample_index": 5117,
+            "size": 3469645824.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3542,
+            "year": 2018
+          },
+          {
+            "code": "002617",
+            "cutoff": "2018-06-30",
+            "distance": 0.02736317373369701,
+            "in_ratio3": true,
+            "sample_index": 1962,
+            "size": 3300418816.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 500,
+            "year": 2018
+          },
+          {
+            "code": "600249",
+            "cutoff": "2018-06-30",
+            "distance": 0.03452927429663788,
+            "in_ratio3": true,
+            "sample_index": 7641,
+            "size": 3276852224.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3820,
+            "year": 2018
+          },
+          {
+            "code": "002446",
+            "cutoff": "2018-06-30",
+            "distance": 0.03933235490237763,
+            "in_ratio3": false,
+            "sample_index": 1438,
+            "size": 3261150976.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2129,
+            "year": 2018
+          },
+          {
+            "code": "300262",
+            "cutoff": "2018-06-30",
+            "distance": 0.04944955612409885,
+            "in_ratio3": false,
+            "sample_index": 4400,
+            "size": 3563923712.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3799,
+            "year": 2018
+          }
+        ],
+        "positive": {
+          "code": "002872",
+          "cutoff": "2018-06-30",
+          "sample_index": 2552,
+          "size": 3391975680.0,
+          "size_available": true,
+          "year": 2018
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300701",
+            "cutoff": "2024-06-30",
+            "distance": 0.0004060236887326596,
+            "in_ratio3": true,
+            "sample_index": 6509,
+            "size": 848359168.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3582,
+            "year": 2024
+          },
+          {
+            "code": "688718",
+            "cutoff": "2024-06-30",
+            "distance": 0.0015073734079251722,
+            "in_ratio3": true,
+            "sample_index": 10700,
+            "size": 846737472.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5573,
+            "year": 2024
+          },
+          {
+            "code": "300380",
+            "cutoff": "2024-06-30",
+            "distance": 0.0023255293769928187,
+            "in_ratio3": true,
+            "sample_index": 5043,
+            "size": 846044992.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2370,
+            "year": 2024
+          },
+          {
+            "code": "300508",
+            "cutoff": "2024-06-30",
+            "distance": 0.010527153465751837,
+            "in_ratio3": false,
+            "sample_index": 5714,
+            "size": 856989120.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 414,
+            "year": 2024
+          },
+          {
+            "code": "301111",
+            "cutoff": "2024-06-30",
+            "distance": 0.010615720096293302,
+            "in_ratio3": false,
+            "sample_index": 7274,
+            "size": 857065024.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5923,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "002898",
+          "cutoff": "2024-06-30",
+          "sample_index": 2636,
+          "size": 848014784.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300667",
+            "cutoff": "2023-06-30",
+            "distance": 0.00032639577793602825,
+            "in_ratio3": true,
+            "sample_index": 6362,
+            "size": 1669553024.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6132,
+            "year": 2023
+          },
+          {
+            "code": "300472",
+            "cutoff": "2023-06-30",
+            "distance": 0.0010555722974245896,
+            "in_ratio3": true,
+            "sample_index": 5523,
+            "size": 1671861888.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 377,
+            "year": 2023
+          },
+          {
+            "code": "605598",
+            "cutoff": "2023-06-30",
+            "distance": 0.0016883193814862807,
+            "in_ratio3": true,
+            "sample_index": 9668,
+            "size": 1667280768.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2499,
+            "year": 2023
+          },
+          {
+            "code": "603203",
+            "cutoff": "2023-06-30",
+            "distance": 0.0021019741407748427,
+            "in_ratio3": false,
+            "sample_index": 8542,
+            "size": 1666591232.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3710,
+            "year": 2023
+          },
+          {
+            "code": "003020",
+            "cutoff": "2023-06-30",
+            "distance": 0.002599388005343428,
+            "in_ratio3": false,
+            "sample_index": 2855,
+            "size": 1674444928.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1717,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "300096",
+          "cutoff": "2023-06-30",
+          "sample_index": 3494,
+          "size": 1670098048.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300606",
+            "cutoff": "2024-06-30",
+            "distance": 0.004252795247492003,
+            "in_ratio3": true,
+            "sample_index": 6137,
+            "size": 835861568.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1986,
+            "year": 2024
+          },
+          {
+            "code": "688004",
+            "cutoff": "2024-06-30",
+            "distance": 0.007046190099273986,
+            "in_ratio3": true,
+            "sample_index": 9683,
+            "size": 826470336.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5230,
+            "year": 2024
+          },
+          {
+            "code": "002213",
+            "cutoff": "2024-06-30",
+            "distance": 0.032608018307225706,
+            "in_ratio3": true,
+            "sample_index": 749,
+            "size": 805611968.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 860,
+            "year": 2024
+          },
+          {
+            "code": "300849",
+            "cutoff": "2024-06-30",
+            "distance": 0.04039464479001609,
+            "in_ratio3": false,
+            "sample_index": 6899,
+            "size": 799363328.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5107,
+            "year": 2024
+          },
+          {
+            "code": "301024",
+            "cutoff": "2024-06-30",
+            "distance": 0.04466305121838232,
+            "in_ratio3": false,
+            "sample_index": 7189,
+            "size": 795958592.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 373,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300152",
+          "cutoff": "2024-06-30",
+          "sample_index": 3731,
+          "size": 832314368.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688459",
+            "cutoff": "2024-06-30",
+            "distance": 0.0008313610589958387,
+            "in_ratio3": true,
+            "sample_index": 10463,
+            "size": 3869671680.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2671,
+            "year": 2024
+          },
+          {
+            "code": "603728",
+            "cutoff": "2024-06-30",
+            "distance": 0.0018984889383872883,
+            "in_ratio3": true,
+            "sample_index": 9195,
+            "size": 3865544448.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6050,
+            "year": 2024
+          },
+          {
+            "code": "002724",
+            "cutoff": "2024-06-30",
+            "distance": 0.0020247901197159024,
+            "in_ratio3": true,
+            "sample_index": 2185,
+            "size": 3865056256.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5038,
+            "year": 2024
+          },
+          {
+            "code": "300366",
+            "cutoff": "2024-06-30",
+            "distance": 0.0023233757128480192,
+            "in_ratio3": false,
+            "sample_index": 4969,
+            "size": 3881898752.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3498,
+            "year": 2024
+          },
+          {
+            "code": "605077",
+            "cutoff": "2024-06-30",
+            "distance": 0.00826670422110709,
+            "in_ratio3": false,
+            "sample_index": 9530,
+            "size": 3905038848.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3948,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300165",
+          "cutoff": "2024-06-30",
+          "sample_index": 3823,
+          "size": 3872890112.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300860",
+            "cutoff": "2023-06-30",
+            "distance": 0.002293656897407459,
+            "in_ratio3": true,
+            "sample_index": 6925,
+            "size": 3876751872.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3288,
+            "year": 2023
+          },
+          {
+            "code": "002876",
+            "cutoff": "2023-06-30",
+            "distance": 0.0045179971854949486,
+            "in_ratio3": true,
+            "sample_index": 2565,
+            "size": 3868138240.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3627,
+            "year": 2023
+          },
+          {
+            "code": "300199",
+            "cutoff": "2023-06-30",
+            "distance": 0.005322429951725383,
+            "in_ratio3": true,
+            "sample_index": 3991,
+            "size": 3906390272.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4283,
+            "year": 2023
+          },
+          {
+            "code": "688330",
+            "cutoff": "2023-06-30",
+            "distance": 0.007651141412626572,
+            "in_ratio3": false,
+            "sample_index": 10319,
+            "size": 3915497728.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2281,
+            "year": 2023
+          },
+          {
+            "code": "603083",
+            "cutoff": "2023-06-30",
+            "distance": 0.009806905784856212,
+            "in_ratio3": false,
+            "sample_index": 8367,
+            "size": 3847734016.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 701,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "300262",
+          "cutoff": "2023-06-30",
+          "sample_index": 4405,
+          "size": 3885654016.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "603599",
+            "cutoff": "2021-06-30",
+            "distance": 0.014924446679135173,
+            "in_ratio3": true,
+            "sample_index": 8966,
+            "size": 6598688768.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5829,
+            "year": 2021
+          },
+          {
+            "code": "002527",
+            "cutoff": "2021-06-30",
+            "distance": 0.022318878186531776,
+            "in_ratio3": true,
+            "sample_index": 1661,
+            "size": 6357451776.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 719,
+            "year": 2021
+          },
+          {
+            "code": "300267",
+            "cutoff": "2021-06-30",
+            "distance": 0.044452933199746525,
+            "in_ratio3": true,
+            "sample_index": 4428,
+            "size": 6218281472.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4593,
+            "year": 2021
+          },
+          {
+            "code": "002528",
+            "cutoff": "2021-06-30",
+            "distance": 0.048375534863499325,
+            "in_ratio3": false,
+            "sample_index": 1675,
+            "size": 6193937408.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 697,
+            "year": 2021
+          },
+          {
+            "code": "300195",
+            "cutoff": "2021-06-30",
+            "distance": 0.060014196462088165,
+            "in_ratio3": false,
+            "sample_index": 3976,
+            "size": 6903031808.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3162,
+            "year": 2021
+          }
+        ],
+        "positive": {
+          "code": "300273",
+          "cutoff": "2021-06-30",
+          "sample_index": 4463,
+          "size": 6500938240.0,
+          "size_available": true,
+          "year": 2021
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002227",
+            "cutoff": "2024-06-30",
+            "distance": 0.0030067058662517354,
+            "in_ratio3": true,
+            "sample_index": 845,
+            "size": 1561684480.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5631,
+            "year": 2024
+          },
+          {
+            "code": "002983",
+            "cutoff": "2024-06-30",
+            "distance": 0.0032048295284425876,
+            "in_ratio3": true,
+            "sample_index": 2796,
+            "size": 1561375104.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2838,
+            "year": 2024
+          },
+          {
+            "code": "300030",
+            "cutoff": "2024-06-30",
+            "distance": 0.005253204320556648,
+            "in_ratio3": true,
+            "sample_index": 3048,
+            "size": 1558180096.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2913,
+            "year": 2024
+          },
+          {
+            "code": "300491",
+            "cutoff": "2024-06-30",
+            "distance": 0.0062013027459322245,
+            "in_ratio3": false,
+            "sample_index": 5648,
+            "size": 1556703488.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2487,
+            "year": 2024
+          },
+          {
+            "code": "688313",
+            "cutoff": "2024-06-30",
+            "distance": 0.007590467246853194,
+            "in_ratio3": false,
+            "sample_index": 10288,
+            "size": 1578321920.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4841,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300311",
+          "cutoff": "2024-06-30",
+          "sample_index": 4655,
+          "size": 1566387072.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300283",
+            "cutoff": "2020-06-30",
+            "distance": 0.0011580549128602513,
+            "in_ratio3": true,
+            "sample_index": 4510,
+            "size": 1404656640.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1779,
+            "year": 2020
+          },
+          {
+            "code": "300191",
+            "cutoff": "2020-06-30",
+            "distance": 0.0021309632579189497,
+            "in_ratio3": true,
+            "sample_index": 3936,
+            "size": 1400044288.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5288,
+            "year": 2020
+          },
+          {
+            "code": "002891",
+            "cutoff": "2020-06-30",
+            "distance": 0.0030717711464056663,
+            "in_ratio3": true,
+            "sample_index": 2611,
+            "size": 1407347328.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 151,
+            "year": 2020
+          },
+          {
+            "code": "002549",
+            "cutoff": "2020-06-30",
+            "distance": 0.006994072409330698,
+            "in_ratio3": false,
+            "sample_index": 1760,
+            "size": 1412878208.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5124,
+            "year": 2020
+          },
+          {
+            "code": "300765",
+            "cutoff": "2020-06-30",
+            "distance": 0.00875626471324864,
+            "in_ratio3": false,
+            "sample_index": 6703,
+            "size": 1390799232.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4813,
+            "year": 2020
+          }
+        ],
+        "positive": {
+          "code": "300313",
+          "cutoff": "2020-06-30",
+          "sample_index": 4663,
+          "size": 1403030912.0,
+          "size_available": true,
+          "year": 2020
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "605018",
+            "cutoff": "2024-06-30",
+            "distance": 0.0015770898503610908,
+            "in_ratio3": true,
+            "sample_index": 9514,
+            "size": 3406771712.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2909,
+            "year": 2024
+          },
+          {
+            "code": "603533",
+            "cutoff": "2024-06-30",
+            "distance": 0.0027033878058801974,
+            "in_ratio3": true,
+            "sample_index": 8904,
+            "size": 3402936832.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 679,
+            "year": 2024
+          },
+          {
+            "code": "688327",
+            "cutoff": "2024-06-30",
+            "distance": 0.003661386948120793,
+            "in_ratio3": true,
+            "sample_index": 10313,
+            "size": 3424664832.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4680,
+            "year": 2024
+          },
+          {
+            "code": "603590",
+            "cutoff": "2024-06-30",
+            "distance": 0.0037010793877847448,
+            "in_ratio3": false,
+            "sample_index": 8960,
+            "size": 3424800768.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3531,
+            "year": 2024
+          },
+          {
+            "code": "688322",
+            "cutoff": "2024-06-30",
+            "distance": 0.004397720426414509,
+            "in_ratio3": false,
+            "sample_index": 10306,
+            "size": 3427187456.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3900,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300326",
+          "cutoff": "2024-06-30",
+          "sample_index": 4755,
+          "size": 3412148736.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300385",
+            "cutoff": "2023-06-30",
+            "distance": 0.00678069728332531,
+            "in_ratio3": true,
+            "sample_index": 5082,
+            "size": 3624510976.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1226,
+            "year": 2023
+          },
+          {
+            "code": "688339",
+            "cutoff": "2023-06-30",
+            "distance": 0.006851118090054342,
+            "in_ratio3": true,
+            "sample_index": 10339,
+            "size": 3624255744.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3037,
+            "year": 2023
+          },
+          {
+            "code": "300331",
+            "cutoff": "2023-06-30",
+            "distance": 0.01602507055503466,
+            "in_ratio3": true,
+            "sample_index": 4800,
+            "size": 3591159040.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2173,
+            "year": 2023
+          },
+          {
+            "code": "300983",
+            "cutoff": "2023-06-30",
+            "distance": 0.017964579772556277,
+            "in_ratio3": false,
+            "sample_index": 7128,
+            "size": 3584200704.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5092,
+            "year": 2023
+          },
+          {
+            "code": "002669",
+            "cutoff": "2023-06-30",
+            "distance": 0.02147338058071213,
+            "in_ratio3": false,
+            "sample_index": 2053,
+            "size": 3728378624.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4456,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "300368",
+          "cutoff": "2023-06-30",
+          "sample_index": 4978,
+          "size": 3649171200.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300378",
+            "cutoff": "2024-06-30",
+            "distance": 0.0028223245438283584,
+            "in_ratio3": true,
+            "sample_index": 5023,
+            "size": 2842772736.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1900,
+            "year": 2024
+          },
+          {
+            "code": "603725",
+            "cutoff": "2024-06-30",
+            "distance": 0.004666193977250543,
+            "in_ratio3": true,
+            "sample_index": 9188,
+            "size": 2864140800.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3546,
+            "year": 2024
+          },
+          {
+            "code": "300680",
+            "cutoff": "2024-06-30",
+            "distance": 0.007519275692004612,
+            "in_ratio3": true,
+            "sample_index": 6419,
+            "size": 2872324096.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4655,
+            "year": 2024
+          },
+          {
+            "code": "300172",
+            "cutoff": "2024-06-30",
+            "distance": 0.009260892964952916,
+            "in_ratio3": false,
+            "sample_index": 3849,
+            "size": 2877330944.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 730,
+            "year": 2024
+          },
+          {
+            "code": "300572",
+            "cutoff": "2024-06-30",
+            "distance": 0.011483061593143162,
+            "in_ratio3": false,
+            "sample_index": 5974,
+            "size": 2883731968.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4807,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300379",
+          "cutoff": "2024-06-30",
+          "sample_index": 5033,
+          "size": 2850807296.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300489",
+            "cutoff": "2020-06-30",
+            "distance": 0.004296120932473002,
+            "in_ratio3": true,
+            "sample_index": 5635,
+            "size": 665886336.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3740,
+            "year": 2020
+          },
+          {
+            "code": "603138",
+            "cutoff": "2020-06-30",
+            "distance": 0.005998240349356365,
+            "in_ratio3": true,
+            "sample_index": 8454,
+            "size": 659066624.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2581,
+            "year": 2020
+          },
+          {
+            "code": "300779",
+            "cutoff": "2020-06-30",
+            "distance": 0.013915463512329751,
+            "in_ratio3": true,
+            "sample_index": 6741,
+            "size": 653869248.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4715,
+            "year": 2020
+          },
+          {
+            "code": "002816",
+            "cutoff": "2020-06-30",
+            "distance": 0.014777462846865319,
+            "in_ratio3": false,
+            "sample_index": 2357,
+            "size": 653305856.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2799,
+            "year": 2020
+          },
+          {
+            "code": "002947",
+            "cutoff": "2020-06-30",
+            "distance": 0.022192692419789495,
+            "in_ratio3": false,
+            "sample_index": 2756,
+            "size": 648479360.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5321,
+            "year": 2020
+          }
+        ],
+        "positive": {
+          "code": "300446",
+          "cutoff": "2020-06-30",
+          "sample_index": 5416,
+          "size": 663031744.0,
+          "size_available": true,
+          "year": 2020
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "603232",
+            "cutoff": "2024-06-30",
+            "distance": 0.0001209415676335368,
+            "in_ratio3": true,
+            "sample_index": 8588,
+            "size": 1746192256.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4894,
+            "year": 2024
+          },
+          {
+            "code": "688138",
+            "cutoff": "2024-06-30",
+            "distance": 0.0019302133217884432,
+            "in_ratio3": true,
+            "sample_index": 9983,
+            "size": 1743035776.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5352,
+            "year": 2024
+          },
+          {
+            "code": "301297",
+            "cutoff": "2024-06-30",
+            "distance": 0.0031240256412132794,
+            "in_ratio3": true,
+            "sample_index": 7419,
+            "size": 1740956160.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3201,
+            "year": 2024
+          },
+          {
+            "code": "300594",
+            "cutoff": "2024-06-30",
+            "distance": 0.005506943145736187,
+            "in_ratio3": false,
+            "sample_index": 6082,
+            "size": 1736812544.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1524,
+            "year": 2024
+          },
+          {
+            "code": "688302",
+            "cutoff": "2024-06-30",
+            "distance": 0.006508192412905345,
+            "in_ratio3": false,
+            "sample_index": 10264,
+            "size": 1735074432.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4643,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300472",
+          "cutoff": "2024-06-30",
+          "sample_index": 5524,
+          "size": 1746403456.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688295",
+            "cutoff": "2024-06-30",
+            "distance": 0.0033100173441518166,
+            "in_ratio3": true,
+            "sample_index": 10250,
+            "size": 7247371776.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3198,
+            "year": 2024
+          },
+          {
+            "code": "300217",
+            "cutoff": "2024-06-30",
+            "distance": 0.0046721575425721085,
+            "in_ratio3": true,
+            "sample_index": 4070,
+            "size": 7237506560.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 743,
+            "year": 2024
+          },
+          {
+            "code": "688072",
+            "cutoff": "2024-06-30",
+            "distance": 0.005805343336145796,
+            "in_ratio3": true,
+            "sample_index": 9845,
+            "size": 7313736192.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3918,
+            "year": 2024
+          },
+          {
+            "code": "688032",
+            "cutoff": "2024-06-30",
+            "distance": 0.006351725103318273,
+            "in_ratio3": false,
+            "sample_index": 9765,
+            "size": 7317733376.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1829,
+            "year": 2024
+          },
+          {
+            "code": "688162",
+            "cutoff": "2024-06-30",
+            "distance": 0.014244956155291533,
+            "in_ratio3": false,
+            "sample_index": 10025,
+            "size": 7375722496.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5460,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300477",
+          "cutoff": "2024-06-30",
+          "sample_index": 5541,
+          "size": 7271400448.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002957",
+            "cutoff": "2024-06-30",
+            "distance": 0.01002769322969499,
+            "in_ratio3": true,
+            "sample_index": 2765,
+            "size": 6177405952.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5638,
+            "year": 2024
+          },
+          {
+            "code": "688213",
+            "cutoff": "2024-06-30",
+            "distance": 0.010149818068594385,
+            "in_ratio3": true,
+            "sample_index": 10139,
+            "size": 6054010368.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4372,
+            "year": 2024
+          },
+          {
+            "code": "603010",
+            "cutoff": "2024-06-30",
+            "distance": 0.010183055432214871,
+            "in_ratio3": true,
+            "sample_index": 8177,
+            "size": 6053809152.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3790,
+            "year": 2024
+          },
+          {
+            "code": "300903",
+            "cutoff": "2024-06-30",
+            "distance": 0.014835331791054784,
+            "in_ratio3": false,
+            "sample_index": 7014,
+            "size": 6207176192.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6268,
+            "year": 2024
+          },
+          {
+            "code": "688331",
+            "cutoff": "2024-06-30",
+            "distance": 0.01558588816654094,
+            "in_ratio3": false,
+            "sample_index": 10322,
+            "size": 6021189632.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5137,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300630",
+          "cutoff": "2024-06-30",
+          "sample_index": 6217,
+          "size": 6115770368.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300018",
+            "cutoff": "2024-06-30",
+            "distance": 0.0002229879976596294,
+            "in_ratio3": true,
+            "sample_index": 3003,
+            "size": 1388139776.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3565,
+            "year": 2024
+          },
+          {
+            "code": "300637",
+            "cutoff": "2024-06-30",
+            "distance": 0.0011516619299207775,
+            "in_ratio3": true,
+            "sample_index": 6231,
+            "size": 1389429504.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4848,
+            "year": 2024
+          },
+          {
+            "code": "688290",
+            "cutoff": "2024-06-30",
+            "distance": 0.0026641130153066683,
+            "in_ratio3": true,
+            "sample_index": 10246,
+            "size": 1384137856.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4117,
+            "year": 2024
+          },
+          {
+            "code": "300643",
+            "cutoff": "2024-06-30",
+            "distance": 0.0033070301903137533,
+            "in_ratio3": false,
+            "sample_index": 6266,
+            "size": 1383248256.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5080,
+            "year": 2024
+          },
+          {
+            "code": "688393",
+            "cutoff": "2024-06-30",
+            "distance": 0.0035629576660589635,
+            "in_ratio3": false,
+            "sample_index": 10431,
+            "size": 1392783872.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3776,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300716",
+          "cutoff": "2024-06-30",
+          "sample_index": 6579,
+          "size": 1387830272.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300966",
+            "cutoff": "2022-06-30",
+            "distance": 0.0006633880330220165,
+            "in_ratio3": true,
+            "sample_index": 7112,
+            "size": 804426560.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5932,
+            "year": 2022
+          },
+          {
+            "code": "688722",
+            "cutoff": "2022-06-30",
+            "distance": 0.0051501080158224966,
+            "in_ratio3": true,
+            "sample_index": 10701,
+            "size": 800825408.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4135,
+            "year": 2022
+          },
+          {
+            "code": "002848",
+            "cutoff": "2022-06-30",
+            "distance": 0.006038466323680325,
+            "in_ratio3": true,
+            "sample_index": 2479,
+            "size": 800114304.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3727,
+            "year": 2022
+          },
+          {
+            "code": "300824",
+            "cutoff": "2022-06-30",
+            "distance": 0.006787484014871836,
+            "in_ratio3": false,
+            "sample_index": 6835,
+            "size": 810442624.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2361,
+            "year": 2022
+          },
+          {
+            "code": "002898",
+            "cutoff": "2022-06-30",
+            "distance": 0.011118003704858381,
+            "in_ratio3": false,
+            "sample_index": 2634,
+            "size": 813959872.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3446,
+            "year": 2022
+          }
+        ],
+        "positive": {
+          "code": "300799",
+          "cutoff": "2022-06-30",
+          "sample_index": 6773,
+          "size": 804960384.0,
+          "size_available": true,
+          "year": 2022
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300235",
+            "cutoff": "2024-06-30",
+            "distance": 0.007523069190519038,
+            "in_ratio3": true,
+            "sample_index": 4224,
+            "size": 704654080.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1089,
+            "year": 2024
+          },
+          {
+            "code": "301059",
+            "cutoff": "2024-06-30",
+            "distance": 0.025901272187155655,
+            "in_ratio3": true,
+            "sample_index": 7222,
+            "size": 691822080.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2620,
+            "year": 2024
+          },
+          {
+            "code": "300321",
+            "cutoff": "2024-06-30",
+            "distance": 0.03138106275109109,
+            "in_ratio3": true,
+            "sample_index": 4723,
+            "size": 688041408.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4402,
+            "year": 2024
+          },
+          {
+            "code": "001366",
+            "cutoff": "2024-06-30",
+            "distance": 0.03951723251195105,
+            "in_ratio3": false,
+            "sample_index": 196,
+            "size": 738593216.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1629,
+            "year": 2024
+          },
+          {
+            "code": "002890",
+            "cutoff": "2024-06-30",
+            "distance": 0.04055624718276363,
+            "in_ratio3": false,
+            "sample_index": 2608,
+            "size": 739361024.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4885,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "300899",
+          "cutoff": "2024-06-30",
+          "sample_index": 7002,
+          "size": 709975232.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "600288",
+            "cutoff": "2006-06-30",
+            "distance": 0.10073537695680912,
+            "in_ratio3": true,
+            "sample_index": 7648,
+            "size": 2051560064.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 978,
+            "year": 2006
+          },
+          {
+            "code": "600171",
+            "cutoff": "2006-06-30",
+            "distance": 0.11995543644407647,
+            "in_ratio3": true,
+            "sample_index": 7547,
+            "size": 2091372544.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1018,
+            "year": 2006
+          },
+          {
+            "code": "000553",
+            "cutoff": "2006-06-30",
+            "distance": 0.165933096360817,
+            "in_ratio3": true,
+            "sample_index": 15,
+            "size": 1571345152.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 779,
+            "year": 2006
+          },
+          {
+            "code": "600105",
+            "cutoff": "2006-06-30",
+            "distance": 0.16730666064897548,
+            "in_ratio3": false,
+            "sample_index": 7509,
+            "size": 2192783616.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5312,
+            "year": 2006
+          },
+          {
+            "code": "600488",
+            "cutoff": "2006-06-30",
+            "distance": 0.19352712699549102,
+            "in_ratio3": false,
+            "sample_index": 7850,
+            "size": 1528578176.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4084,
+            "year": 2006
+          }
+        ],
+        "positive": {
+          "code": "600080",
+          "cutoff": "2006-06-30",
+          "sample_index": 7489,
+          "size": 1854963712.0,
+          "size_available": true,
+          "year": 2006
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002703",
+            "cutoff": "2018-06-30",
+            "distance": 0.0003702831159877462,
+            "in_ratio3": true,
+            "sample_index": 2144,
+            "size": 2074741504.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2502,
+            "year": 2018
+          },
+          {
+            "code": "300210",
+            "cutoff": "2018-06-30",
+            "distance": 0.0009407491362729559,
+            "in_ratio3": true,
+            "sample_index": 4025,
+            "size": 2073558272.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2223,
+            "year": 2018
+          },
+          {
+            "code": "002522",
+            "cutoff": "2018-06-30",
+            "distance": 0.004669031882094998,
+            "in_ratio3": true,
+            "sample_index": 1630,
+            "size": 2085223168.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6026,
+            "year": 2018
+          },
+          {
+            "code": "300425",
+            "cutoff": "2018-06-30",
+            "distance": 0.008241288068465025,
+            "in_ratio3": false,
+            "sample_index": 5299,
+            "size": 2092685440.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5647,
+            "year": 2018
+          },
+          {
+            "code": "300259",
+            "cutoff": "2018-06-30",
+            "distance": 0.014848840966298127,
+            "in_ratio3": false,
+            "sample_index": 4387,
+            "size": 2044918656.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2092,
+            "year": 2018
+          }
+        ],
+        "positive": {
+          "code": "600186",
+          "cutoff": "2018-06-30",
+          "sample_index": 7578,
+          "size": 2075509888.0,
+          "size_available": true,
+          "year": 2018
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002457",
+            "cutoff": "2017-06-30",
+            "distance": 0.011758512855411851,
+            "in_ratio3": true,
+            "sample_index": 1479,
+            "size": 2473638144.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6143,
+            "year": 2017
+          },
+          {
+            "code": "002592",
+            "cutoff": "2017-06-30",
+            "distance": 0.016613306755612456,
+            "in_ratio3": true,
+            "sample_index": 1887,
+            "size": 2544824832.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4305,
+            "year": 2017
+          },
+          {
+            "code": "300381",
+            "cutoff": "2017-06-30",
+            "distance": 0.020437485557135204,
+            "in_ratio3": true,
+            "sample_index": 5046,
+            "size": 2452262400.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4971,
+            "year": 2017
+          },
+          {
+            "code": "300337",
+            "cutoff": "2017-06-30",
+            "distance": 0.02250378951409715,
+            "in_ratio3": false,
+            "sample_index": 4839,
+            "size": 2447200512.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1117,
+            "year": 2017
+          },
+          {
+            "code": "002108",
+            "cutoff": "2017-06-30",
+            "distance": 0.02730199612932438,
+            "in_ratio3": false,
+            "sample_index": 449,
+            "size": 2435486464.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4105,
+            "year": 2017
+          }
+        ],
+        "positive": {
+          "code": "600202",
+          "cutoff": "2017-06-30",
+          "sample_index": 7590,
+          "size": 2502896128.0,
+          "size_available": true,
+          "year": 2017
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002006",
+            "cutoff": "2008-06-30",
+            "distance": 0.0334645670111513,
+            "in_ratio3": true,
+            "sample_index": 200,
+            "size": 1012996864.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2240,
+            "year": 2008
+          },
+          {
+            "code": "000952",
+            "cutoff": "2008-06-30",
+            "distance": 0.20445753262193023,
+            "in_ratio3": true,
+            "sample_index": 131,
+            "size": 798509056.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 550,
+            "year": 2008
+          },
+          {
+            "code": "600202",
+            "cutoff": "2008-06-30",
+            "distance": 0.2059313527489266,
+            "in_ratio3": true,
+            "sample_index": 7581,
+            "size": 1203675648.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2626,
+            "year": 2008
+          },
+          {
+            "code": "600495",
+            "cutoff": "2008-06-30",
+            "distance": 0.23125310400505228,
+            "in_ratio3": false,
+            "sample_index": 7871,
+            "size": 777396672.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3370,
+            "year": 2008
+          },
+          {
+            "code": "002054",
+            "cutoff": "2008-06-30",
+            "distance": 0.2638464338443782,
+            "in_ratio3": false,
+            "sample_index": 280,
+            "size": 752467200.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5556,
+            "year": 2008
+          }
+        ],
+        "positive": {
+          "code": "600678",
+          "cutoff": "2008-06-30",
+          "sample_index": 7980,
+          "size": 979658304.0,
+          "size_available": true,
+          "year": 2008
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002420",
+            "cutoff": "2011-06-30",
+            "distance": 0.025341085363130844,
+            "in_ratio3": true,
+            "sample_index": 1353,
+            "size": 1486885504.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 156,
+            "year": 2011
+          },
+          {
+            "code": "002115",
+            "cutoff": "2011-06-30",
+            "distance": 0.03245629399239647,
+            "in_ratio3": true,
+            "sample_index": 477,
+            "size": 1476343552.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2683,
+            "year": 2011
+          },
+          {
+            "code": "000565",
+            "cutoff": "2011-06-30",
+            "distance": 0.039002943711174964,
+            "in_ratio3": true,
+            "sample_index": 39,
+            "size": 1466710016.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3196,
+            "year": 2011
+          },
+          {
+            "code": "600367",
+            "cutoff": "2011-06-30",
+            "distance": 0.0484462117331681,
+            "in_ratio3": false,
+            "sample_index": 7740,
+            "size": 1452924672.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2214,
+            "year": 2011
+          },
+          {
+            "code": "002317",
+            "cutoff": "2011-06-30",
+            "distance": 0.0829814689611581,
+            "in_ratio3": false,
+            "sample_index": 1065,
+            "size": 1403604096.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2419,
+            "year": 2011
+          }
+        ],
+        "positive": {
+          "code": "600882",
+          "cutoff": "2011-06-30",
+          "sample_index": 8043,
+          "size": 1525046272.0,
+          "size_available": true,
+          "year": 2011
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "002442",
+            "cutoff": "2017-06-30",
+            "distance": 0.0064256570665861545,
+            "in_ratio3": true,
+            "sample_index": 1423,
+            "size": 2830343936.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5161,
+            "year": 2017
+          },
+          {
+            "code": "002308",
+            "cutoff": "2017-06-30",
+            "distance": 0.011563377984206369,
+            "in_ratio3": true,
+            "sample_index": 1056,
+            "size": 2881719808.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5553,
+            "year": 2017
+          },
+          {
+            "code": "300007",
+            "cutoff": "2017-06-30",
+            "distance": 0.013351793149865898,
+            "in_ratio3": true,
+            "sample_index": 2921,
+            "size": 2810808320.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3932,
+            "year": 2017
+          },
+          {
+            "code": "002497",
+            "cutoff": "2017-06-30",
+            "distance": 0.015577973212302254,
+            "in_ratio3": false,
+            "sample_index": 1605,
+            "size": 2893312000.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1170,
+            "year": 2017
+          },
+          {
+            "code": "300105",
+            "cutoff": "2017-06-30",
+            "distance": 0.01967701623500062,
+            "in_ratio3": false,
+            "sample_index": 3529,
+            "size": 2793085440.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3165,
+            "year": 2017
+          }
+        ],
+        "positive": {
+          "code": "601798",
+          "cutoff": "2017-06-30",
+          "sample_index": 8110,
+          "size": 2848589312.0,
+          "size_available": true,
+          "year": 2017
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "603182",
+            "cutoff": "2024-06-30",
+            "distance": 0.0008413160832567712,
+            "in_ratio3": true,
+            "sample_index": 8499,
+            "size": 1183475584.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4488,
+            "year": 2024
+          },
+          {
+            "code": "300989",
+            "cutoff": "2024-06-30",
+            "distance": 0.002039103890570715,
+            "in_ratio3": true,
+            "sample_index": 7138,
+            "size": 1182058880.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2511,
+            "year": 2024
+          },
+          {
+            "code": "300452",
+            "cutoff": "2024-06-30",
+            "distance": 0.0033156314067745996,
+            "in_ratio3": true,
+            "sample_index": 5443,
+            "size": 1180550912.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2351,
+            "year": 2024
+          },
+          {
+            "code": "688198",
+            "cutoff": "2024-06-30",
+            "distance": 0.0038440124885390503,
+            "in_ratio3": false,
+            "sample_index": 10100,
+            "size": 1179927296.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3651,
+            "year": 2024
+          },
+          {
+            "code": "300414",
+            "cutoff": "2024-06-30",
+            "distance": 0.00588258349790749,
+            "in_ratio3": false,
+            "sample_index": 5260,
+            "size": 1191459968.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4274,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "603261",
+          "cutoff": "2024-06-30",
+          "sample_index": 8602,
+          "size": 1184471680.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688314",
+            "cutoff": "2024-06-30",
+            "distance": 0.01948997362073257,
+            "in_ratio3": true,
+            "sample_index": 10291,
+            "size": 638219840.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4982,
+            "year": 2024
+          },
+          {
+            "code": "603159",
+            "cutoff": "2024-06-30",
+            "distance": 0.02026994636875301,
+            "in_ratio3": true,
+            "sample_index": 8482,
+            "size": 637722240.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5485,
+            "year": 2024
+          },
+          {
+            "code": "300720",
+            "cutoff": "2024-06-30",
+            "distance": 0.023588336718429304,
+            "in_ratio3": true,
+            "sample_index": 6607,
+            "size": 635609536.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5189,
+            "year": 2024
+          },
+          {
+            "code": "300238",
+            "cutoff": "2024-06-30",
+            "distance": 0.029512067021951083,
+            "in_ratio3": false,
+            "sample_index": 4250,
+            "size": 670272832.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4006,
+            "year": 2024
+          },
+          {
+            "code": "603696",
+            "cutoff": "2024-06-30",
+            "distance": 0.03678425172580191,
+            "in_ratio3": false,
+            "sample_index": 9151,
+            "size": 627277184.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 569,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "603268",
+          "cutoff": "2024-06-30",
+          "sample_index": 8623,
+          "size": 650780736.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "603056",
+            "cutoff": "2023-06-30",
+            "distance": 0.07291707797512359,
+            "in_ratio3": true,
+            "sample_index": 8317,
+            "size": 15897981952.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6049,
+            "year": 2023
+          },
+          {
+            "code": "601677",
+            "cutoff": "2023-06-30",
+            "distance": 0.10157854619949802,
+            "in_ratio3": true,
+            "sample_index": 8099,
+            "size": 18928861184.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 333,
+            "year": 2023
+          },
+          {
+            "code": "002226",
+            "cutoff": "2023-06-30",
+            "distance": 0.11224687014112078,
+            "in_ratio3": true,
+            "sample_index": 828,
+            "size": 15284853760.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1403,
+            "year": 2023
+          },
+          {
+            "code": "300072",
+            "cutoff": "2023-06-30",
+            "distance": 0.1467048266778015,
+            "in_ratio3": false,
+            "sample_index": 3340,
+            "size": 14767139840.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3962,
+            "year": 2023
+          },
+          {
+            "code": "688005",
+            "cutoff": "2023-06-30",
+            "distance": 0.15116541173880904,
+            "in_ratio3": false,
+            "sample_index": 9687,
+            "size": 14701416448.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2303,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "603363",
+          "cutoff": "2023-06-30",
+          "sample_index": 8743,
+          "size": 17100526592.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300354",
+            "cutoff": "2023-06-30",
+            "distance": 0.006310047606021385,
+            "in_ratio3": true,
+            "sample_index": 4929,
+            "size": 545294336.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3855,
+            "year": 2023
+          },
+          {
+            "code": "688013",
+            "cutoff": "2023-06-30",
+            "distance": 0.007154513329709289,
+            "in_ratio3": true,
+            "sample_index": 9706,
+            "size": 544834048.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1710,
+            "year": 2023
+          },
+          {
+            "code": "301230",
+            "cutoff": "2023-06-30",
+            "distance": 0.01637698937862453,
+            "in_ratio3": true,
+            "sample_index": 7388,
+            "size": 557806848.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 839,
+            "year": 2023
+          },
+          {
+            "code": "300417",
+            "cutoff": "2023-06-30",
+            "distance": 0.01945915630707873,
+            "in_ratio3": false,
+            "sample_index": 5277,
+            "size": 538171136.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5140,
+            "year": 2023
+          },
+          {
+            "code": "301255",
+            "cutoff": "2023-06-30",
+            "distance": 0.03047989735134138,
+            "in_ratio3": false,
+            "sample_index": 7393,
+            "size": 565729280.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1004,
+            "year": 2023
+          }
+        ],
+        "positive": {
+          "code": "603963",
+          "cutoff": "2023-06-30",
+          "sample_index": 9442,
+          "size": 548746048.0,
+          "size_available": true,
+          "year": 2023
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "300004",
+            "cutoff": "2024-06-30",
+            "distance": 1.3121862469489542e-05,
+            "in_ratio3": true,
+            "sample_index": 2898,
+            "size": 1911936256.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3455,
+            "year": 2024
+          },
+          {
+            "code": "300848",
+            "cutoff": "2024-06-30",
+            "distance": 0.0016550747675232458,
+            "in_ratio3": true,
+            "sample_index": 6895,
+            "size": 1915078144.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3552,
+            "year": 2024
+          },
+          {
+            "code": "300909",
+            "cutoff": "2024-06-30",
+            "distance": 0.0017677356314784731,
+            "in_ratio3": true,
+            "sample_index": 7034,
+            "size": 1908534400.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6034,
+            "year": 2024
+          },
+          {
+            "code": "688150",
+            "cutoff": "2024-06-30",
+            "distance": 0.0017799419308133224,
+            "in_ratio3": false,
+            "sample_index": 9993,
+            "size": 1908511104.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3095,
+            "year": 2024
+          },
+          {
+            "code": "301040",
+            "cutoff": "2024-06-30",
+            "distance": 0.008543613710692455,
+            "in_ratio3": false,
+            "sample_index": 7207,
+            "size": 1928315776.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 4032,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "605081",
+          "cutoff": "2024-06-30",
+          "sample_index": 9533,
+          "size": 1911911168.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688679",
+            "cutoff": "2024-06-30",
+            "distance": 0.0009880343856281115,
+            "in_ratio3": true,
+            "sample_index": 10661,
+            "size": 2309774080.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5181,
+            "year": 2024
+          },
+          {
+            "code": "603229",
+            "cutoff": "2024-06-30",
+            "distance": 0.0014146040032798624,
+            "in_ratio3": true,
+            "sample_index": 8580,
+            "size": 2315330304.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5398,
+            "year": 2024
+          },
+          {
+            "code": "688323",
+            "cutoff": "2024-06-30",
+            "distance": 0.0019656305376258842,
+            "in_ratio3": true,
+            "sample_index": 10309,
+            "size": 2316606464.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 3735,
+            "year": 2024
+          },
+          {
+            "code": "300200",
+            "cutoff": "2024-06-30",
+            "distance": 0.0024042450134764692,
+            "in_ratio3": false,
+            "sample_index": 4005,
+            "size": 2317622784.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 501,
+            "year": 2024
+          },
+          {
+            "code": "300501",
+            "cutoff": "2024-06-30",
+            "distance": 0.002904293700112248,
+            "in_ratio3": false,
+            "sample_index": 5682,
+            "size": 2305352192.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2052,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "605199",
+          "cutoff": "2024-06-30",
+          "sample_index": 9598,
+          "size": 2312057344.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "603665",
+            "cutoff": "2024-06-30",
+            "distance": 0.0022102253065732214,
+            "in_ratio3": true,
+            "sample_index": 9076,
+            "size": 4115300096.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 6010,
+            "year": 2024
+          },
+          {
+            "code": "603158",
+            "cutoff": "2024-06-30",
+            "distance": 0.004590661756044057,
+            "in_ratio3": true,
+            "sample_index": 8474,
+            "size": 4087407360.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 266,
+            "year": 2024
+          },
+          {
+            "code": "300401",
+            "cutoff": "2024-06-30",
+            "distance": 0.006226003623762466,
+            "in_ratio3": true,
+            "sample_index": 5152,
+            "size": 4131859456.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1625,
+            "year": 2024
+          },
+          {
+            "code": "601996",
+            "cutoff": "2024-06-30",
+            "distance": 0.006702715490455091,
+            "in_ratio3": false,
+            "sample_index": 8136,
+            "size": 4133829632.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1487,
+            "year": 2024
+          },
+          {
+            "code": "603987",
+            "cutoff": "2024-06-30",
+            "distance": 0.007707488540582119,
+            "in_ratio3": false,
+            "sample_index": 9487,
+            "size": 4137985280.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 51,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "688184",
+          "cutoff": "2024-06-30",
+          "sample_index": 10069,
+          "size": 4106214400.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688286",
+            "cutoff": "2021-06-30",
+            "distance": 0.029583456039851797,
+            "in_ratio3": true,
+            "sample_index": 10237,
+            "size": 339485440.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 824,
+            "year": 2021
+          },
+          {
+            "code": "300906",
+            "cutoff": "2021-06-30",
+            "distance": 0.03557616538862973,
+            "in_ratio3": true,
+            "sample_index": 7019,
+            "size": 362342784.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5056,
+            "year": 2021
+          },
+          {
+            "code": "300553",
+            "cutoff": "2021-06-30",
+            "distance": 0.061586048434911334,
+            "in_ratio3": true,
+            "sample_index": 5894,
+            "size": 371890912.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 800,
+            "year": 2021
+          },
+          {
+            "code": "300876",
+            "cutoff": "2021-06-30",
+            "distance": 0.08527546792754137,
+            "in_ratio3": false,
+            "sample_index": 6955,
+            "size": 321095648.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2232,
+            "year": 2021
+          },
+          {
+            "code": "688233",
+            "cutoff": "2021-06-30",
+            "distance": 0.0953147803817167,
+            "in_ratio3": false,
+            "sample_index": 10171,
+            "size": 384648256.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1931,
+            "year": 2021
+          }
+        ],
+        "positive": {
+          "code": "688309",
+          "cutoff": "2021-06-30",
+          "sample_index": 10271,
+          "size": 349678624.0,
+          "size_available": true,
+          "year": 2021
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "688611",
+            "cutoff": "2024-06-30",
+            "distance": 0.002871765958690986,
+            "in_ratio3": true,
+            "sample_index": 10610,
+            "size": 877698176.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 508,
+            "year": 2024
+          },
+          {
+            "code": "300588",
+            "cutoff": "2024-06-30",
+            "distance": 0.004435508898801288,
+            "in_ratio3": true,
+            "sample_index": 6049,
+            "size": 879071744.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 695,
+            "year": 2024
+          },
+          {
+            "code": "301359",
+            "cutoff": "2024-06-30",
+            "distance": 0.004700698956565219,
+            "in_ratio3": true,
+            "sample_index": 7444,
+            "size": 879304896.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1348,
+            "year": 2024
+          },
+          {
+            "code": "300753",
+            "cutoff": "2024-06-30",
+            "distance": 0.005109373845986198,
+            "in_ratio3": false,
+            "sample_index": 6676,
+            "size": 870721024.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1565,
+            "year": 2024
+          },
+          {
+            "code": "603860",
+            "cutoff": "2024-06-30",
+            "distance": 0.0076541717110423235,
+            "in_ratio3": false,
+            "sample_index": 9308,
+            "size": 868508032.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 504,
+            "year": 2024
+          }
+        ],
+        "positive": {
+          "code": "688511",
+          "cutoff": "2024-06-30",
+          "sample_index": 10499,
+          "size": 875181248.0,
+          "size_available": true,
+          "year": 2024
+        }
+      },
+      {
+        "controls": [
+          {
+            "code": "301068",
+            "cutoff": "2022-06-30",
+            "distance": 0.001859782739153104,
+            "in_ratio3": true,
+            "sample_index": 7238,
+            "size": 948329600.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 607,
+            "year": 2022
+          },
+          {
+            "code": "300845",
+            "cutoff": "2022-06-30",
+            "distance": 0.0049011338309377095,
+            "in_ratio3": true,
+            "sample_index": 6885,
+            "size": 941939648.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 5122,
+            "year": 2022
+          },
+          {
+            "code": "002892",
+            "cutoff": "2022-06-30",
+            "distance": 0.007384475589240935,
+            "in_ratio3": true,
+            "sample_index": 2620,
+            "size": 939603392.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2378,
+            "year": 2022
+          },
+          {
+            "code": "002903",
+            "cutoff": "2022-06-30",
+            "distance": 0.008219006571916765,
+            "in_ratio3": false,
+            "sample_index": 2655,
+            "size": 954379456.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 2928,
+            "year": 2022
+          },
+          {
+            "code": "300480",
+            "cutoff": "2022-06-30",
+            "distance": 0.009846413484872585,
+            "in_ratio3": false,
+            "sample_index": 5566,
+            "size": 937292992.0,
+            "size_available": true,
+            "size_distance_skipped": false,
+            "tie_rank": 1519,
+            "year": 2022
+          }
+        ],
+        "positive": {
+          "code": "688555",
+          "cutoff": "2022-06-30",
+          "sample_index": 10537,
+          "size": 946567552.0,
+          "size_available": true,
+          "year": 2022
+        }
+      }
+    ],
+    "preprocessing_fit_scope": "original full training pool, unchanged from the baseline fold",
+    "protocol_sha256": "d6a283e690b919bd95028e2c8891015b8b7b023ec7a4469d063142d3e129a084",
+    "protocol_version": "matched-negatives-v1",
+    "ratio_actual": 5.0,
+    "ratio_requested": 5,
+    "schema_version": 1,
+    "seed": 42,
+    "size_matching": {
+      "age_quarters": 2,
+      "feature_index": 30,
+      "field": "AF_CFEATUREPROFILE-CompanySize",
+      "full_training_negative_size_missing": 0,
+      "missing_positive_indices": [
+        1063
+      ],
+      "native_quarter_node": 19,
+      "point_in_time_verified": false,
+      "positive_size_missing": 1,
+      "same_year_size_distance_fallback_pairs": 5,
+      "selected_negative_size_missing": 0,
+      "unit": "yuan; historical opening-assets proxy, not market capitalization"
+    },
+    "stable_keys_sha256": {
+      "test": "409249b215e4aca6093942936588d7fca037fd06fb2513584c757315914e747f",
+      "train_full": "3d697e9d4604a1e51ab78c169ef42bc78a63049681a5f65898bf396985e674f6",
+      "train_selected": "dcc18836791f6a72206a8fcf9a83a1d37c18ba8aeb10b9f4106c6aa335a17317",
+      "validation": "9653790abbc67b2f067325ea4d196157b9b5cf6947041f58ff7287de982b2c3a"
+    },
+    "test": {
+      "companies": 308,
+      "negatives": 2125,
+      "positives": 20,
+      "prevalence": 0.009324009324009324,
+      "windows": 2145
+    },
+    "train_full": {
+      "companies": 921,
+      "negatives": 6373,
+      "positives": 60,
+      "prevalence": 0.00932690812995492,
+      "windows": 6433
+    },
+    "train_selected": {
+      "companies": 341,
+      "negatives": 300,
+      "positives": 60,
+      "prevalence": 0.16666666666666666,
+      "windows": 360
+    },
+    "validation": {
+      "companies": 307,
+      "negatives": 2125,
+      "positives": 20,
+      "prevalence": 0.009324009324009324,
+      "windows": 2145
+    },
+    "year_statistics": {
+      "test": {
+        "2006": {
+          "negatives": 10,
+          "positives": 0,
+          "windows": 10
+        },
+        "2007": {
+          "negatives": 11,
+          "positives": 0,
+          "windows": 11
+        },
+        "2008": {
+          "negatives": 14,
+          "positives": 0,
+          "windows": 14
+        },
+        "2009": {
+          "negatives": 19,
+          "positives": 1,
+          "windows": 20
+        },
+        "2010": {
+          "negatives": 24,
+          "positives": 0,
+          "windows": 24
+        },
+        "2011": {
+          "negatives": 43,
+          "positives": 0,
+          "windows": 43
+        },
+        "2012": {
+          "negatives": 59,
+          "positives": 0,
+          "windows": 59
+        },
+        "2013": {
+          "negatives": 69,
+          "positives": 1,
+          "windows": 70
+        },
+        "2014": {
+          "negatives": 69,
+          "positives": 0,
+          "windows": 69
+        },
+        "2015": {
+          "negatives": 76,
+          "positives": 0,
+          "windows": 76
+        },
+        "2016": {
+          "negatives": 93,
+          "positives": 1,
+          "windows": 94
+        },
+        "2017": {
+          "negatives": 111,
+          "positives": 0,
+          "windows": 111
+        },
+        "2018": {
+          "negatives": 153,
+          "positives": 0,
+          "windows": 153
+        },
+        "2019": {
+          "negatives": 156,
+          "positives": 3,
+          "windows": 159
+        },
+        "2020": {
+          "negatives": 175,
+          "positives": 1,
+          "windows": 176
+        },
+        "2021": {
+          "negatives": 215,
+          "positives": 2,
+          "windows": 217
+        },
+        "2022": {
+          "negatives": 255,
+          "positives": 5,
+          "windows": 260
+        },
+        "2023": {
+          "negatives": 285,
+          "positives": 2,
+          "windows": 287
+        },
+        "2024": {
+          "negatives": 288,
+          "positives": 4,
+          "windows": 292
+        }
+      },
+      "train_full": {
+        "2006": {
+          "negatives": 30,
+          "positives": 1,
+          "windows": 31
+        },
+        "2007": {
+          "negatives": 35,
+          "positives": 0,
+          "windows": 35
+        },
+        "2008": {
+          "negatives": 44,
+          "positives": 2,
+          "windows": 46
+        },
+        "2009": {
+          "negatives": 54,
+          "positives": 0,
+          "windows": 54
+        },
+        "2010": {
+          "negatives": 70,
+          "positives": 0,
+          "windows": 70
+        },
+        "2011": {
+          "negatives": 123,
+          "positives": 1,
+          "windows": 124
+        },
+        "2012": {
+          "negatives": 175,
+          "positives": 0,
+          "windows": 175
+        },
+        "2013": {
+          "negatives": 203,
+          "positives": 2,
+          "windows": 205
+        },
+        "2014": {
+          "negatives": 203,
+          "positives": 0,
+          "windows": 203
+        },
+        "2015": {
+          "negatives": 226,
+          "positives": 1,
+          "windows": 227
+        },
+        "2016": {
+          "negatives": 282,
+          "positives": 0,
+          "windows": 282
+        },
+        "2017": {
+          "negatives": 330,
+          "positives": 4,
+          "windows": 334
+        },
+        "2018": {
+          "negatives": 453,
+          "positives": 4,
+          "windows": 457
+        },
+        "2019": {
+          "negatives": 469,
+          "positives": 2,
+          "windows": 471
+        },
+        "2020": {
+          "negatives": 521,
+          "positives": 4,
+          "windows": 525
+        },
+        "2021": {
+          "negatives": 650,
+          "positives": 3,
+          "windows": 653
+        },
+        "2022": {
+          "negatives": 780,
+          "positives": 4,
+          "windows": 784
+        },
+        "2023": {
+          "negatives": 866,
+          "positives": 9,
+          "windows": 875
+        },
+        "2024": {
+          "negatives": 859,
+          "positives": 23,
+          "windows": 882
+        }
+      },
+      "train_selected": {
+        "2006": {
+          "negatives": 5,
+          "positives": 1,
+          "windows": 6
+        },
+        "2007": {
+          "negatives": 0,
+          "positives": 0,
+          "windows": 0
+        },
+        "2008": {
+          "negatives": 10,
+          "positives": 2,
+          "windows": 12
+        },
+        "2009": {
+          "negatives": 0,
+          "positives": 0,
+          "windows": 0
+        },
+        "2010": {
+          "negatives": 0,
+          "positives": 0,
+          "windows": 0
+        },
+        "2011": {
+          "negatives": 5,
+          "positives": 1,
+          "windows": 6
+        },
+        "2012": {
+          "negatives": 0,
+          "positives": 0,
+          "windows": 0
+        },
+        "2013": {
+          "negatives": 10,
+          "positives": 2,
+          "windows": 12
+        },
+        "2014": {
+          "negatives": 0,
+          "positives": 0,
+          "windows": 0
+        },
+        "2015": {
+          "negatives": 5,
+          "positives": 1,
+          "windows": 6
+        },
+        "2016": {
+          "negatives": 0,
+          "positives": 0,
+          "windows": 0
+        },
+        "2017": {
+          "negatives": 20,
+          "positives": 4,
+          "windows": 24
+        },
+        "2018": {
+          "negatives": 20,
+          "positives": 4,
+          "windows": 24
+        },
+        "2019": {
+          "negatives": 10,
+          "positives": 2,
+          "windows": 12
+        },
+        "2020": {
+          "negatives": 20,
+          "positives": 4,
+          "windows": 24
+        },
+        "2021": {
+          "negatives": 15,
+          "positives": 3,
+          "windows": 18
+        },
+        "2022": {
+          "negatives": 20,
+          "positives": 4,
+          "windows": 24
+        },
+        "2023": {
+          "negatives": 45,
+          "positives": 9,
+          "windows": 54
+        },
+        "2024": {
+          "negatives": 115,
+          "positives": 23,
+          "windows": 138
+        }
+      },
+      "validation": {
+        "2006": {
+          "negatives": 9,
+          "positives": 1,
+          "windows": 10
+        },
+        "2007": {
+          "negatives": 11,
+          "positives": 0,
+          "windows": 11
+        },
+        "2008": {
+          "negatives": 14,
+          "positives": 0,
+          "windows": 14
+        },
+        "2009": {
+          "negatives": 16,
+          "positives": 0,
+          "windows": 16
+        },
+        "2010": {
+          "negatives": 21,
+          "positives": 0,
+          "windows": 21
+        },
+        "2011": {
+          "negatives": 41,
+          "positives": 0,
+          "windows": 41
+        },
+        "2012": {
+          "negatives": 59,
+          "positives": 2,
+          "windows": 61
+        },
+        "2013": {
+          "negatives": 69,
+          "positives": 1,
+          "windows": 70
+        },
+        "2014": {
+          "negatives": 69,
+          "positives": 0,
+          "windows": 69
+        },
+        "2015": {
+          "negatives": 80,
+          "positives": 0,
+          "windows": 80
+        },
+        "2016": {
+          "negatives": 96,
+          "positives": 0,
+          "windows": 96
+        },
+        "2017": {
+          "negatives": 113,
+          "positives": 0,
+          "windows": 113
+        },
+        "2018": {
+          "negatives": 154,
+          "positives": 1,
+          "windows": 155
+        },
+        "2019": {
+          "negatives": 158,
+          "positives": 1,
+          "windows": 159
+        },
+        "2020": {
+          "negatives": 172,
+          "positives": 4,
+          "windows": 176
+        },
+        "2021": {
+          "negatives": 215,
+          "positives": 1,
+          "windows": 216
+        },
+        "2022": {
+          "negatives": 256,
+          "positives": 3,
+          "windows": 259
+        },
+        "2023": {
+          "negatives": 285,
+          "positives": 3,
+          "windows": 288
+        },
+        "2024": {
+          "negatives": 287,
+          "positives": 3,
+          "windows": 290
+        }
+      }
+    },
+    "manifest_sha256": "2effe43fe6baaa074297da1b9809bb1d2372f41cec804d504a5c37520ec61b90",
+    "manifest_path": "/data_disk/disk_1/hl/workspace/The_Latest_ST_Project/cache/sampling_v1/fold_3.json"
+  },
+  "epochs_completed": 18,
+  "optimizer_steps": 108,
+  "training_examples_seen": 6480,
+  "positive_training_exposures": 1080,
+  "attention_backend": "default",
+  "artifact_sha256": {
+    "best.pt": "85eb1608c35faa81be5d35f1908fb468caad236a08d0ab9ec97e4d5d0d2d2786",
+    "started.json": "487e597d5cc86a0b41a4fcaddbb5167bf9859f2adab8d3bda609938109edb1ea",
+    "preprocessing.json": "40706c5d50392ba5a4905434a37b5efae1d79d386354efdd2ef196d737377e70",
+    "epochs.jsonl": "b20438e50002237062a7fb0271e3114d144c8c4fef24b56936ad954d7c8b4555",
+    "predictions.csv": "de17cbf5d6df44340ae6afcdbbf3ed29e514dff6d30b39c09890dc377b307143",
+    "validation_metrics.json": "b7723a5e18d44c51d7aea4436b5b7965286ff76317935f809958bc69be554e01",
+    "validation_predictions.csv": "0acaf5c8f859b121a7efce412731248a102fe008d5e2c36e9598f90c9f14d463"
+  }
+}

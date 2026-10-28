@@ -1,0 +1,553 @@
+{
+  "fingerprint": "4be53d01863402a7b4d0d39a58760cc6bc2e293b22b344c317c2d3173bb0e35e",
+  "design": {
+    "version": 1,
+    "experiment": "sampled_baselines_v1",
+    "ratios": [
+      3,
+      5
+    ],
+    "models": [
+      "DLinear",
+      "TiRex",
+      "XLSTMMixer",
+      "LightTS",
+      "Pyraformer",
+      "TimeFilter",
+      "TimesNet",
+      "Reformer",
+      "Informer",
+      "Autoformer",
+      "ETSformer",
+      "FEDformer",
+      "TimeMoE",
+      "SEMPO"
+    ],
+    "folds": 5,
+    "seed": 42,
+    "threshold": 0.5,
+    "train_selection": "unchanged cache/sampling_v1/fold_k.json manifests",
+    "preprocessing": "original full training pool; exactly match original model/fold preprocessing",
+    "validation_test": "complete original company groups, no resampling",
+    "loss": "BCEWithLogitsLoss actual selected negatives/positives; original auxiliary losses",
+    "checkpoint": "strict validation AP improvement; original patience/epochs",
+    "budget": "same epochs/patience, 4 or 6 optimizer updates/epoch; not equal full-data update budgets",
+    "attention_backend": {
+      "SEMPO": "SDPBackend.MATH",
+      "others": "default"
+    },
+    "TimeFilter": "train batch64, microbatch16, eval batch16",
+    "comparison": "28 new baseline and 6 original PerSeM sampling conditions; no test-based selection"
+  },
+  "condition_ratio": null,
+  "baseline_fingerprint": "aa08df924ec57cc2ba83c54de2d58d8b1faf1901467844f3d626d5c2a0e3a50a",
+  "config": {
+    "seed": 42,
+    "epochs": 100,
+    "patience": 15,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dim": 64,
+    "depth": 2,
+    "dropout": 0.1,
+    "text_dim": 64,
+    "threshold": 0.5,
+    "gradient_clip": 1.0,
+    "bert_batch_size": 128,
+    "torch_threads": 6,
+    "auxiliary_loss_weight": 0.01,
+    "graph_microbatch_size": 16
+  },
+  "source_sha256": {
+    "run_sampled_baselines.py": "819d88d7ceb5438b6d089434e042f7a92d2114b6e974ab6ac851994391f75e49",
+    "run.py": "9a3ab69a895b95e8df92b7fa3ac970939f2149a89e2712a6ab858aa2f6d20ec2",
+    "data.py": "a940f7581bf1cc880ce09c07c21b0f98982d9f75a3a1f5de971890376b358771",
+    "models_classic.py": "831703ac07f6c1bce6dfe36a34afe70b39dfc7118622f746c7d31ecd0e5a4185",
+    "models_recent.py": "3af9ba5490d07779e8ddaf6f274ef213d3dce94688ac0215612a4440db539a5d",
+    "sampling.py": "86e8948351da3841cae37288350bc7ccc7218e98310ba156691084ca59815b72",
+    "run_persem.py": "3f1c824f10e95a3bbb718fbf6fcb5ddbab943b011ecb3c3c8aa62e06c97a2325",
+    "models_persem.py": "96c8751a3adf8bfac459ce459ab5483f265ce6fd02149849e7469e7c3a3ac921",
+    "config.json": "c50261e640891e166535a387a3225f7c143ec816f1431376f7a81aec8e613b9d",
+    "README.md": "573b534753c81a406454b23f633ef62e71f0a376073d5fe16bf0f8f632d7a5ee"
+  },
+  "manifest_sha256": {
+    "0": "19da0f424a03d75edfcdb6775cfc8b5334aeffb723b17148bec06c4a2eadb6bc",
+    "1": "a728d086fb1cd1c9536156575dafe0e4f978244bbfff39c7ed58656abef37a87",
+    "2": "b92da53d6196ff45cb9cc7b71fe37391e9c42d688bc35dbe88532a2ef1a3ab1c",
+    "3": "2effe43fe6baaa074297da1b9809bb1d2372f41cec804d504a5c37520ec61b90",
+    "4": "6fee36430bdc01e06b8415e4d011bb1a5d10210694175e2a78ca0d624e1a86fc"
+  },
+  "preserved_identity_sha256": "f799e204b871dfce7f92206f339918a573907057a903aa4a95c956bae1e5b9dc",
+  "pilot_reference": {
+    "fingerprint": "6645926b16665a6e6f52e00af0ed6bcd4f1a5d17eaf33574b4757a4d7d7683d1",
+    "condition_fingerprints": {
+      "3": "40297cf7a1840b2e0547fffb7372c2f02d83f6da3e7099e37cb366b4db5ab16e",
+      "5": "621f23c372dd630244d5adb4788972e431a124160c776e64da18519ce0d90276"
+    },
+    "summary_sha256": "e7d447718889c57a6b2b17087690ec0d225e443c609c739cbab1b6f9aa1e3ced",
+    "protocol_sha256": "2adb1aef41d8743917ceaabf5b6cd6043fa1dfc7e9110f457c8b8fefe53e1662",
+    "snapshot_sha256": "1fcd532162a04d18e6335c1ae0b70f7f3c8aadaf0caa70e68de0e79af1cece96",
+    "legacy_identity_sha256": "88f530c9d1b9d315b4a47faeedff2e8fbc011ff9648dbdaa83ea5a75fa56e475"
+  },
+  "experiment": "sampled_baselines_v1",
+  "expected_runs": 140,
+  "fold_statistics": [
+    {
+      "fold": 0,
+      "ratio": 3,
+      "train_full": {
+        "companies": 922,
+        "negatives": 6375,
+        "positives": 60,
+        "prevalence": 0.009324009324009324,
+        "windows": 6435
+      },
+      "train_selected": {
+        "companies": 231,
+        "negatives": 180,
+        "positives": 60,
+        "prevalence": 0.25,
+        "windows": 240
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "manifest_sha256": "19da0f424a03d75edfcdb6775cfc8b5334aeffb723b17148bec06c4a2eadb6bc",
+      "index_sha256": {
+        "test": "a7118cd7a85cbdd30b46db9e90fde2cb3c49272457c1ac777b2c00415a06a47f",
+        "train_full": "d052ba376980750853abdd48d1e49cdfb55538ed583cdfb1596685d29340cec0",
+        "train_selected": "404006073df249fe8adce673019561d6eb4fa4b92386db4a9356e817d9a322a8",
+        "validation": "76aeb7ba9ccd192e68feddf284bafac76a1e555a782a6c561997787b1ce77306"
+      },
+      "stable_keys_sha256": {
+        "test": "c8081e5223090fe121f8c736576138404a455dd59270c9b0eac3cf648b4242ae",
+        "train_full": "3832f9daa13e45546f2aac0d9a158f803fcde0c389e93d8cdbf0cdb0243135ff",
+        "train_selected": "a08764c6173140642731dd50c1005b0cff7a0a2ab932ab65b07513a08843d9c6",
+        "validation": "76e1146ecc0014568f25da4ba7fef476ddebc9bfb084d36d9ae30b4e5d51c65c"
+      }
+    },
+    {
+      "fold": 0,
+      "ratio": 5,
+      "train_full": {
+        "companies": 922,
+        "negatives": 6375,
+        "positives": 60,
+        "prevalence": 0.009324009324009324,
+        "windows": 6435
+      },
+      "train_selected": {
+        "companies": 345,
+        "negatives": 300,
+        "positives": 60,
+        "prevalence": 0.16666666666666666,
+        "windows": 360
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "manifest_sha256": "19da0f424a03d75edfcdb6775cfc8b5334aeffb723b17148bec06c4a2eadb6bc",
+      "index_sha256": {
+        "test": "a7118cd7a85cbdd30b46db9e90fde2cb3c49272457c1ac777b2c00415a06a47f",
+        "train_full": "d052ba376980750853abdd48d1e49cdfb55538ed583cdfb1596685d29340cec0",
+        "train_selected": "2007884439ce49d1b775690aa1eccb33452150ac6eb5d276aad7c4a20aea8341",
+        "validation": "76aeb7ba9ccd192e68feddf284bafac76a1e555a782a6c561997787b1ce77306"
+      },
+      "stable_keys_sha256": {
+        "test": "c8081e5223090fe121f8c736576138404a455dd59270c9b0eac3cf648b4242ae",
+        "train_full": "3832f9daa13e45546f2aac0d9a158f803fcde0c389e93d8cdbf0cdb0243135ff",
+        "train_selected": "7c2140228b39dbec0af232920a9b3052284e606eb8d9a1b7448aa739f9eb32bb",
+        "validation": "76e1146ecc0014568f25da4ba7fef476ddebc9bfb084d36d9ae30b4e5d51c65c"
+      }
+    },
+    {
+      "fold": 1,
+      "ratio": 3,
+      "train_full": {
+        "companies": 922,
+        "negatives": 6374,
+        "positives": 60,
+        "prevalence": 0.009325458501709667,
+        "windows": 6434
+      },
+      "train_selected": {
+        "companies": 232,
+        "negatives": 180,
+        "positives": 60,
+        "prevalence": 0.25,
+        "windows": 240
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "manifest_sha256": "a728d086fb1cd1c9536156575dafe0e4f978244bbfff39c7ed58656abef37a87",
+      "index_sha256": {
+        "test": "76aeb7ba9ccd192e68feddf284bafac76a1e555a782a6c561997787b1ce77306",
+        "train_full": "368e7b5e5947b05acdfa3606323e0f384f090312d3fe474fff27da3bd59eaa1e",
+        "train_selected": "e294dcab71de51e827f59630e35bb6594d003da8463eac294c471ef4fcd0ee34",
+        "validation": "699ef0f085380a3347169bcd852555fe8810db0bbe0f2ad6b2d151d02252b544"
+      },
+      "stable_keys_sha256": {
+        "test": "76e1146ecc0014568f25da4ba7fef476ddebc9bfb084d36d9ae30b4e5d51c65c",
+        "train_full": "7e8acb03520d337db31c70b8f37afcb320432c90beb098183436b80fbb33717e",
+        "train_selected": "b07a6bada14cd3737f8a692ad418cb179625e1e7481c3d1a42b713408906d3a8",
+        "validation": "58c2d5cf86bf2722bdf9ea8eefe2ff807c72104478346af1319f9b9b6f36ecb0"
+      }
+    },
+    {
+      "fold": 1,
+      "ratio": 5,
+      "train_full": {
+        "companies": 922,
+        "negatives": 6374,
+        "positives": 60,
+        "prevalence": 0.009325458501709667,
+        "windows": 6434
+      },
+      "train_selected": {
+        "companies": 342,
+        "negatives": 300,
+        "positives": 60,
+        "prevalence": 0.16666666666666666,
+        "windows": 360
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "manifest_sha256": "a728d086fb1cd1c9536156575dafe0e4f978244bbfff39c7ed58656abef37a87",
+      "index_sha256": {
+        "test": "76aeb7ba9ccd192e68feddf284bafac76a1e555a782a6c561997787b1ce77306",
+        "train_full": "368e7b5e5947b05acdfa3606323e0f384f090312d3fe474fff27da3bd59eaa1e",
+        "train_selected": "88a91bcc4ff1f19dd21bbeff0bccfb7e0de8bfb5926640036b96d2778e5f0900",
+        "validation": "699ef0f085380a3347169bcd852555fe8810db0bbe0f2ad6b2d151d02252b544"
+      },
+      "stable_keys_sha256": {
+        "test": "76e1146ecc0014568f25da4ba7fef476ddebc9bfb084d36d9ae30b4e5d51c65c",
+        "train_full": "7e8acb03520d337db31c70b8f37afcb320432c90beb098183436b80fbb33717e",
+        "train_selected": "42a6f1469a9b181b9abe8ee4315e6285ff8f1ec82ffe7633ee6c81f6e84b93fb",
+        "validation": "58c2d5cf86bf2722bdf9ea8eefe2ff807c72104478346af1319f9b9b6f36ecb0"
+      }
+    },
+    {
+      "fold": 2,
+      "ratio": 3,
+      "train_full": {
+        "companies": 921,
+        "negatives": 6373,
+        "positives": 60,
+        "prevalence": 0.00932690812995492,
+        "windows": 6433
+      },
+      "train_selected": {
+        "companies": 226,
+        "negatives": 180,
+        "positives": 60,
+        "prevalence": 0.25,
+        "windows": 240
+      },
+      "validation": {
+        "companies": 308,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "manifest_sha256": "b92da53d6196ff45cb9cc7b71fe37391e9c42d688bc35dbe88532a2ef1a3ab1c",
+      "index_sha256": {
+        "test": "699ef0f085380a3347169bcd852555fe8810db0bbe0f2ad6b2d151d02252b544",
+        "train_full": "ab0a50c7da2f16975cb00e5d78f6589cae977d96e330abc4a9cf72be4b290091",
+        "train_selected": "46166cb194d34d180c03fa36e5b51a6f9602d3f9307d8c04fec1075e557f57f8",
+        "validation": "16f8d8170f836ecf4ab75d434d600056bcfdb45f4b2b356227e6d90ae03779f4"
+      },
+      "stable_keys_sha256": {
+        "test": "58c2d5cf86bf2722bdf9ea8eefe2ff807c72104478346af1319f9b9b6f36ecb0",
+        "train_full": "35f69543cb88b7ea14eb6ab449da4e4802f4a00b51de0aeafcf04c83ca46ed92",
+        "train_selected": "308e6ff734d6e2bf535d331ae7cc52e83fc1052f7b60a9a40325dca92ea711e5",
+        "validation": "409249b215e4aca6093942936588d7fca037fd06fb2513584c757315914e747f"
+      }
+    },
+    {
+      "fold": 2,
+      "ratio": 5,
+      "train_full": {
+        "companies": 921,
+        "negatives": 6373,
+        "positives": 60,
+        "prevalence": 0.00932690812995492,
+        "windows": 6433
+      },
+      "train_selected": {
+        "companies": 335,
+        "negatives": 300,
+        "positives": 60,
+        "prevalence": 0.16666666666666666,
+        "windows": 360
+      },
+      "validation": {
+        "companies": 308,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "manifest_sha256": "b92da53d6196ff45cb9cc7b71fe37391e9c42d688bc35dbe88532a2ef1a3ab1c",
+      "index_sha256": {
+        "test": "699ef0f085380a3347169bcd852555fe8810db0bbe0f2ad6b2d151d02252b544",
+        "train_full": "ab0a50c7da2f16975cb00e5d78f6589cae977d96e330abc4a9cf72be4b290091",
+        "train_selected": "7e4c466553b663dcfd84f1e432b96fe63a7225e5da8de890925d56598a782d28",
+        "validation": "16f8d8170f836ecf4ab75d434d600056bcfdb45f4b2b356227e6d90ae03779f4"
+      },
+      "stable_keys_sha256": {
+        "test": "58c2d5cf86bf2722bdf9ea8eefe2ff807c72104478346af1319f9b9b6f36ecb0",
+        "train_full": "35f69543cb88b7ea14eb6ab449da4e4802f4a00b51de0aeafcf04c83ca46ed92",
+        "train_selected": "e16d9fe08ef6045fcd1ec5f5b4d25d4f63c325375afa2866469d221c20624a72",
+        "validation": "409249b215e4aca6093942936588d7fca037fd06fb2513584c757315914e747f"
+      }
+    },
+    {
+      "fold": 3,
+      "ratio": 3,
+      "train_full": {
+        "companies": 921,
+        "negatives": 6373,
+        "positives": 60,
+        "prevalence": 0.00932690812995492,
+        "windows": 6433
+      },
+      "train_selected": {
+        "companies": 229,
+        "negatives": 180,
+        "positives": 60,
+        "prevalence": 0.25,
+        "windows": 240
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "test": {
+        "companies": 308,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "manifest_sha256": "2effe43fe6baaa074297da1b9809bb1d2372f41cec804d504a5c37520ec61b90",
+      "index_sha256": {
+        "test": "16f8d8170f836ecf4ab75d434d600056bcfdb45f4b2b356227e6d90ae03779f4",
+        "train_full": "cf89acbb98d8258c9febf28298ccc80a65a803b222108091ba5a4f8e34f0b2fc",
+        "train_selected": "3242342ec3f85f4d374435a6f75ad7e7a99f9d8a653520ba615685f11b277d40",
+        "validation": "2f768c5cfeabef0e624bd7f7f1bfbfd6faefb9dc7523fdcad12fe427e9840ce4"
+      },
+      "stable_keys_sha256": {
+        "test": "409249b215e4aca6093942936588d7fca037fd06fb2513584c757315914e747f",
+        "train_full": "3d697e9d4604a1e51ab78c169ef42bc78a63049681a5f65898bf396985e674f6",
+        "train_selected": "d6573b218a48b8e48d50e5b741089ce2d54d40664d020bf3be53b8b585c36ef1",
+        "validation": "9653790abbc67b2f067325ea4d196157b9b5cf6947041f58ff7287de982b2c3a"
+      }
+    },
+    {
+      "fold": 3,
+      "ratio": 5,
+      "train_full": {
+        "companies": 921,
+        "negatives": 6373,
+        "positives": 60,
+        "prevalence": 0.00932690812995492,
+        "windows": 6433
+      },
+      "train_selected": {
+        "companies": 341,
+        "negatives": 300,
+        "positives": 60,
+        "prevalence": 0.16666666666666666,
+        "windows": 360
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "test": {
+        "companies": 308,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "manifest_sha256": "2effe43fe6baaa074297da1b9809bb1d2372f41cec804d504a5c37520ec61b90",
+      "index_sha256": {
+        "test": "16f8d8170f836ecf4ab75d434d600056bcfdb45f4b2b356227e6d90ae03779f4",
+        "train_full": "cf89acbb98d8258c9febf28298ccc80a65a803b222108091ba5a4f8e34f0b2fc",
+        "train_selected": "7ba0f1862252230a38ee4505eac4d2a697c631a02cc68adc4322338d775094e2",
+        "validation": "2f768c5cfeabef0e624bd7f7f1bfbfd6faefb9dc7523fdcad12fe427e9840ce4"
+      },
+      "stable_keys_sha256": {
+        "test": "409249b215e4aca6093942936588d7fca037fd06fb2513584c757315914e747f",
+        "train_full": "3d697e9d4604a1e51ab78c169ef42bc78a63049681a5f65898bf396985e674f6",
+        "train_selected": "dcc18836791f6a72206a8fcf9a83a1d37c18ba8aeb10b9f4106c6aa335a17317",
+        "validation": "9653790abbc67b2f067325ea4d196157b9b5cf6947041f58ff7287de982b2c3a"
+      }
+    },
+    {
+      "fold": 4,
+      "ratio": 3,
+      "train_full": {
+        "companies": 922,
+        "negatives": 6374,
+        "positives": 60,
+        "prevalence": 0.009325458501709667,
+        "windows": 6434
+      },
+      "train_selected": {
+        "companies": 228,
+        "negatives": 180,
+        "positives": 60,
+        "prevalence": 0.25,
+        "windows": 240
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "manifest_sha256": "6fee36430bdc01e06b8415e4d011bb1a5d10210694175e2a78ca0d624e1a86fc",
+      "index_sha256": {
+        "test": "2f768c5cfeabef0e624bd7f7f1bfbfd6faefb9dc7523fdcad12fe427e9840ce4",
+        "train_full": "679fd59e3531a8afe647f6de310e23af1ebcf43538292a17d2043916ce4d885c",
+        "train_selected": "44ffbdd9c19d2d203c60616365e377122789ae6d15de94c80a2a9b7f11db043a",
+        "validation": "a7118cd7a85cbdd30b46db9e90fde2cb3c49272457c1ac777b2c00415a06a47f"
+      },
+      "stable_keys_sha256": {
+        "test": "9653790abbc67b2f067325ea4d196157b9b5cf6947041f58ff7287de982b2c3a",
+        "train_full": "6356ac45e7cee730f50537e3166abbd2590cd45bda166b6945b1b7f4128b6c2a",
+        "train_selected": "551d6a3d2125f480652de4ead48efd952dc655812e84b6fba20e7b1d90786983",
+        "validation": "c8081e5223090fe121f8c736576138404a455dd59270c9b0eac3cf648b4242ae"
+      }
+    },
+    {
+      "fold": 4,
+      "ratio": 5,
+      "train_full": {
+        "companies": 922,
+        "negatives": 6374,
+        "positives": 60,
+        "prevalence": 0.009325458501709667,
+        "windows": 6434
+      },
+      "train_selected": {
+        "companies": 341,
+        "negatives": 300,
+        "positives": 60,
+        "prevalence": 0.16666666666666666,
+        "windows": 360
+      },
+      "validation": {
+        "companies": 307,
+        "negatives": 2124,
+        "positives": 20,
+        "prevalence": 0.009328358208955223,
+        "windows": 2144
+      },
+      "test": {
+        "companies": 307,
+        "negatives": 2125,
+        "positives": 20,
+        "prevalence": 0.009324009324009324,
+        "windows": 2145
+      },
+      "manifest_sha256": "6fee36430bdc01e06b8415e4d011bb1a5d10210694175e2a78ca0d624e1a86fc",
+      "index_sha256": {
+        "test": "2f768c5cfeabef0e624bd7f7f1bfbfd6faefb9dc7523fdcad12fe427e9840ce4",
+        "train_full": "679fd59e3531a8afe647f6de310e23af1ebcf43538292a17d2043916ce4d885c",
+        "train_selected": "8a7614944e2f3ea83de2ca434d09e1fc349383d0737c99cf53809dcfc464a9ed",
+        "validation": "a7118cd7a85cbdd30b46db9e90fde2cb3c49272457c1ac777b2c00415a06a47f"
+      },
+      "stable_keys_sha256": {
+        "test": "9653790abbc67b2f067325ea4d196157b9b5cf6947041f58ff7287de982b2c3a",
+        "train_full": "6356ac45e7cee730f50537e3166abbd2590cd45bda166b6945b1b7f4128b6c2a",
+        "train_selected": "e7b0e26fc770a2a43470d7fa4cfd524a23513e43823ba34c660560e266110579",
+        "validation": "c8081e5223090fe121f8c736576138404a455dd59270c9b0eac3cf648b4242ae"
+      }
+    }
+  ],
+  "comparison_conditions": 34,
+  "old_pilot_runs_reused": 30,
+  "new_condition_fingerprints": {
+    "3": "83cc0e39612b497ae2eabda91e00658653e010c65e0c5c3a6e9804f46f3d8856",
+    "5": "deb06ddfe498d32a6251745c29d223153aea798b8025a6a51278d518d02edd96"
+  }
+}

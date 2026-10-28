@@ -1,0 +1,51 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.8758928571428571,
+  "precision": 0.3569682151589242,
+  "recall": 0.906832298136646,
+  "f1": 0.512280701754386,
+  "specificity": 0.8734968734968735,
+  "mcc": 0.5216896243297977,
+  "roc_auc": 0.9619979744203349,
+  "ap": 0.7354513140930645,
+  "brier": 0.08094096425750671,
+  "ece_10_bins": 0.14094620640202526,
+  "top_decile_capture": 0.8385093167701864,
+  "tn": 1816,
+  "fp": 263,
+  "fn": 15,
+  "tp": 146,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "ad62845986a1d8be76d5ed1b74c3522d4a12fe68ba8593c146995885a8feec62",
+    "experiment": "annual_risk_v1",
+    "model": "PerSeM_ABC",
+    "scheme": "ratio_4",
+    "fold": 3,
+    "protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+      "fold": 3,
+      "numeric_sha256": "376ad58f81a9c46ae8ba7ccb3b101391af2cee3b123dfb1dd9e4e4fcaf9f9b1e",
+      "preprocessing_sha256": "0ff0b56fc71bdb6219ca02a7d1f1530a717d39a37eed946f3b103f125c4e2027",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007664069802434,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "selected_index_sha256": "6239f82ada9cb2651ff5081d1e34cb59816d8b382da9f8dda457c9fcfb59853a",
+    "full_train_index_sha256": "82fb0d3e12414428a74709842c78b6331ed9dc426ed4e6828f2a7cf0688b3e1c",
+    "validation_index_sha256": "883b85492e66cd23f103438f30eec85e2c65295b7ea6f919762049756faabbd7",
+    "test_index_sha256": "a461781454845c7421d7f65e96c786442baf45b66333dda345b62ef5b8feb379",
+    "sampling_manifest_sha256": "d1c5d5c12aff145483bf885d649ee315f2f9b2aeb3a76659f68bd5e203294081"
+  },
+  "best_step": 210,
+  "checkpoint_selection": "maximum validation AP"
+}

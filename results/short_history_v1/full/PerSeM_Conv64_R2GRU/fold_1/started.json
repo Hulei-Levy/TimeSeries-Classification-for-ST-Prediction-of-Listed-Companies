@@ -1,0 +1,84 @@
+{
+  "identity": {
+    "fingerprint": "9284db27d126d174b39fb7ddc3033f79341e8fe40949208d1b152a06ad56b65b",
+    "experiment": "short_history_v1",
+    "model": "PerSeM_Conv64_R2GRU",
+    "scheme": "full",
+    "fold": 1,
+    "protocol_fingerprint": "ccf9187020a5ffde589711afae42d6561e59a5221c04ba42517a16b9e0d9ab69",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+      "fold": 1,
+      "numeric_sha256": "79530f49d67dfb3307b9003b16fdebdbda6b2e3321a39e2343d3318749d1505c",
+      "preprocessing_sha256": "603714216e2a1864ccf62b9487a793c3678ab124fe8e653b74e88305619a769b",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007662574803696,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+    "validation_indices_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+    "test_indices_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59",
+    "history_metadata_sha256": "f73e6eac2646a635b5302e0407d141af43f0f9beedd644c442b8a5224177753b"
+  },
+  "config": {
+    "seed": 42,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dim": 64,
+    "depth": 2,
+    "dropout": 0.1,
+    "text_dim": 64,
+    "threshold": 0.5,
+    "gradient_clip": 1.0,
+    "bert_batch_size": 128,
+    "torch_threads": 6,
+    "auxiliary_loss_weight": 0.01,
+    "graph_microbatch_size": 16,
+    "max_optimizer_steps": 10500,
+    "validate_every_steps": 105,
+    "patience_checks": 15
+  },
+  "pos_weight": 12.882231404958677,
+  "split_statistics": {
+    "training": {
+      "windows": 6719,
+      "companies": 926,
+      "positives": 484,
+      "negatives": 6235,
+      "prevalence": 0.07203452894776008
+    },
+    "validation": {
+      "windows": 2240,
+      "companies": 309,
+      "positives": 161,
+      "negatives": 2079,
+      "prevalence": 0.071875
+    },
+    "test": {
+      "windows": 2240,
+      "companies": 308,
+      "positives": 161,
+      "negatives": 2079,
+      "prevalence": 0.071875
+    }
+  },
+  "feature_check": {
+    "samples": 11199,
+    "residual_dimension": 864,
+    "history_available": 8249,
+    "legacy_available": 4935,
+    "no_history": 2950,
+    "mask_checked": true
+  },
+  "predictor_metadata_fingerprint": "56a9432590c944c9c633356368fb6c8efbc5d6ed66d1b3697613793408a07522",
+  "started_at": "2026-10-28T15:52:12Z",
+  "pid": 117,
+  "device": "cuda:1"
+}

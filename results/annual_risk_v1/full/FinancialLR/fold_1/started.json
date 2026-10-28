@@ -1,0 +1,126 @@
+{
+  "identity": {
+    "fingerprint": "49dc5d9bb3e817a30d075ed9ae7ac52ca4c84b766687ed6a9e1644bf3b216495",
+    "experiment": "annual_risk_v1",
+    "model": "FinancialLR",
+    "scheme": "full",
+    "fold": 1,
+    "protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+      "fold": 1,
+      "numeric_sha256": "79530f49d67dfb3307b9003b16fdebdbda6b2e3321a39e2343d3318749d1505c",
+      "preprocessing_sha256": "603714216e2a1864ccf62b9487a793c3678ab124fe8e653b74e88305619a769b",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007662574803696,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "selected_index_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+    "full_train_index_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+    "validation_index_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+    "test_index_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59",
+    "sampling_manifest_sha256": "09e81665688ddef87114f9e41e08219782d6765b0d32b9e80ab50ad2a2b888c9"
+  },
+  "config": {
+    "inherited_config": {
+      "seed": 42,
+      "epochs": 100,
+      "patience": 15,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "dim": 64,
+      "depth": 2,
+      "dropout": 0.1,
+      "text_dim": 64,
+      "threshold": 0.5,
+      "gradient_clip": 1.0,
+      "bert_batch_size": 128,
+      "torch_threads": 6,
+      "auxiliary_loss_weight": 0.01,
+      "graph_microbatch_size": 16
+    },
+    "neural": {
+      "seed": 42,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "dim": 64,
+      "depth": 2,
+      "dropout": 0.1,
+      "text_dim": 64,
+      "threshold": 0.5,
+      "gradient_clip": 1.0,
+      "bert_batch_size": 128,
+      "torch_threads": 6,
+      "auxiliary_loss_weight": 0.01,
+      "graph_microbatch_size": 16,
+      "max_optimizer_steps": 10500,
+      "validate_every_steps": 105,
+      "patience_checks": 15
+    },
+    "financial_lr": {
+      "penalty": "l2",
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 10000,
+      "tol": 0.0001,
+      "fit_intercept": true,
+      "class_weight": "negative=1, positive=actual selected negative/positive ratio",
+      "seed": 42,
+      "threshold": 0.5
+    }
+  },
+  "pos_weight": 12.882231404958677,
+  "seed": 42,
+  "full_train_n": 6719,
+  "selected_train_n": 6719,
+  "validation_n": 2240,
+  "test_n": 2240,
+  "sampling_statistics": {
+    "full": {
+      "windows": 6719,
+      "companies": 926,
+      "positives": 484,
+      "negatives": 6235,
+      "prevalence": 0.07203452894776008
+    },
+    "ratio_3": {
+      "windows": 1936,
+      "companies": 884,
+      "positives": 484,
+      "negatives": 1452,
+      "prevalence": 0.25
+    },
+    "ratio_4": {
+      "windows": 2420,
+      "companies": 926,
+      "positives": 484,
+      "negatives": 1936,
+      "prevalence": 0.2
+    },
+    "validation": {
+      "windows": 2240,
+      "companies": 309,
+      "positives": 161,
+      "negatives": 2079,
+      "prevalence": 0.071875
+    },
+    "test": {
+      "windows": 2240,
+      "companies": 308,
+      "positives": 161,
+      "negatives": 2079,
+      "prevalence": 0.071875
+    }
+  },
+  "started_at": "2026-10-26T09:43:58Z",
+  "pid": 26,
+  "device": "cuda:1"
+}

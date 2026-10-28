@@ -1,0 +1,59 @@
+{
+  "fingerprint": "b01d71c1555dac0c2832c1c816fa57273e9bc3e78a6576d834f4907d39f02f0a",
+  "checks": {
+    "PerSeM_R": {
+      "passed": true,
+      "model": "PerSeM_R",
+      "fold": 0,
+      "device": "cuda:1",
+      "examples": 64,
+      "parameters": 1507905,
+      "optimizer_steps": 1,
+      "feature_contract": {
+        "train_n": 6720,
+        "validation_n": 2240,
+        "test_n": 2239,
+        "history_available": 4935,
+        "inner_counts": [
+          2240,
+          2240,
+          2240
+        ]
+      },
+      "batch_invariance": true,
+      "empty_history_fallback": true,
+      "extra_bias_masked": true,
+      "frozen_predictor_features": true,
+      "text_and_extra_gradients": true,
+      "cuda_peak_reserved_bytes": 142606336,
+      "checked_at": "2026-10-28T12:13:21Z"
+    },
+    "PerSeM_H": {
+      "passed": true,
+      "model": "PerSeM_H",
+      "fold": 0,
+      "device": "cuda:0",
+      "examples": 64,
+      "parameters": 1507905,
+      "optimizer_steps": 1,
+      "feature_contract": {
+        "train_n": 6720,
+        "validation_n": 2240,
+        "test_n": 2239,
+        "history_available": 4935,
+        "inner_counts": [
+          2240,
+          2240,
+          2240
+        ]
+      },
+      "batch_invariance": true,
+      "empty_history_fallback": true,
+      "extra_bias_masked": true,
+      "frozen_predictor_features": true,
+      "text_and_extra_gradients": true,
+      "cuda_peak_reserved_bytes": 142606336,
+      "checked_at": "2026-10-28T12:13:21Z"
+    }
+  }
+}

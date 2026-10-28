@@ -1,0 +1,26 @@
+{
+  "fingerprint": "af9ab5f96efdde5b23a486596721982dc6b276887881ee52670af453ce19c2be",
+  "checks": {
+    "PerSeM_Conv64_R16_Stage2": {
+      "passed": true,
+      "model": "PerSeM_Conv64_R16_Stage2",
+      "fold": 0,
+      "device": "cuda:1",
+      "parameters": 832914,
+      "trainable_parameters": 37201,
+      "frozen_parameters": 795713,
+      "stage0_validation_ap": 0.7030404311453042,
+      "stage1_probabilities_reproduced": true,
+      "frozen_base_hash": "0c62b3a7482e13cc830c9f7134b3d56adf91e01fe004169e3f77d116c6c43c78",
+      "frozen_base_unchanged": true,
+      "base_eval": true,
+      "no_history_unchanged": true,
+      "residual_gradients": true,
+      "residual_updated": true,
+      "empty_batch_skips_optimizer": true,
+      "batch_invariance": true,
+      "cuda_peak_reserved_bytes": 121634816,
+      "checked_at": "2026-10-28T14:56:52Z"
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "analysis": "validation_reconstruction_comparison",
+  "experiment": "short_history_v1",
+  "created_at_utc": "2026-10-28T15:55:37.108207+00:00",
+  "split": "validation_only",
+  "test_metrics_computed": false,
+  "old_predictor": "linear_history_v1 H5 to X5, evaluated only on last two target years",
+  "new_predictor": "short_history_v1 H8 to X2",
+  "method": {
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "targets": "same last two complete fiscal years: financial8quarters/governance2years",
+    "condition": "intersection of old and new residual masks separately for each inner-generator prediction view",
+    "residual": "cached native actual minus native predicted, divided by identical corresponding outer-training feature scale",
+    "error_arithmetic": "float64 MAE and MSE of cached float32 standardized residuals, no clipping or re-fitting",
+    "predictor_views": "each of three inner cross-fitted predictors evaluated individually; error averaged over common cells and views, not over an averaged forecast",
+    "fold_mean": "unweighted arithmetic mean of the five fold metrics",
+    "pooled_cells": "weighted by common prediction-cell counts across folds",
+    "cell_counts": "common_prediction_cells includes three views; common_target_cells counts distinct sample/time/field cells; all three views have identical coverage here",
+    "partition_check": "old/new validation sample indices, inner company groups and outer preprocessing hash identical"
+  },
+  "interpretation_limits": [
+    "Comparison excludes new-coverage expansion by restricting to common valid target cells.",
+    "History length and recency of conditioning information also change from H5 to H8; this is not an isolated horizon effect.",
+    "Financial fold3 has much larger MSE and dominates the aggregate MSE; MAE improvement is more consistent.",
+    "Reduced reconstruction error does not establish improved risk classification or causal information.",
+    "Inherited disclosure availability and historical-vintage limitations remain unchanged."
+  ],
+  "source_sha256": {
+    "cache/linear_history_v1/fold_0/features.npz": "88aff174d84cdc3827ca9875317c635f54b15c3e34f869ebcca96193a671b076",
+    "cache/linear_history_v1/fold_0/metadata.json": "dd8e9bc4849b3a09b36ba54a0e31f85a55015381f2451a920b7c5895e1e6deba",
+    "cache/short_history_v1/fold_0/features.npz": "4134bafbacd4db68ed11b28b22122515a142b9a441c129bcabda5b9fad91f6f9",
+    "cache/short_history_v1/fold_0/metadata.json": "01a37ebb555096acb5bb46959c424abb618b668a830a4ba4c1596d5b1192e0fc",
+    "cache/linear_history_v1/fold_1/features.npz": "29103acd1539898695e49fa9bbe4477c9bfa86708e1c3588fd799503a8be4193",
+    "cache/linear_history_v1/fold_1/metadata.json": "d02961262f08978ca2808571c0c8dd2c60c9889012ff03c5f6d8e21d6ef435a2",
+    "cache/short_history_v1/fold_1/features.npz": "f21cd241ab48c273d577a9da62eac2284ffe89af34455eb970d71e316b5d44b8",
+    "cache/short_history_v1/fold_1/metadata.json": "f73e6eac2646a635b5302e0407d141af43f0f9beedd644c442b8a5224177753b",
+    "cache/linear_history_v1/fold_2/features.npz": "3fb7da239480804a20659e6f35271bbc5682ba85c17cd0f1e2e90a191f86c0d3",
+    "cache/linear_history_v1/fold_2/metadata.json": "27bd1a2e714d135c48cac50951b8b66546625cd87501d68e0e489465794381db",
+    "cache/short_history_v1/fold_2/features.npz": "e4ccd1f1cb494cce453c29ef6259a461d42f3db0ad1d2ad85c94064eb3e764f5",
+    "cache/short_history_v1/fold_2/metadata.json": "61a3b5c008adf5d5d5d67042c1322c5340747f3e141a0fae65352915ec9e63cc",
+    "cache/linear_history_v1/fold_3/features.npz": "f36824408e83ebe2b97c50f9d8d5e989b2320b425dbbfd44a977673cf4e00787",
+    "cache/linear_history_v1/fold_3/metadata.json": "61a2f5f908b111c5c490b2914e4896e44d203b0c9fc016328d10765d9dd88c86",
+    "cache/short_history_v1/fold_3/features.npz": "64374aac11102c79248796e9e7ead87d5fce32f2524bc6fe37a4ed77e011c25f",
+    "cache/short_history_v1/fold_3/metadata.json": "03b41a7e33b2db08bdcf930d5c9cb153eceaf3f54b66b86d013a45a00d9f677c",
+    "cache/linear_history_v1/fold_4/features.npz": "7b454d4fd93db6fe73a0b9173599336a0fbb7e607576c952d198762b46ea416a",
+    "cache/linear_history_v1/fold_4/metadata.json": "73188cc98b8231281e320b069d2c7164c632e36b16f1e3472d170dc1fd92b6d5",
+    "cache/short_history_v1/fold_4/features.npz": "2f164f25681bb1bdd2016eb4ecad2764f2ffc1665dd57c57e721cb88b14aca64",
+    "cache/short_history_v1/fold_4/metadata.json": "fe4e6eaba7c83c0f1dcdeb318d202b5444e073f7c85b62f94384aed5d9946cd8"
+  },
+  "fold_modalities": [
+    {
+      "fold": 0,
+      "modal": "financial",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59",
+      "common_prediction_cells": 572487,
+      "common_by_view": [
+        190829,
+        190829,
+        190829
+      ],
+      "common_target_cells_all3": 190829,
+      "common_target_cells_any": 190829,
+      "old_mae": 0.33150773322156757,
+      "new_mae": 0.26084835126755207,
+      "old_mse": 3.889552667198596,
+      "new_mse": 2.7744769378838052,
+      "mae_reduction": 0.21314550121456555,
+      "mse_reduction": 0.2866848259231597
+    },
+    {
+      "fold": 0,
+      "modal": "governance",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59",
+      "common_prediction_cells": 72165,
+      "common_by_view": [
+        24055,
+        24055,
+        24055
+      ],
+      "common_target_cells_all3": 24055,
+      "common_target_cells_any": 24055,
+      "old_mae": 0.5209820117724631,
+      "new_mae": 0.3244907378577658,
+      "old_mse": 0.7805404976549042,
+      "new_mse": 0.43259716461168246,
+      "mae_reduction": 0.3771555821019673,
+      "mse_reduction": 0.44577230020556335
+    },
+    {
+      "fold": 1,
+      "modal": "financial",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+      "common_prediction_cells": 569802,
+      "common_by_view": [
+        189934,
+        189934,
+        189934
+      ],
+      "common_target_cells_all3": 189934,
+      "common_target_cells_any": 189934,
+      "old_mae": 0.3049614082548413,
+      "new_mae": 0.2317461747847126,
+      "old_mse": 1.6019210245439701,
+      "new_mse": 1.3763279693619779,
+      "mae_reduction": 0.24008032324190454,
+      "mse_reduction": 0.14082657741895444
+    },
+    {
+      "fold": 1,
+      "modal": "governance",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+      "common_prediction_cells": 70743,
+      "common_by_view": [
+        23581,
+        23581,
+        23581
+      ],
+      "common_target_cells_all3": 23581,
+      "common_target_cells_any": 23581,
+      "old_mae": 0.5085782196383205,
+      "new_mae": 0.30961780910658215,
+      "old_mse": 0.9008614363304659,
+      "new_mse": 0.46235712083831504,
+      "mae_reduction": 0.3912090664701108,
+      "mse_reduction": 0.48676111309452574
+    },
+    {
+      "fold": 2,
+      "modal": "financial",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "a461781454845c7421d7f65e96c786442baf45b66333dda345b62ef5b8feb379",
+      "common_prediction_cells": 566211,
+      "common_by_view": [
+        188737,
+        188737,
+        188737
+      ],
+      "common_target_cells_all3": 188737,
+      "common_target_cells_any": 188737,
+      "old_mae": 0.2824132025906188,
+      "new_mae": 0.2082438088084912,
+      "old_mse": 0.9734982764072093,
+      "new_mse": 0.58066090077983,
+      "mae_reduction": 0.26262721820991586,
+      "mse_reduction": 0.40353166014549513
+    },
+    {
+      "fold": 2,
+      "modal": "governance",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "a461781454845c7421d7f65e96c786442baf45b66333dda345b62ef5b8feb379",
+      "common_prediction_cells": 71922,
+      "common_by_view": [
+        23974,
+        23974,
+        23974
+      ],
+      "common_target_cells_all3": 23974,
+      "common_target_cells_any": 23974,
+      "old_mae": 0.46339425882852825,
+      "new_mae": 0.2842325012147484,
+      "old_mse": 0.46362209344150035,
+      "new_mse": 0.2454528842545286,
+      "mae_reduction": 0.3866292130306168,
+      "mse_reduction": 0.4705755231971064
+    },
+    {
+      "fold": 3,
+      "modal": "financial",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "883b85492e66cd23f103438f30eec85e2c65295b7ea6f919762049756faabbd7",
+      "common_prediction_cells": 565404,
+      "common_by_view": [
+        188468,
+        188468,
+        188468
+      ],
+      "common_target_cells_all3": 188468,
+      "common_target_cells_any": 188468,
+      "old_mae": 0.2640017114992737,
+      "new_mae": 0.20195231544415496,
+      "old_mse": 23.567733895178904,
+      "new_mse": 23.51095986127771,
+      "mae_reduction": 0.2350340674033451,
+      "mse_reduction": 0.0024089729693023143
+    },
+    {
+      "fold": 3,
+      "modal": "governance",
+      "validation_samples": 2240,
+      "validation_indices_sha256": "883b85492e66cd23f103438f30eec85e2c65295b7ea6f919762049756faabbd7",
+      "common_prediction_cells": 71352,
+      "common_by_view": [
+        23784,
+        23784,
+        23784
+      ],
+      "common_target_cells_all3": 23784,
+      "common_target_cells_any": 23784,
+      "old_mae": 0.4427893575289789,
+      "new_mae": 0.27800343983902126,
+      "old_mse": 0.437977507372294,
+      "new_mse": 0.23891853565767768,
+      "mae_reduction": 0.37215419677103023,
+      "mse_reduction": 0.45449587790226464
+    },
+    {
+      "fold": 4,
+      "modal": "financial",
+      "validation_samples": 2239,
+      "validation_indices_sha256": "fd12b724e2d2477bfbbe10a2ad249e96d116b9bf73fe586053b364e5d56ee689",
+      "common_prediction_cells": 569481,
+      "common_by_view": [
+        189827,
+        189827,
+        189827
+      ],
+      "common_target_cells_all3": 189827,
+      "common_target_cells_any": 189827,
+      "old_mae": 0.26919392215486104,
+      "new_mae": 0.2056197221081387,
+      "old_mse": 1.1995023504779807,
+      "new_mse": 1.1290699522896892,
+      "mae_reduction": 0.23616506471550114,
+      "mse_reduction": 0.05871801598406656
+    },
+    {
+      "fold": 4,
+      "modal": "governance",
+      "validation_samples": 2239,
+      "validation_indices_sha256": "fd12b724e2d2477bfbbe10a2ad249e96d116b9bf73fe586053b364e5d56ee689",
+      "common_prediction_cells": 71646,
+      "common_by_view": [
+        23882,
+        23882,
+        23882
+      ],
+      "common_target_cells_all3": 23882,
+      "common_target_cells_any": 23882,
+      "old_mae": 0.5162003885510112,
+      "new_mae": 0.3183701913277074,
+      "old_mse": 1.7933477349526084,
+      "new_mse": 0.9521747257144917,
+      "mae_reduction": 0.3832430226924445,
+      "mse_reduction": 0.4690518145720054
+    }
+  ],
+  "summaries": [
+    {
+      "modal": "financial",
+      "common_prediction_cells": 2843385,
+      "common_target_cells_all3": 947795,
+      "common_target_cells_any": 947795,
+      "fold_mean": {
+        "old_mae": 0.29041559554423246,
+        "new_mae": 0.22168207448260988,
+        "old_mse": 6.246441642761332,
+        "new_mse": 5.874299124318602,
+        "mae_reduction": 0.23667296838111418,
+        "mse_reduction": 0.05957672219254395
+      },
+      "pooled_cells": {
+        "old_mae": 0.290507756613503,
+        "new_mae": 0.2217683609899125,
+        "old_mse": 6.224653498319366,
+        "new_mse": 5.851313709727622,
+        "mae_reduction": 0.23661810763642588,
+        "mse_reduction": 0.05997760175607281
+      }
+    },
+    {
+      "modal": "governance",
+      "common_prediction_cells": 357828,
+      "common_target_cells_all3": 119276,
+      "common_target_cells_any": 119276,
+      "fold_mean": {
+        "old_mae": 0.4903888472638604,
+        "new_mae": 0.302942935869165,
+        "old_mse": 0.8752698539503545,
+        "new_mse": 0.4663000862153391,
+        "mae_reduction": 0.3822393442276586,
+        "mse_reduction": 0.4672499182843013
+      },
+      "pooled_cells": {
+        "old_mae": 0.490405605574277,
+        "new_mae": 0.30296340388890336,
+        "old_mse": 0.8751096524937522,
+        "new_mse": 0.46627763137543254,
+        "mae_reduction": 0.3822187176385845,
+        "mse_reduction": 0.4671780501486795
+      }
+    }
+  ]
+}

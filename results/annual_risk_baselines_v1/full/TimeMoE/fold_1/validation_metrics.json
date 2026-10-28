@@ -1,0 +1,50 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.9433035714285715,
+  "precision": 0.5726495726495726,
+  "recall": 0.8322981366459627,
+  "f1": 0.6784810126582278,
+  "specificity": 0.9518999518999519,
+  "mcc": 0.6622051729717637,
+  "roc_auc": 0.9499102232021487,
+  "ap": 0.7051326047575097,
+  "brier": 0.05056631365122078,
+  "ece_10_bins": 0.06537121999296125,
+  "top_decile_capture": 0.8260869565217391,
+  "tn": 1979,
+  "fp": 100,
+  "fn": 27,
+  "tp": 134,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "6a0099c4a6b17a8c110769967cee30908c0e628c5f10e1e494200340e95c044d",
+    "experiment": "annual_risk_baselines_v1",
+    "model": "TimeMoE",
+    "scheme": "full",
+    "fold": 1,
+    "protocol_fingerprint": "b7114795190e5b0b0922d931aeec2eaf1033564344e9910a972ad6c960bc061d",
+    "parent_protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+      "fold": 1,
+      "numeric_sha256": "79530f49d67dfb3307b9003b16fdebdbda6b2e3321a39e2343d3318749d1505c",
+      "preprocessing_sha256": "603714216e2a1864ccf62b9487a793c3678ab124fe8e653b74e88305619a769b",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007662574803696,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "train_index_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+    "validation_index_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+    "test_index_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59"
+  },
+  "best_step": 1365,
+  "checkpoint_selection": "maximum validation AP"
+}

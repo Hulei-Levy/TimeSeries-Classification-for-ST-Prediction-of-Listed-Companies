@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "pyarrow": "24.0.0"
+  },
+  "purpose": "host parquet decoding and deterministic linear reference preparation"
+}

@@ -1,0 +1,51 @@
+{
+  "n": 2240,
+  "positive": 161,
+  "prevalence": 0.071875,
+  "accuracy": 0.8700892857142857,
+  "precision": 0.3399014778325123,
+  "recall": 0.8571428571428571,
+  "f1": 0.48677248677248675,
+  "specificity": 0.8710918710918711,
+  "mcc": 0.48825745835738493,
+  "roc_auc": 0.9504808511019691,
+  "ap": 0.6528736850404209,
+  "brier": 0.0884200029779165,
+  "ece_10_bins": 0.1478496658707237,
+  "top_decile_capture": 0.7701863354037267,
+  "tn": 1811,
+  "fp": 268,
+  "fn": 23,
+  "tp": 138,
+  "threshold": 0.5,
+  "identity": {
+    "fingerprint": "44917141a975b8b77178847ab6c2fcb180caa1ae0ced5ff84b61778aaf9be9f7",
+    "experiment": "annual_risk_v1",
+    "model": "PerSeM",
+    "scheme": "ratio_4",
+    "fold": 1,
+    "protocol_fingerprint": "535a2494adc88b619e5fffc665c452c5fc5b292dddbe3a0228aa24798c984420",
+    "preprocessing": {
+      "data_identity_sha256": "eae4e01c527d693aaa11f280cf9a8235a27df7185b74e94130e66622e52e2ae4",
+      "full_train_indices_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+      "fold": 1,
+      "numeric_sha256": "79530f49d67dfb3307b9003b16fdebdbda6b2e3321a39e2343d3318749d1505c",
+      "preprocessing_sha256": "603714216e2a1864ccf62b9487a793c3678ab124fe8e653b74e88305619a769b",
+      "numeric_size": 185455568,
+      "numeric_mtime_ns": 1793007662574803696,
+      "numeric_shape": [
+        11199,
+        20,
+        207
+      ],
+      "financial_lr_dimension": 1800
+    },
+    "selected_index_sha256": "65b68faa92d8635c22f58023b58e1a7d6caeee1bd03c5ebcc53a546e57a5e9b0",
+    "full_train_index_sha256": "275eae339c03611548a93c46a33544f86362c83ef02f54515a8a7443f33372a8",
+    "validation_index_sha256": "35a26326fd036b49f32d5cd6f43038805ee17300402e484eae5353d8f7dc955d",
+    "test_index_sha256": "81c7712a33f7bec6b563015ba4c236c666012b2500616fa4b7bdaa0842281a59",
+    "sampling_manifest_sha256": "09e81665688ddef87114f9e41e08219782d6765b0d32b9e80ab50ad2a2b888c9"
+  },
+  "best_step": 315,
+  "checkpoint_selection": "maximum validation AP"
+}
